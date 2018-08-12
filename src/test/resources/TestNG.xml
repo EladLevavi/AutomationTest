@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="tests" parallel="tests" thread-count="4">
+
+    <test name="Chrome">
+
+        <parameter name="browser" value="Chrome" />
+
+            <classes>
+
+                <class name="com.cloudents.AutomationTest.CloudentsAutoTests" />
+
+            </classes>
+
+    </test>
+
+
+    <test name="Firefox">
+
+        <parameter name="browser" value="Firefox" />
+
+            <classes>
+
+                <class name="com.cloudents.AutomationTest.CloudentsAutoTests" />
+
+            </classes>
+
+    </test>
+
+
+    <test name="EdgeTest">
+
+        <parameter name="browser" value="Edge" />
+
+        <classes>
+
+            <class name="com.cloudents.AutomationTest.CloudentsAutoTests" />
+
+        </classes>
+
+    </test>
+
+    <test name="IETest">
+
+        <parameter name="browser" value="IE" />
+
+        <classes>
+
+            <class name="com.cloudents.AutomationTest.CloudentsAutoTests" />
+
+        </classes>
+
+    </test>
+
+    <test name="SafariTest">
+
+        <parameter name="browser" value="Safari" />
+
+        <classes>
+
+            <class name="com.cloudents.AutomationTest.CloudentsAutoTests" />
+
+        </classes>
+
+    </test>
+
+</suite>
