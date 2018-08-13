@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b3fc1a-ab91-4c31-bf82-736e12ce3328" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/AboutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/HWpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/HWpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.cloudents.AutomationTest.CloudentsAutoTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.cloudents.AutomationTest.CloudentsAutoTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/tests/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/tests/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/tests/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/tests/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/Chrome.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/Chrome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/Chrome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/Chrome.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/EdgeTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/EdgeTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/EdgeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/EdgeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/Firefox.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/Firefox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/Firefox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/Firefox.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/IETest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/IETest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/IETest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/IETest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/SafariTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/SafariTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/SafariTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/SafariTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestNG.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/CloudentsAutoTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/CloudentsAutoTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/AboutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/AboutPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/HWpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/HWpage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/velocity.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/velocity.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -104,14 +73,14 @@
         <counts>
           <entry key="dummy" value="2" />
           <entry key="java" value="14770" />
-          <entry key="txt" value="34" />
+          <entry key="txt" value="45" />
           <entry key="xml" value="477" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="14770" />
-          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="PLAIN_TEXT" value="47" />
           <entry key="XML" value="477" />
         </counts>
       </usages-collector>
@@ -206,6 +175,11 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="EladLevavi" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="AutomationTest" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -327,12 +301,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534168692499" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534171323965" />
     <property name="last_opened_file_path" value="C:/cygwin64/bin/git.exe" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -567,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534072160637</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="More tests.">
+      <created>1534168760197</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534168760197</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -670,7 +651,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Startup Automation project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Startup Automation project." />
+    <MESSAGE value="More tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="More tests." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/FirefoxTesting.java" />
