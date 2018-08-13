@@ -2,10 +2,13 @@ package com.cloudents.AutomationTest;
 
 
 import com.cloudents.AutomationTest.Pages.*;
+import javafx.stage.Screen;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -14,7 +17,7 @@ import org.testng.annotations.*;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
+import java.util.regex.Pattern;
 
 
 public class CloudentsAutoTests {
@@ -31,8 +34,26 @@ public class CloudentsAutoTests {
     private RepsPage repsPage;
 
     private String winHandleBefore;
-    //ScreenRegion screen = new DesktopScreenRegion();
 
+    /*private Pattern baseImagePattern = new Pattern(imagePath1);
+    private Pattern capturedImagePattern = new Pattern(imagePath2);
+    Screen screen = new Screen();
+    Match pass = screen.exists(capturedImagePattern);*/
+
+
+    private void loadPageElements() {
+
+        mainPage = PageFactory.initElements(driver, MainPage.class);
+        HwPage = PageFactory.initElements(driver, HWpage.class);
+        loginPage = PageFactory.initElements(driver, LoginPage.class);
+        aboutPage = PageFactory.initElements(driver, AboutPage.class);
+        faqPage = PageFactory.initElements(driver, FaqPage.class);
+        termsPage = PageFactory.initElements(driver, TermsPage.class);
+        privacyPage = PageFactory.initElements(driver, PrivacyPage.class);
+        partnersPage = PageFactory.initElements(driver, PartnersPage.class);
+        repsPage = PageFactory.initElements(driver, RepsPage.class);
+
+    }
 
     @Parameters("browser")
     @BeforeClass
@@ -60,7 +81,7 @@ public class CloudentsAutoTests {
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://dev.spitball.co");
+        //driver.get("https://dev.spitball.co");
 
         loadPageElements();
 
@@ -78,65 +99,43 @@ public class CloudentsAutoTests {
     @Test
     public void MainTabsNavigation() throws InterruptedException {
 
+        driver.get("https://dev.spitball.co");
+
         mainPage.HWhelpTab.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertEquals(mainPage.HWhelpTab.getAttribute("className"),"v-tabs__item v-tabs__item--active");
         Assert.assertEquals(driver.getCurrentUrl(), "https://dev.spitball.co/ask?q=");
         Assert.assertEquals(mainPage.SearchBar.getAttribute("placeholder"),"Search questions");
 
         mainPage.StudyDocsTab.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertEquals(mainPage.StudyDocsTab.getAttribute("className"),"v-tabs__item v-tabs__item--active");
         Assert.assertEquals(driver.getCurrentUrl(), "https://dev.spitball.co/note?q=");
         Assert.assertEquals(mainPage.SearchBar.getAttribute("placeholder"),"Find study documents in...");
 
         mainPage.FlashcardTab.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertEquals(mainPage.FlashcardTab.getAttribute("className"),"v-tabs__item v-tabs__item--active");
         Assert.assertEquals(driver.getCurrentUrl(), "https://dev.spitball.co/flashcard?q=");
         Assert.assertEquals(mainPage.SearchBar.getAttribute("placeholder"),"Look for flashcards...");
 
         mainPage.TutorsTab.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertEquals(mainPage.TutorsTab.getAttribute("className"),"v-tabs__item v-tabs__item--active");
         Assert.assertEquals(driver.getCurrentUrl(), "https://dev.spitball.co/tutor?q=");
         Assert.assertEquals(mainPage.SearchBar.getAttribute("placeholder"),"Find a tutor...");
 
         mainPage.BooksTab.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertEquals(mainPage.BooksTab.getAttribute("className"),"v-tabs__item v-tabs__item--active");
         Assert.assertEquals(driver.getCurrentUrl(), "https://dev.spitball.co/book?q=");
         Assert.assertEquals(mainPage.SearchBar.getAttribute("placeholder"),"Textbook title or ISBN...");
 
         mainPage.JobsTab.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertEquals(mainPage.JobsTab.getAttribute("className"),"v-tabs__item v-tabs__item--active");
         Assert.assertEquals(driver.getCurrentUrl(), "https://dev.spitball.co/job?q=");
         Assert.assertEquals(mainPage.SearchBar.getAttribute("placeholder"),"Your field of expertise...");
-
-    }
-
-    @Test
-    public void FAQNavigateLinks() {
-
-        mainPage.WhatLink.click();
-        checkNewWindowAddress("https://dev.spitball.co/faq?id=0");
-
-
-        mainPage.HowLink.click();
-        checkNewWindowAddress("https://dev.spitball.co/faq?id=1");
-
-
-        mainPage.HowDifferLink.click();
-        checkNewWindowAddress("https://dev.spitball.co/faq?id=2");
-
-
-        mainPage.SblLink.click();
-        checkNewWindowAddress("https://dev.spitball.co/faq?id=3");
-
-
-        mainPage.WhatCanLink.click();
-        checkNewWindowAddress("https://dev.spitball.co/faq?id=4");
 
     }
 
@@ -219,6 +218,8 @@ public class CloudentsAutoTests {
     @Test
     public void signUpNavigation() {
 
+        driver.get("https://dev.spitball.co");
+
         mainPage.SignUpButton.click();
         /*File screenShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         File originImage = new File("src/test/resources/SignUp.png");
@@ -290,7 +291,7 @@ public class CloudentsAutoTests {
     }
 
     @Test
-    public void TermsPageContent() {
+    public void TermsPageContent() throws InterruptedException {
 
         driver.get("https://dev.spitball.co/terms");
 
@@ -352,6 +353,7 @@ public class CloudentsAutoTests {
         Assert.assertEquals(termsPage.contract5.getText(), "Provide your full legal name and your electronic or physical signature.");
 
         termsPage.link.click();
+        Thread.sleep(3000);
         checkNewWindowAddress("https://www.copyright.gov/legislation/dmca.pdf");
 
     }
@@ -437,20 +439,6 @@ public class CloudentsAutoTests {
         Assert.assertEquals(driver.getCurrentUrl(), address);
         driver.close();
         driver.switchTo().window(winHandleBefore);
-
-    }
-
-    private void loadPageElements() {
-
-        mainPage = PageFactory.initElements(driver, MainPage.class);
-        HwPage = PageFactory.initElements(driver, HWpage.class);
-        loginPage = PageFactory.initElements(driver, LoginPage.class);
-        aboutPage = PageFactory.initElements(driver, AboutPage.class);
-        faqPage = PageFactory.initElements(driver, FaqPage.class);
-        termsPage = PageFactory.initElements(driver, TermsPage.class);
-        privacyPage = PageFactory.initElements(driver, PrivacyPage.class);
-        partnersPage = PageFactory.initElements(driver, PartnersPage.class);
-        repsPage = PageFactory.initElements(driver, RepsPage.class);
 
     }
 

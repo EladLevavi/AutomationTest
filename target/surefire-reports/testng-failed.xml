@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" verbose="0" name="Failed suite [tests]" parallel="tests">
+  <parameter name="browser" value="Safari"/>
+  <test name="EdgeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
+        <methods>
+          <include name="signUpNavigation"/>
+          <include name="MainTabsNavigation"/>
+          <include name="TermsPageContent"/>
+          <include name="PrivacyPageContent"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="cleanupTestSeries"/>
+          <include name="cleanupTestSeries"/>
+          <include name="cleanupTestSeries"/>
+          <include name="RepsPageContent"/>
+          <include name="AboutPageContent"/>
+          <include name="loginNavigation"/>
+          <include name="PartnersPageContent"/>
+          <include name="FAQPageContent"/>
+          <include name="DefaultHomePage"/>
+          <include name="FAQNavigateLinks"/>
+        </methods>
+      </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test name="SafariTest(failed)" parallel="tests">
+    <parameter name="browser" value="Safari"/>
+    <classes>
+      <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
+        <methods>
+          <include name="signUpNavigation"/>
+          <include name="MainTabsNavigation"/>
+          <include name="TermsPageContent"/>
+          <include name="PrivacyPageContent"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="cleanupTestSeries"/>
+          <include name="cleanupTestSeries"/>
+          <include name="cleanupTestSeries"/>
+          <include name="RepsPageContent"/>
+          <include name="AboutPageContent"/>
+          <include name="loginNavigation"/>
+          <include name="PartnersPageContent"/>
+          <include name="FAQPageContent"/>
+          <include name="DefaultHomePage"/>
+          <include name="FAQNavigateLinks"/>
+        </methods>
+      </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
+    </classes>
+  </test> <!-- SafariTest(failed) -->
+  <test name="Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
+        <methods>
+          <include name="signUpNavigation"/>
+          <include name="MainTabsNavigation"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="cleanupTestSeries"/>
+          <include name="cleanupTestSeries"/>
+          <include name="cleanupTestSeries"/>
+          <include name="FAQNavigateLinks"/>
+        </methods>
+      </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test name="Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
+        <methods>
+          <include name="signUpNavigation"/>
+          <include name="MainTabsNavigation"/>
+          <include name="TermsPageContent"/>
+          <include name="PrivacyPageContent"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="cleanupTestSeries"/>
+          <include name="cleanupTestSeries"/>
+          <include name="cleanupTestSeries"/>
+          <include name="loginNavigation"/>
+          <include name="FAQNavigateLinks"/>
+        </methods>
+      </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+  <test name="IETest(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
+        <methods>
+          <include name="signUpNavigation"/>
+          <include name="MainTabsNavigation"/>
+          <include name="TermsPageContent"/>
+          <include name="PrivacyPageContent"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="cleanupTestSeries"/>
+          <include name="cleanupTestSeries"/>
+          <include name="cleanupTestSeries"/>
+          <include name="RepsPageContent"/>
+          <include name="AboutPageContent"/>
+          <include name="loginNavigation"/>
+          <include name="PartnersPageContent"/>
+          <include name="FAQPageContent"/>
+          <include name="DefaultHomePage"/>
+          <include name="FAQNavigateLinks"/>
+        </methods>
+      </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [tests] -->
