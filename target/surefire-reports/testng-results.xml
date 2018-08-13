@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="22" failed="20" total="55" passed="13">
+<testng-results skipped="20" failed="15" total="50" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="tests" duration-ms="117328" started-at="2018-08-12T12:48:51Z" finished-at="2018-08-12T12:50:49Z">
+  <suite name="tests" duration-ms="227876" started-at="2018-08-13T08:47:24Z" finished-at="2018-08-13T08:51:12Z">
     <groups>
     </groups>
-    <test name="EdgeTest" duration-ms="1031" started-at="2018-08-12T12:48:51Z" finished-at="2018-08-12T12:48:52Z">
+    <test name="EdgeTest" duration-ms="1022" started-at="2018-08-13T08:47:24Z" finished-at="2018-08-13T08:47:25Z">
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
-        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="setup" is-config="true" duration-ms="0" started-at="2018-08-12T15:48:51Z" finished-at="2018-08-12T15:48:51Z">
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="setup" is-config="true" duration-ms="0" started-at="2018-08-13T11:47:24Z" finished-at="2018-08-13T11:47:24Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
 	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
 	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.setup(CloudentsAutoTests.java:65)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.setup(CloudentsAutoTests.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -68,59 +68,55 @@ Driver info: driver.version: EdgeDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="FAQNavigateLinks()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="FAQNavigateLinks" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FAQNavigateLinks -->
-        <test-method status="SKIP" signature="AboutPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="AboutPageContent" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="AboutPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="AboutPageContent" duration-ms="0" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AboutPageContent -->
-        <test-method status="SKIP" signature="DefaultHomePage()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="DefaultHomePage" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="DefaultHomePage()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="DefaultHomePage" duration-ms="0" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DefaultHomePage -->
-        <test-method status="SKIP" signature="FAQPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="FAQPageContent" duration-ms="1" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FAQPageContent -->
-        <test-method status="SKIP" signature="MainTabsNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="MainTabsNavigation" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="MainTabsNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="MainTabsNavigation" duration-ms="1" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainTabsNavigation -->
-        <test-method status="SKIP" signature="RepsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="RepsPageContent" duration-ms="1" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="FAQPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="FAQPageContent" duration-ms="0" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RepsPageContent -->
-        <test-method status="SKIP" signature="PartnersPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="PartnersPageContent" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        </test-method> <!-- FAQPageContent -->
+        <test-method status="SKIP" signature="PartnersPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="PartnersPageContent" duration-ms="0" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PartnersPageContent -->
-        <test-method status="SKIP" signature="PrivacyPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="PrivacyPageContent" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="PrivacyPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="PrivacyPageContent" duration-ms="1" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrivacyPageContent -->
-        <test-method status="SKIP" signature="TermsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="TermsPageContent" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="TermsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="TermsPageContent" duration-ms="0" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TermsPageContent -->
-        <test-method status="SKIP" signature="cleanupTestSeries()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="cleanupTestSeries" is-config="true" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanupTestSeries -->
-        <test-method status="SKIP" signature="signUpNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="signUpNavigation" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="signUpNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="signUpNavigation" duration-ms="0" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpNavigation -->
-        <test-method status="SKIP" signature="loginNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="loginNavigation" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="cleanupTestSeries()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="cleanupTestSeries" is-config="true" duration-ms="0" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanupTestSeries -->
+        <test-method status="SKIP" signature="loginNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="loginNavigation" duration-ms="0" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNavigation -->
+        <test-method status="SKIP" signature="RepsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a]" name="RepsPageContent" duration-ms="0" started-at="2018-08-13T11:47:25Z" finished-at="2018-08-13T11:47:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RepsPageContent -->
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </test> <!-- EdgeTest -->
-    <test name="SafariTest" duration-ms="15" started-at="2018-08-12T12:48:52Z" finished-at="2018-08-12T12:48:52Z">
+    <test name="SafariTest" duration-ms="5" started-at="2018-08-13T08:47:26Z" finished-at="2018-08-13T08:47:26Z">
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
-        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="setup" is-config="true" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="setup" is-config="true" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
           <params>
             <param index="0">
               <value>
@@ -143,7 +139,7 @@ Driver info: driver.version: SafariDriver
 	at org.openqa.selenium.safari.SafariDriverService.createDefaultService(SafariDriverService.java:59)
 	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:60)
 	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:38)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.setup(CloudentsAutoTests.java:68)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.setup(CloudentsAutoTests.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -170,59 +166,55 @@ Driver info: driver.version: SafariDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="TermsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="TermsPageContent" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TermsPageContent -->
-        <test-method status="SKIP" signature="AboutPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="AboutPageContent" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="AboutPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="AboutPageContent" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AboutPageContent -->
-        <test-method status="SKIP" signature="FAQPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="FAQPageContent" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FAQPageContent -->
-        <test-method status="SKIP" signature="PartnersPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="PartnersPageContent" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PartnersPageContent -->
-        <test-method status="SKIP" signature="cleanupTestSeries()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="cleanupTestSeries" is-config="true" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanupTestSeries -->
-        <test-method status="SKIP" signature="RepsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="RepsPageContent" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RepsPageContent -->
-        <test-method status="SKIP" signature="signUpNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="signUpNavigation" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpNavigation -->
-        <test-method status="SKIP" signature="loginNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="loginNavigation" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginNavigation -->
-        <test-method status="SKIP" signature="FAQNavigateLinks()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="FAQNavigateLinks" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FAQNavigateLinks -->
-        <test-method status="SKIP" signature="DefaultHomePage()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="DefaultHomePage" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="DefaultHomePage()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="DefaultHomePage" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DefaultHomePage -->
-        <test-method status="SKIP" signature="PrivacyPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="PrivacyPageContent" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        <test-method status="SKIP" signature="RepsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="RepsPageContent" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PrivacyPageContent -->
-        <test-method status="SKIP" signature="MainTabsNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="MainTabsNavigation" duration-ms="0" started-at="2018-08-12T15:48:52Z" finished-at="2018-08-12T15:48:52Z">
+        </test-method> <!-- RepsPageContent -->
+        <test-method status="SKIP" signature="MainTabsNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="MainTabsNavigation" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainTabsNavigation -->
+        <test-method status="SKIP" signature="FAQPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="FAQPageContent" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAQPageContent -->
+        <test-method status="SKIP" signature="PartnersPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="PartnersPageContent" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PartnersPageContent -->
+        <test-method status="SKIP" signature="PrivacyPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="PrivacyPageContent" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrivacyPageContent -->
+        <test-method status="SKIP" signature="TermsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="TermsPageContent" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TermsPageContent -->
+        <test-method status="SKIP" signature="signUpNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="signUpNavigation" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpNavigation -->
+        <test-method status="SKIP" signature="cleanupTestSeries()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="cleanupTestSeries" is-config="true" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanupTestSeries -->
+        <test-method status="SKIP" signature="loginNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@67b64c45]" name="loginNavigation" duration-ms="0" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNavigation -->
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </test> <!-- SafariTest -->
-    <test name="Chrome" duration-ms="84379" started-at="2018-08-12T12:48:51Z" finished-at="2018-08-12T12:50:16Z">
+    <test name="Chrome" duration-ms="88590" started-at="2018-08-13T08:47:24Z" finished-at="2018-08-13T08:48:53Z">
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="setup" is-config="true" duration-ms="7682" started-at="2018-08-12T15:48:51Z" finished-at="2018-08-12T15:48:59Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="setup" is-config="true" duration-ms="3735" started-at="2018-08-13T11:47:24Z" finished-at="2018-08-13T11:47:28Z">
           <params>
             <param index="0">
               <value>
@@ -233,266 +225,90 @@ Driver info: driver.version: SafariDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AboutPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="AboutPageContent" duration-ms="12918" started-at="2018-08-12T15:48:59Z" finished-at="2018-08-12T15:49:12Z">
+        <test-method status="FAIL" signature="AboutPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="AboutPageContent" duration-ms="17675" started-at="2018-08-13T11:47:28Z" finished-at="2018-08-13T11:47:46Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://dev.spitball.co/reps] but found [https://dev.spitball.co/partners]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://dev.spitball.co/reps] but found [https://dev.spitball.co/partners]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.AboutPageContent(CloudentsAutoTests.java:275)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AboutPageContent -->
-        <test-method status="PASS" signature="DefaultHomePage()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="DefaultHomePage" duration-ms="909" started-at="2018-08-12T15:49:12Z" finished-at="2018-08-12T15:49:13Z">
+        <test-method status="PASS" signature="DefaultHomePage()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="DefaultHomePage" duration-ms="2519" started-at="2018-08-13T11:47:46Z" finished-at="2018-08-13T11:47:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DefaultHomePage -->
-        <test-method status="FAIL" signature="FAQNavigateLinks()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="FAQNavigateLinks" duration-ms="10308" started-at="2018-08-12T15:49:13Z" finished-at="2018-08-12T15:49:23Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"What is Spitball?"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56540}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
-Session ID: 06b4936d8b49ca0b41f34d13e0c07507
-*** Element info: {Using=link text, value=What is Spitball?}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"What is Spitball?"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56540}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
-Session ID: 06b4936d8b49ca0b41f34d13e0c07507
-*** Element info: {Using=link text, value=What is Spitball?}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.FAQNavigateLinks(CloudentsAutoTests.java:136)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FAQNavigateLinks -->
-        <test-method status="PASS" signature="FAQPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="FAQPageContent" duration-ms="20642" started-at="2018-08-12T15:49:23Z" finished-at="2018-08-12T15:49:44Z">
+        <test-method status="PASS" signature="FAQPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="FAQPageContent" duration-ms="21210" started-at="2018-08-13T11:47:48Z" finished-at="2018-08-13T11:48:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FAQPageContent -->
-        <test-method status="FAIL" signature="MainTabsNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="MainTabsNavigation" duration-ms="10070" started-at="2018-08-12T15:49:44Z" finished-at="2018-08-12T15:49:54Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Homework Help"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56540}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
-Session ID: 06b4936d8b49ca0b41f34d13e0c07507
-*** Element info: {Using=link text, value=Homework Help}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Homework Help"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56540}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
-Session ID: 06b4936d8b49ca0b41f34d13e0c07507
-*** Element info: {Using=link text, value=Homework Help}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.MainTabsNavigation(CloudentsAutoTests.java:95)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="MainTabsNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="MainTabsNavigation" duration-ms="13942" started-at="2018-08-13T11:48:10Z" finished-at="2018-08-13T11:48:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainTabsNavigation -->
-        <test-method status="PASS" signature="PartnersPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="PartnersPageContent" duration-ms="719" started-at="2018-08-12T15:49:54Z" finished-at="2018-08-12T15:49:55Z">
+        <test-method status="PASS" signature="PartnersPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="PartnersPageContent" duration-ms="1507" started-at="2018-08-13T11:48:24Z" finished-at="2018-08-13T11:48:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PartnersPageContent -->
-        <test-method status="PASS" signature="PrivacyPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="PrivacyPageContent" duration-ms="4378" started-at="2018-08-12T15:49:55Z" finished-at="2018-08-12T15:49:59Z">
+        <test-method status="PASS" signature="PrivacyPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="PrivacyPageContent" duration-ms="6533" started-at="2018-08-13T11:48:25Z" finished-at="2018-08-13T11:48:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrivacyPageContent -->
-        <test-method status="PASS" signature="RepsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="RepsPageContent" duration-ms="561" started-at="2018-08-12T15:49:59Z" finished-at="2018-08-12T15:50:00Z">
+        <test-method status="PASS" signature="RepsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="RepsPageContent" duration-ms="1985" started-at="2018-08-13T11:48:32Z" finished-at="2018-08-13T11:48:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RepsPageContent -->
-        <test-method status="PASS" signature="TermsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="TermsPageContent" duration-ms="3656" started-at="2018-08-12T15:50:00Z" finished-at="2018-08-12T15:50:03Z">
+        <test-method status="PASS" signature="TermsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="TermsPageContent" duration-ms="6919" started-at="2018-08-13T11:48:34Z" finished-at="2018-08-13T11:48:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TermsPageContent -->
-        <test-method status="PASS" signature="loginNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="loginNavigation" duration-ms="1741" started-at="2018-08-12T15:50:03Z" finished-at="2018-08-12T15:50:05Z">
+        <test-method status="PASS" signature="loginNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="loginNavigation" duration-ms="2555" started-at="2018-08-13T11:48:40Z" finished-at="2018-08-13T11:48:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNavigation -->
-        <test-method status="FAIL" signature="signUpNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="signUpNavigation" duration-ms="10040" started-at="2018-08-12T15:50:05Z" finished-at="2018-08-12T15:50:15Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Sign Up"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56540}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
-Session ID: 06b4936d8b49ca0b41f34d13e0c07507
-*** Element info: {Using=link text, value=Sign Up}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Sign Up"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56540}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
-Session ID: 06b4936d8b49ca0b41f34d13e0c07507
-*** Element info: {Using=link text, value=Sign Up}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.signUpNavigation(CloudentsAutoTests.java:236)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="signUpNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="signUpNavigation" duration-ms="9293" started-at="2018-08-13T11:48:43Z" finished-at="2018-08-13T11:48:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpNavigation -->
-        <test-method status="PASS" signature="cleanupTestSeries()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="cleanupTestSeries" is-config="true" duration-ms="746" started-at="2018-08-12T15:50:15Z" finished-at="2018-08-12T15:50:16Z">
+        <test-method status="PASS" signature="cleanupTestSeries()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2c8d66b2]" name="cleanupTestSeries" is-config="true" duration-ms="709" started-at="2018-08-13T11:48:52Z" finished-at="2018-08-13T11:48:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanupTestSeries -->
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </test> <!-- Chrome -->
-    <test name="Firefox" duration-ms="104492" started-at="2018-08-12T12:48:51Z" finished-at="2018-08-12T12:50:36Z">
+    <test name="Firefox" duration-ms="102429" started-at="2018-08-13T08:47:24Z" finished-at="2018-08-13T08:49:07Z">
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="setup" is-config="true" duration-ms="23786" started-at="2018-08-12T15:48:51Z" finished-at="2018-08-12T15:49:15Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="setup" is-config="true" duration-ms="14894" started-at="2018-08-13T11:47:24Z" finished-at="2018-08-13T11:47:39Z">
           <params>
             <param index="0">
               <value>
@@ -503,122 +319,66 @@ Session ID: 06b4936d8b49ca0b41f34d13e0c07507
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AboutPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="AboutPageContent" duration-ms="11359" started-at="2018-08-12T15:49:15Z" finished-at="2018-08-12T15:49:26Z">
+        <test-method status="FAIL" signature="AboutPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="AboutPageContent" duration-ms="16445" started-at="2018-08-13T11:47:39Z" finished-at="2018-08-13T11:47:56Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://dev.spitball.co/partners] but found [https://dev.spitball.co/blog]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://dev.spitball.co/partners] but found [https://dev.spitball.co/blog]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.AboutPageContent(CloudentsAutoTests.java:270)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AboutPageContent -->
-        <test-method status="PASS" signature="DefaultHomePage()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="DefaultHomePage" duration-ms="1346" started-at="2018-08-12T15:49:26Z" finished-at="2018-08-12T15:49:28Z">
+        <test-method status="PASS" signature="DefaultHomePage()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="DefaultHomePage" duration-ms="4590" started-at="2018-08-13T11:47:56Z" finished-at="2018-08-13T11:48:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DefaultHomePage -->
-        <test-method status="FAIL" signature="FAQNavigateLinks()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="FAQNavigateLinks" duration-ms="10443" started-at="2018-08-12T15:49:28Z" finished-at="2018-08-12T15:49:38Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: What is Spitball?
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7448, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
-*** Element info: {Using=link text, value=What is Spitball?}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: What is Spitball?
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7448, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
-*** Element info: {Using=link text, value=What is Spitball?}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.FAQNavigateLinks(CloudentsAutoTests.java:136)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FAQNavigateLinks -->
-        <test-method status="PASS" signature="FAQPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="FAQPageContent" duration-ms="25499" started-at="2018-08-12T15:49:38Z" finished-at="2018-08-12T15:50:04Z">
+        <test-method status="PASS" signature="FAQPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="FAQPageContent" duration-ms="25787" started-at="2018-08-13T11:48:00Z" finished-at="2018-08-13T11:48:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FAQPageContent -->
-        <test-method status="FAIL" signature="MainTabsNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="MainTabsNavigation" duration-ms="10088" started-at="2018-08-12T15:50:04Z" finished-at="2018-08-12T15:50:14Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="MainTabsNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="MainTabsNavigation" duration-ms="11019" started-at="2018-08-13T11:48:26Z" finished-at="2018-08-13T11:48:37Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to locate element: Homework Help
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7448, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
-*** Element info: {Using=link text, value=Homework Help}]]>
+              <![CDATA[expected [https://dev.spitball.co/tutor?q=] but found [https://dev.spitball.co/flashcard?q=]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Homework Help
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7448, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
-*** Element info: {Using=link text, value=Homework Help}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.MainTabsNavigation(CloudentsAutoTests.java:95)
+              <![CDATA[java.lang.AssertionError: expected [https://dev.spitball.co/tutor?q=] but found [https://dev.spitball.co/flashcard?q=]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.MainTabsNavigation(CloudentsAutoTests.java:125)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -641,15 +401,15 @@ Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
 	at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainTabsNavigation -->
-        <test-method status="PASS" signature="PartnersPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="PartnersPageContent" duration-ms="1116" started-at="2018-08-12T15:50:14Z" finished-at="2018-08-12T15:50:15Z">
+        <test-method status="PASS" signature="PartnersPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="PartnersPageContent" duration-ms="5258" started-at="2018-08-13T11:48:37Z" finished-at="2018-08-13T11:48:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PartnersPageContent -->
-        <test-method status="FAIL" signature="PrivacyPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="PrivacyPageContent" duration-ms="1396" started-at="2018-08-12T15:50:15Z" finished-at="2018-08-12T15:50:16Z">
+        <test-method status="FAIL" signature="PrivacyPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="PrivacyPageContent" duration-ms="1984" started-at="2018-08-13T11:48:42Z" finished-at="2018-08-13T11:48:44Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [https://www.spitball.co/ask] but found [https://dev.spitball.co/privacy]]]>
@@ -661,8 +421,8 @@ Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.checkNewWindowAddress(CloudentsAutoTests.java:451)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.PrivacyPageContent(CloudentsAutoTests.java:413)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.checkNewWindowAddress(CloudentsAutoTests.java:441)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.PrivacyPageContent(CloudentsAutoTests.java:403)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -689,11 +449,11 @@ Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrivacyPageContent -->
-        <test-method status="PASS" signature="RepsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="RepsPageContent" duration-ms="1731" started-at="2018-08-12T15:50:16Z" finished-at="2018-08-12T15:50:18Z">
+        <test-method status="PASS" signature="RepsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="RepsPageContent" duration-ms="824" started-at="2018-08-13T11:48:44Z" finished-at="2018-08-13T11:48:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RepsPageContent -->
-        <test-method status="FAIL" signature="TermsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="TermsPageContent" duration-ms="2081" started-at="2018-08-12T15:50:18Z" finished-at="2018-08-12T15:50:20Z">
+        <test-method status="FAIL" signature="TermsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="TermsPageContent" duration-ms="6177" started-at="2018-08-13T11:48:45Z" finished-at="2018-08-13T11:48:51Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [https://www.copyright.gov/legislation/dmca.pdf] but found [https://www.spitball.co/ask]]]>
@@ -705,8 +465,8 @@ Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.checkNewWindowAddress(CloudentsAutoTests.java:451)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.TermsPageContent(CloudentsAutoTests.java:369)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.checkNewWindowAddress(CloudentsAutoTests.java:441)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.TermsPageContent(CloudentsAutoTests.java:359)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -733,119 +493,23 @@ Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TermsPageContent -->
-        <test-method status="FAIL" signature="loginNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="loginNavigation" duration-ms="3950" started-at="2018-08-12T15:50:20Z" finished-at="2018-08-12T15:50:24Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://dev.spitball.co/signin] but found [https://www.spitball.co/signin]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://dev.spitball.co/signin] but found [https://www.spitball.co/signin]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.loginNavigation(CloudentsAutoTests.java:249)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="loginNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="loginNavigation" duration-ms="4772" started-at="2018-08-13T11:48:51Z" finished-at="2018-08-13T11:48:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNavigation -->
-        <test-method status="FAIL" signature="signUpNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="signUpNavigation" duration-ms="10020" started-at="2018-08-12T15:50:24Z" finished-at="2018-08-12T15:50:34Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: Sign Up
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7448, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
-*** Element info: {Using=link text, value=Sign Up}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Sign Up
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7448, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
-*** Element info: {Using=link text, value=Sign Up}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.signUpNavigation(CloudentsAutoTests.java:236)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="signUpNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="signUpNavigation" duration-ms="8507" started-at="2018-08-13T11:48:56Z" finished-at="2018-08-13T11:49:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpNavigation -->
-        <test-method status="PASS" signature="cleanupTestSeries()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="cleanupTestSeries" is-config="true" duration-ms="1651" started-at="2018-08-12T15:50:34Z" finished-at="2018-08-12T15:50:36Z">
+        <test-method status="PASS" signature="cleanupTestSeries()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@30c7da1e]" name="cleanupTestSeries" is-config="true" duration-ms="2162" started-at="2018-08-13T11:49:05Z" finished-at="2018-08-13T11:49:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanupTestSeries -->
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </test> <!-- Firefox -->
-    <test name="IETest" duration-ms="117328" started-at="2018-08-12T12:48:51Z" finished-at="2018-08-12T12:50:49Z">
+    <test name="IETest" duration-ms="227876" started-at="2018-08-13T08:47:24Z" finished-at="2018-08-13T08:51:12Z">
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="setup" is-config="true" duration-ms="4615" started-at="2018-08-12T15:48:51Z" finished-at="2018-08-12T15:48:56Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="setup" is-config="true" duration-ms="1729" started-at="2018-08-13T11:47:24Z" finished-at="2018-08-13T11:47:26Z">
           <params>
             <param index="0">
               <value>
@@ -856,7 +520,7 @@ Session ID: 4fd72eae-604b-4949-8449-75d547c7d89f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="AboutPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="AboutPageContent" duration-ms="11596" started-at="2018-08-12T15:48:56Z" finished-at="2018-08-12T15:49:08Z">
+        <test-method status="FAIL" signature="AboutPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="AboutPageContent" duration-ms="18882" started-at="2018-08-13T11:47:26Z" finished-at="2018-08-13T11:47:45Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with xpath == /html/body/div[1]/div[1]/div/div/nav/div/div/div[2]/div/div/div/div/div/div[2]/a
@@ -864,8 +528,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/div/nav/div/div/div[2]/div/div/div/div/div/div[2]/a}]]>
             </message>
             <full-stacktrace>
@@ -874,8 +538,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/div/nav/div/div/div[2]/div/div/div/div/div/div[2]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -894,7 +558,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.AboutPageContent(CloudentsAutoTests.java:258)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.AboutPageContent(CloudentsAutoTests.java:247)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -921,7 +585,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AboutPageContent -->
-        <test-method status="FAIL" signature="DefaultHomePage()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="DefaultHomePage" duration-ms="1612" started-at="2018-08-12T15:49:08Z" finished-at="2018-08-12T15:49:09Z">
+        <test-method status="FAIL" signature="DefaultHomePage()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="DefaultHomePage" duration-ms="10642" started-at="2018-08-13T11:47:45Z" finished-at="2018-08-13T11:47:56Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [https://dev.spitball.co/ask] but found [https://dev.spitball.co/]]]>
@@ -933,7 +597,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.DefaultHomePage(CloudentsAutoTests.java:89)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.DefaultHomePage(CloudentsAutoTests.java:96)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -960,72 +624,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DefaultHomePage -->
-        <test-method status="FAIL" signature="FAQNavigateLinks()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="FAQNavigateLinks" duration-ms="10209" started-at="2018-08-12T15:49:09Z" finished-at="2018-08-12T15:49:19Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to find element with link text == What is Spitball?
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
-*** Element info: {Using=link text, value=What is Spitball?}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with link text == What is Spitball?
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
-*** Element info: {Using=link text, value=What is Spitball?}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.FAQNavigateLinks(CloudentsAutoTests.java:136)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FAQNavigateLinks -->
-        <test-method status="FAIL" signature="FAQPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="FAQPageContent" duration-ms="11564" started-at="2018-08-12T15:49:19Z" finished-at="2018-08-12T15:49:31Z">
+        <test-method status="FAIL" signature="FAQPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="FAQPageContent" duration-ms="21109" started-at="2018-08-13T11:47:56Z" finished-at="2018-08-13T11:48:17Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with xpath == /html/body/div[1]/div[1]/div/main/div/div[2]/div/div/ul/li[1]/div[1]/div[1]/div
@@ -1033,8 +632,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/main/div/div[2]/div/div/ul/li[1]/div[1]/div[1]/div}]]>
             </message>
             <full-stacktrace>
@@ -1043,8 +642,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/main/div/div[2]/div/div/ul/li[1]/div[1]/div[1]/div}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1063,7 +662,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.FAQPageContent(CloudentsAutoTests.java:162)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.FAQPageContent(CloudentsAutoTests.java:147)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1090,7 +689,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FAQPageContent -->
-        <test-method status="FAIL" signature="MainTabsNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="MainTabsNavigation" duration-ms="10251" started-at="2018-08-12T15:49:31Z" finished-at="2018-08-12T15:49:41Z">
+        <test-method status="FAIL" signature="MainTabsNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="MainTabsNavigation" duration-ms="20482" started-at="2018-08-13T11:48:17Z" finished-at="2018-08-13T11:48:37Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with link text == Homework Help
@@ -1098,8 +697,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=link text, value=Homework Help}]]>
             </message>
             <full-stacktrace>
@@ -1108,8 +707,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=link text, value=Homework Help}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1128,7 +727,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.MainTabsNavigation(CloudentsAutoTests.java:95)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.MainTabsNavigation(CloudentsAutoTests.java:104)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1155,7 +754,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainTabsNavigation -->
-        <test-method status="FAIL" signature="PartnersPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="PartnersPageContent" duration-ms="11836" started-at="2018-08-12T15:49:41Z" finished-at="2018-08-12T15:49:53Z">
+        <test-method status="FAIL" signature="PartnersPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="PartnersPageContent" duration-ms="25664" started-at="2018-08-13T11:48:37Z" finished-at="2018-08-13T11:49:03Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with xpath == /html/body/div[1]/div[1]/div/main/div/div[2]/div[2]/div
@@ -1163,8 +762,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/main/div/div[2]/div[2]/div}]]>
             </message>
             <full-stacktrace>
@@ -1173,8 +772,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/main/div/div[2]/div[2]/div}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1193,7 +792,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.getText(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.PartnersPageContent(CloudentsAutoTests.java:423)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.PartnersPageContent(CloudentsAutoTests.java:413)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1220,7 +819,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PartnersPageContent -->
-        <test-method status="FAIL" signature="PrivacyPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="PrivacyPageContent" duration-ms="11419" started-at="2018-08-12T15:49:53Z" finished-at="2018-08-12T15:50:04Z">
+        <test-method status="FAIL" signature="PrivacyPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="PrivacyPageContent" duration-ms="23300" started-at="2018-08-13T11:49:03Z" finished-at="2018-08-13T11:49:26Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with xpath == /html/body/div[1]/div[1]/div/main/div/div[2]/h2[1]
@@ -1228,8 +827,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/main/div/div[2]/h2[1]}]]>
             </message>
             <full-stacktrace>
@@ -1238,8 +837,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/main/div/div[2]/h2[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1258,7 +857,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.getText(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.PrivacyPageContent(CloudentsAutoTests.java:378)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.PrivacyPageContent(CloudentsAutoTests.java:368)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1285,7 +884,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrivacyPageContent -->
-        <test-method status="FAIL" signature="RepsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="RepsPageContent" duration-ms="12029" started-at="2018-08-12T15:50:04Z" finished-at="2018-08-12T15:50:16Z">
+        <test-method status="FAIL" signature="RepsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="RepsPageContent" duration-ms="21450" started-at="2018-08-13T11:49:26Z" finished-at="2018-08-13T11:49:48Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with xpath == /html/body/div[1]/div[1]/div/main/div/div[2]/div[2]/div
@@ -1293,8 +892,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/main/div/div[2]/div[2]/div}]]>
             </message>
             <full-stacktrace>
@@ -1303,8 +902,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/main/div/div[2]/div[2]/div}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1323,7 +922,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.getText(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.RepsPageContent(CloudentsAutoTests.java:431)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.RepsPageContent(CloudentsAutoTests.java:421)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1350,7 +949,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RepsPageContent -->
-        <test-method status="FAIL" signature="TermsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="TermsPageContent" duration-ms="11507" started-at="2018-08-12T15:50:16Z" finished-at="2018-08-12T15:50:28Z">
+        <test-method status="FAIL" signature="TermsPageContent()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="TermsPageContent" duration-ms="25995" started-at="2018-08-13T11:49:48Z" finished-at="2018-08-13T11:50:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with xpath == /html/body/div[1]/div[1]/div/main/div/div[2]/h2[1]
@@ -1358,8 +957,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/main/div/div[2]/h2[1]}]]>
             </message>
             <full-stacktrace>
@@ -1368,8 +967,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div/main/div/div[2]/h2[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1388,7 +987,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.getText(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.TermsPageContent(CloudentsAutoTests.java:311)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.TermsPageContent(CloudentsAutoTests.java:300)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1415,7 +1014,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TermsPageContent -->
-        <test-method status="FAIL" signature="loginNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="loginNavigation" duration-ms="10108" started-at="2018-08-12T15:50:28Z" finished-at="2018-08-12T15:50:38Z">
+        <test-method status="FAIL" signature="loginNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="loginNavigation" duration-ms="27216" started-at="2018-08-13T11:50:14Z" finished-at="2018-08-13T11:50:41Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with link text == Login
@@ -1423,8 +1022,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=link text, value=Login}]]>
             </message>
             <full-stacktrace>
@@ -1433,8 +1032,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=link text, value=Login}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1453,7 +1052,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.loginNavigation(CloudentsAutoTests.java:248)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.loginNavigation(CloudentsAutoTests.java:237)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1480,7 +1079,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNavigation -->
-        <test-method status="FAIL" signature="signUpNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="signUpNavigation" duration-ms="10014" started-at="2018-08-12T15:50:38Z" finished-at="2018-08-12T15:50:48Z">
+        <test-method status="FAIL" signature="signUpNavigation()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="signUpNavigation" duration-ms="30763" started-at="2018-08-13T11:50:41Z" finished-at="2018-08-13T11:51:12Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with link text == Sign Up
@@ -1488,8 +1087,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=link text, value=Sign Up}]]>
             </message>
             <full-stacktrace>
@@ -1498,8 +1097,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EIDAN-DESKTOP', ip: '192.168.2.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9672/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39380/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 789cbe1a-0e45-4720-be89-9af0d715d7c0
 *** Element info: {Using=link text, value=Sign Up}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1518,7 +1117,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.signUpNavigation(CloudentsAutoTests.java:236)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.signUpNavigation(CloudentsAutoTests.java:223)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1545,7 +1144,7 @@ Session ID: 357553b8-d40d-48bf-a13d-5c6f9e7aea42
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpNavigation -->
-        <test-method status="PASS" signature="cleanupTestSeries()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="cleanupTestSeries" is-config="true" duration-ms="552" started-at="2018-08-12T15:50:48Z" finished-at="2018-08-12T15:50:49Z">
+        <test-method status="PASS" signature="cleanupTestSeries()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@2d6e8792]" name="cleanupTestSeries" is-config="true" duration-ms="629" started-at="2018-08-13T11:51:12Z" finished-at="2018-08-13T11:51:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanupTestSeries -->

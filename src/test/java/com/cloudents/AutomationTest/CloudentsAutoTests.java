@@ -55,7 +55,7 @@ public class CloudentsAutoTests {
 
     }
 
-    @Parameters("browser")
+    /*@Parameters("browser")
     @BeforeClass
     public void setup(@Optional String browser) {
 
@@ -88,6 +88,20 @@ public class CloudentsAutoTests {
         // Store the current window handle
         winHandleBefore = driver.getWindowHandle();
 
+    }*/
+
+    @BeforeClass
+    public void setup() {
+        System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");
+        driver = new ChromeDriver();
+
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        loadPageElements();
+
+        // Store the current window handle
+        winHandleBefore = driver.getWindowHandle();
     }
 
     @Test
@@ -136,6 +150,138 @@ public class CloudentsAutoTests {
         Assert.assertEquals(mainPage.JobsTab.getAttribute("className"),"v-tabs__item v-tabs__item--active");
         Assert.assertEquals(driver.getCurrentUrl(), "https://dev.spitball.co/job?q=");
         Assert.assertEquals(mainPage.SearchBar.getAttribute("placeholder"),"Your field of expertise...");
+
+    }
+
+    @Test
+    public void HWPageContent() throws InterruptedException {
+
+        driver.get("https://dev.spitball.co");
+
+        HwPage.artsItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Arts");
+        HwPage.artsItem.click();
+        Thread.sleep(1000);
+
+        HwPage.biologyItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Biology");
+        HwPage.biologyItem.click();
+        Thread.sleep(1000);
+
+        HwPage.blockchainItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Blockchain");
+        HwPage.blockchainItem.click();
+        Thread.sleep(1000);
+
+        HwPage.businessItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Business");
+        HwPage.businessItem.click();
+        Thread.sleep(1000);
+
+        HwPage.chemistryItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Chemistry");
+        HwPage.chemistryItem.click();
+        Thread.sleep(1000);
+
+        HwPage.computerScienceItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Computer%20Science");
+        HwPage.computerScienceItem.click();
+        Thread.sleep(1000);
+
+        HwPage.economicsItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Economics");
+        HwPage.economicsItem.click();
+        Thread.sleep(1000);
+
+        HwPage.educationItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Education");
+        HwPage.educationItem.click();
+        Thread.sleep(1000);
+
+        HwPage.geographyItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Geography");
+        HwPage.geographyItem.click();
+        Thread.sleep(1000);
+
+        HwPage.healthItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Health%20%26%20Medicine");
+        HwPage.healthItem.click();
+        Thread.sleep(1000);
+
+        HwPage.historyItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=History");
+        HwPage.historyItem.click();
+        Thread.sleep(1000);
+
+        HwPage.languagesItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Languages");
+        HwPage.languagesItem.click();
+        Thread.sleep(1000);
+
+        HwPage.lawItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Law%20%26%20Politics");
+        HwPage.lawItem.click();
+        Thread.sleep(1000);
+
+        HwPage.literatureItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Literature");
+        HwPage.literatureItem.click();
+        Thread.sleep(1000);
+
+        HwPage.mathItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Mathematics");
+        HwPage.mathItem.click();
+        Thread.sleep(1000);
+
+        HwPage.physicsItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Physics");
+        HwPage.physicsItem.click();
+        Thread.sleep(1000);
+
+        HwPage.psychologyItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Psychology");
+        HwPage.psychologyItem.click();
+        Thread.sleep(1000);
+
+        HwPage.religionItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Religion%2FPhilosophy");
+        HwPage.religionItem.click();
+        Thread.sleep(1000);
+
+        HwPage.socialItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Social%20Studies");
+        HwPage.socialItem.click();
+        Thread.sleep(1000);
+
+        HwPage.technologyItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Technology");
+        HwPage.technologyItem.click();
+        Thread.sleep(1000);
+
+        HwPage.miscItem.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/ask?source=Miscellaneous");
+        HwPage.miscItem.click();
 
     }
 
@@ -216,10 +362,10 @@ public class CloudentsAutoTests {
     }
 
     @Test
-    public void signUpNavigation() {
+    public void signUpNavigation() throws InterruptedException {
 
         driver.get("https://dev.spitball.co");
-
+        Thread.sleep(1000);
         mainPage.SignUpButton.click();
         /*File screenShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         File originImage = new File("src/test/resources/SignUp.png");
@@ -232,6 +378,8 @@ public class CloudentsAutoTests {
     @Test
     public void loginNavigation() {
 
+        driver.get("https://dev.spitball.co");
+
         mainPage.LoginButton.click();
         Assert.assertEquals(driver.getCurrentUrl(), "https://dev.spitball.co/signin");
 
@@ -243,7 +391,7 @@ public class CloudentsAutoTests {
         driver.get("https://dev.spitball.co/about");
 
         aboutPage.HowWorks.click();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         Assert.assertEquals(driver.getCurrentUrl(),"https://dev.spitball.co/about");
         Assert.assertEquals(aboutPage.HowWorks.getAttribute("className"),"v-tabs__item--active v-tabs__item");
         Assert.assertEquals(aboutPage.AboutHeader1.getText(),"What is Spitball?");

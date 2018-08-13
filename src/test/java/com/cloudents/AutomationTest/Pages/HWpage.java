@@ -12,4 +12,67 @@ public class HWpage {
     @FindBy(className = "top-block")
     public WebElement question;
 
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[1]/label[2]")
+    public WebElement artsItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[2]/label[2]")
+    public WebElement biologyItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[3]/label[2]")
+    public WebElement blockchainItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[4]/label[2]")
+    public WebElement businessItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[5]/label[2]")
+    public WebElement chemistryItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[6]/label[2]")
+    public WebElement computerScienceItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[7]/label[2]")
+    public WebElement economicsItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[8]/label[2]")
+    public WebElement educationItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[9]/label[2]")
+    public WebElement geographyItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[10]/label[2]")
+    public WebElement healthItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[11]/label[2]")
+    public WebElement historyItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[12]/label[2]")
+    public WebElement languagesItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[13]/label[2]")
+    public WebElement lawItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[14]/label[2]")
+    public WebElement literatureItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[15]/label[2]")
+    public WebElement mathItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[16]/label[2]")
+    public WebElement physicsItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[17]/label[2]")
+    public WebElement psychologyItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[18]/label[2]")
+    public WebElement religionItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[19]/label[2]")
+    public WebElement socialItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[20]/label[2]")
+    public WebElement technologyItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[21]/label[2]")
+    public WebElement miscItem;
+
 }

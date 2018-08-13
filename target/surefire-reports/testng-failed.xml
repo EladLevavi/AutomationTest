@@ -25,7 +25,6 @@
           <include name="PartnersPageContent"/>
           <include name="FAQPageContent"/>
           <include name="DefaultHomePage"/>
-          <include name="FAQNavigateLinks"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>
@@ -53,7 +52,6 @@
           <include name="PartnersPageContent"/>
           <include name="FAQPageContent"/>
           <include name="DefaultHomePage"/>
-          <include name="FAQNavigateLinks"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>
@@ -63,8 +61,6 @@
     <classes>
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
         <methods>
-          <include name="signUpNavigation"/>
-          <include name="MainTabsNavigation"/>
           <include name="setup"/>
           <include name="setup"/>
           <include name="setup"/>
@@ -73,7 +69,7 @@
           <include name="cleanupTestSeries"/>
           <include name="cleanupTestSeries"/>
           <include name="cleanupTestSeries"/>
-          <include name="FAQNavigateLinks"/>
+          <include name="AboutPageContent"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>
@@ -83,7 +79,6 @@
     <classes>
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
         <methods>
-          <include name="signUpNavigation"/>
           <include name="MainTabsNavigation"/>
           <include name="TermsPageContent"/>
           <include name="PrivacyPageContent"/>
@@ -95,8 +90,7 @@
           <include name="cleanupTestSeries"/>
           <include name="cleanupTestSeries"/>
           <include name="cleanupTestSeries"/>
-          <include name="loginNavigation"/>
-          <include name="FAQNavigateLinks"/>
+          <include name="AboutPageContent"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>
@@ -124,7 +118,6 @@
           <include name="PartnersPageContent"/>
           <include name="FAQPageContent"/>
           <include name="DefaultHomePage"/>
-          <include name="FAQNavigateLinks"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>

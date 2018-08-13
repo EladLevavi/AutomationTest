@@ -18,7 +18,7 @@ public class AboutPage {
     @FindBy(xpath = "/html/body/div[1]/div[1]/div/div/nav/div/div/div[2]/div/div/div/div/div/div[5]/a")
     public WebElement Partners;
 
-    @FindBy(xpath ="/html/body/div[1]/div[1]/div/div/nav/div/div/div[2]/div/div/div/div/div/div[6]/a")
+    @FindBy(xpath ="//*[@id=\"app\"]/div/div/nav/div/div/div[2]/div/div/div/div/div/div[6]/a")
     public WebElement Reps;
 
     @FindBy(xpath ="/html/body/div[1]/div[1]/div/div/nav/div/div/div[2]/div/div/div/div/div/div[7]/a")
