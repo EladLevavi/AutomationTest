@@ -11,24 +11,24 @@ public class MainPage {
     @FindBy(linkText="Login")
     public WebElement LoginButton;
 
-    @FindBy(linkText="Homework Help")
+    @FindBy(id="ask")
     public WebElement HWhelpTab;
 
-    @FindBy(linkText="Study Documents")
+    @FindBy(id="note")
     public WebElement StudyDocsTab;
 
-    @FindBy(linkText = "Flashcards")
-    public WebElement FlashcardTab;
+    @FindBy(id = "flashcard")
+    public WebElement FlashcardsTab;
 
-    @FindBy(linkText = "Tutors")
+    @FindBy(id = "tutor")
     public WebElement TutorsTab;
 
-    @FindBy(linkText = "Textbooks")
+    @FindBy(id = "book")
     public WebElement BooksTab;
 
-    @FindBy(linkText = "Jobs")
+    @FindBy(id = "job")
     public WebElement JobsTab;
 
-    @FindBy(name = "q")
+    @FindBy(id = "transcript")
     public WebElement SearchBar;
 }

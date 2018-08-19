@@ -102,6 +102,6 @@ public class FaqPage {
     public WebElement FAQ16Content;
 
     @FindBy(linkText = "Terms of Service.")
-    public WebElement link;
+    public WebElement termsLink;
 
 }

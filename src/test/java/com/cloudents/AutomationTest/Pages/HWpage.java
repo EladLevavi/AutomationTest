@@ -2,6 +2,7 @@ package com.cloudents.AutomationTest.Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 
 
 public class HWpage {
@@ -74,5 +75,14 @@ public class HWpage {
 
     @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li/div[2]/div/div[21]/label[2]")
     public WebElement miscItem;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/main/div/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/div/div[1]/a/div/div/div[2]/div/div/div/div")
+    public WebElement answerIcon;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/main/div/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/div/div[1]/a/div/div/p")
+    public WebElement answerText;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[5]/main/div/div[2]/div[1]/div[2]/div/div/div[1]/div/p")
+    public WebElement answerPage;
 
 }

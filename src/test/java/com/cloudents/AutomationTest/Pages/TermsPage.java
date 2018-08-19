@@ -168,5 +168,5 @@ public class TermsPage {
     public WebElement contract5;
 
     @FindBy(linkText = "http://www.copyright.gov/legislation/dmca.pdf")
-    public WebElement link;
+    public WebElement docLink;
 }
