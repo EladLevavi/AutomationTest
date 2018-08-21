@@ -9,7 +9,7 @@ public class SignUpPage {
     public WebElement emailInput;
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/main/div/div[2]/button")
-    public WebElement backButton;
+    public WebElement closeButton;
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/button")
     public WebElement cancelButton;
@@ -31,5 +31,11 @@ public class SignUpPage {
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/main/div/div[2]/div[1]/div/div/div[2]/div/form/input")
     public WebElement continueButton;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/main/div/div[2]/div[1]/div/div/div[2]/div/form/input")
+    public WebElement loginButton;
+
+    @FindBy(tagName = "iframe")
+    public WebElement recaptcha;
 
 }

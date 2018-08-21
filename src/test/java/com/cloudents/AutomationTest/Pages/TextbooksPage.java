@@ -11,7 +11,7 @@ public class TextbooksPage {
     @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div/div/div/div[1]/div/div[1]")
     public WebElement buyRentSortion;
 
-    @FindBy(css = "#app > div.application--wrap > main > div > div:nth-child(2) > div > div > div > div.flex.first-grid.hidden-xs-only.left-side-bar > div > div:nth-child(3) > div > ul > li > div.v-expansion-panel__body > div > div:nth-child(1)")
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/main/div/div[2]/div/div/div/div[1]/div/div[2]/div/ul/li/div[2]/div/div[1]/label[1]")
     public WebElement newType;
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div/div/div/div[1]/div/div[2]/div/ul/li/div[2]/div/div[2]/label[2]")
@@ -20,7 +20,10 @@ public class TextbooksPage {
     @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div/div/div/div[1]/div/div[2]/div/ul/li/div[2]/div/div[3]/label[2]")
     public WebElement usedType;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/div/div[1]/a/span/div/div/div[2]")
+    @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div/div/div/div[2]/div[1]/div/div[2]/div/div/div/div[1]")
     public WebElement firstBook;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div[1]/div[3]/div[1]/h2")
+    public WebElement bannerText;
 
 }

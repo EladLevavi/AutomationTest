@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class AboutPage {
 
-    @FindBy(xpath = "/html/body/div[1]/div[1]/div/div/nav/div/div/div[2]/div/div/div/div/div/div[2]/a")
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/nav/div/div/div[2]/div/div/div/div/div/div[2]/a")
     public WebElement HowWorks;
 
     @FindBy(linkText = "FAQ")

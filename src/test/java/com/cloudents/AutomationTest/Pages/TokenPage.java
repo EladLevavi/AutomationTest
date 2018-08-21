@@ -32,7 +32,7 @@ public class TokenPage {
     @FindBy(xpath = "//*[@id=\"contact-form\"]/div[5]/button")
     public WebElement submitButton;
 
-    @FindBy(xpath = "//*[@id=\"partners\"]/div[5]/div[5]/div[1]/a")
+    @FindBy(xpath = "//*[@id=\"partners\"]/div[5]/div[5]/div[1]/a/img")
     public WebElement homePage;
 
     @FindBy(xpath = "//*[@id=\"partners\"]/div[5]/div[5]/div[3]/ul/li[6]/a")

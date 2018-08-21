@@ -11,7 +11,7 @@ public class StudyDocPage {
     @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div[1]")
     public WebElement relevanceSortion;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div/div/div/div[1]/div/div[2]/div/ul/li[2]/div[1]")
+    @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div[2]/div/div/div[1]/div/div[2]/div/ul/li[2]/div[1]")
     public WebElement sourcesSection;
 
     @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div[2]/div/div/div[1]/div/div[2]/div/ul/li[2]/div[2]/div/div[1]/label[2]")
@@ -29,7 +29,13 @@ public class StudyDocPage {
     @FindBy(xpath = "//*[@id=\"app\"]/div/main/div/div[2]/div/div/div/div[1]/div/div[2]/div/ul/li[2]/div[2]/div/div[5]/label[2]")
     public WebElement studysoupSource;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/main/div/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div/div/div/div[2]/a/div/div/div[2]/div/div[1]/div[2]/span")
-    public WebElement studyItem;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div[2]/div/div/div[1]/div/div[2]/div/ul/li[1]/div[2]/div/div/button")
+    public WebElement personilize;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div/div/div[1]/div/div/div[1]/div/input")
+    public WebElement searchSchool;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[3]/main/div/div[2]/div[1]/div[3]/div[1]/h2")
+    public WebElement bannerText;
 
 }

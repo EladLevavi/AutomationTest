@@ -31,4 +31,14 @@ public class MainPage {
 
     @FindBy(id = "transcript")
     public WebElement SearchBar;
+
+    @FindBy(linkText = "Ask Your Question")
+    public WebElement AskQuestion;
+
+    @FindBy(className = "dialog-wrapp")
+    public WebElement loginPopup;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[3]/div/div/div/button/i")
+    public WebElement closePopup;
+
 }
