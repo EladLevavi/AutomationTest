@@ -2,13 +2,12 @@ package com.cloudents.AutomationTest.Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class AboutPage {
+public class FAQPage {
 
-    @FindBy(className = "v-tabs__div")
-    public List<WebElement> tabsHeader;
+    @FindBy(className = "v-expansion-panel__container")
+    public List<WebElement> FaqHeaders;
 
 }

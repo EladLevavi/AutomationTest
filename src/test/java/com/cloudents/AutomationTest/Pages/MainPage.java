@@ -3,34 +3,42 @@ package com.cloudents.AutomationTest.Pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class MainPage {
 
-    @FindBy(linkText = "Sign Up")
-    public WebElement SignUpButton;
-
-    @FindBy(linkText="Login")
-    public WebElement LoginButton;
+    @FindBy(xpath = "//*[@class='settings-wrapper d-flex align-center']//a")
+    public List<WebElement> signButtons;
 
     @FindBy(id="ask")
-    public WebElement HWhelpTab;
+    public WebElement homeworkHelpTab;
 
     @FindBy(id="note")
-    public WebElement StudyDocsTab;
+    public WebElement studyDocumentsTab;
 
     @FindBy(id = "flashcard")
-    public WebElement FlashcardsTab;
+    public WebElement flashcardsTab;
 
     @FindBy(id = "tutor")
-    public WebElement TutorsTab;
+    public WebElement tutorsTab;
 
     @FindBy(id = "book")
-    public WebElement BooksTab;
+    public WebElement textbooksTab;
 
     @FindBy(id = "job")
-    public WebElement JobsTab;
+    public WebElement jobsTab;
 
     @FindBy(id = "transcript")
-    public WebElement SearchBar;
+    public WebElement searchBar;
+
+    @FindBy(xpath = "//*[@class='sort-switch']//label")
+    public List<WebElement> sort;
+
+    @FindBy(className = "filter")
+    public List<WebElement> filters;
+
+    @FindBy(className = "v-expansion-panel__header")
+    public List<WebElement> sortSection;
 
     @FindBy(linkText = "Ask Your Question")
     public WebElement AskQuestion;
@@ -38,7 +46,16 @@ public class MainPage {
     @FindBy(className = "dialog-wrapp")
     public WebElement loginPopup;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[3]/div/div/div/button/i")
-    public WebElement closePopup;
+    @FindBy(xpath = "//*[@class='title-wrap']//h2")
+    public WebElement banner;
+
+    @FindBy(className = "dialog-wrapp")
+    public WebElement signPopup;
+
+    @FindBy(linkText = "Terms of Service.")
+    public WebElement termsLink;
+
+    @FindBy(tagName = "img")
+    public List<WebElement> images;
 
 }

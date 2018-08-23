@@ -2,13 +2,14 @@ package com.cloudents.AutomationTest.Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.annotations.Test;
+import org.openqa.selenium.support.FindBys;
 
 import java.util.List;
 
-public class AboutPage {
 
-    @FindBy(className = "v-tabs__div")
-    public List<WebElement> tabsHeader;
+public class HomeworkHelpPage {
+
+    @FindBy(className="ask-question")
+    public WebElement askButton;
 
 }
