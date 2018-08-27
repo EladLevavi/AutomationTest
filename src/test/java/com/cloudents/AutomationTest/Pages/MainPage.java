@@ -7,7 +7,7 @@ import java.util.List;
 
 public class MainPage {
 
-    @FindBy(xpath = "//*[@class='settings-wrapper d-flex align-center']//a")
+    @FindBy(xpath = "//*[@class='settings-wrapper']//a")
     public List<WebElement> signButtons;
 
     @FindBy(id="ask")
@@ -34,7 +34,7 @@ public class MainPage {
     @FindBy(xpath = "//*[@class='sort-switch']//label")
     public List<WebElement> sort;
 
-    @FindBy(className = "filter")
+    @FindBy(className = "filter-switch")
     public List<WebElement> filters;
 
     @FindBy(className = "v-expansion-panel__header")
@@ -57,5 +57,14 @@ public class MainPage {
 
     @FindBy(tagName = "img")
     public List<WebElement> images;
+
+    @FindBy(xpath = "//*[@class='layout column']//input")
+    public WebElement searchSchool;
+
+    @FindBy(xpath = "//*[@class='content']//a")
+    public List<WebElement> FAQlist;
+
+    @FindBy(xpath = "//*[@class='footer']//button")
+    public WebElement moreButton;
 
 }

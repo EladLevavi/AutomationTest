@@ -13,11 +13,8 @@ public class SignUpPage {
     @FindBy(className = "click")
     public WebElement loginLink;
 
-    @FindBy(linkText = "Terms")
-    public WebElement termsLink;
-
-    @FindBy(linkText = "Privacy")
-    public WebElement privacyLink;
+    @FindBy(tagName = "a")
+    public List<WebElement> termsLinks;
 
     @FindBy(className = "google-signin")
     public WebElement googleButton;

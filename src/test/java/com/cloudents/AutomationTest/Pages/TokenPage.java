@@ -19,13 +19,13 @@ public class TokenPage {
     @FindBy(id = "telegram-nav")
     public WebElement joinTelegram;
 
-    @FindBy(xpath = "//*[@id='contact-form']//div")
+    @FindBy(xpath = "//*[@id='contact-form']//input")
     public List<WebElement> contactForm;
 
     @FindBy(className = "footer-brand")
     public WebElement homePage;
 
-    @FindBy(linkText = "Privacy Policy")
+    @FindBy(linkText = "Privacy")
     public WebElement privacy;
 
     @FindBy(linkText = "Terms & Conditions")
@@ -34,25 +34,19 @@ public class TokenPage {
     @FindBy(className = "input-round")
     public WebElement emailText;
 
-    @FindBy(xpath = "//*[@id=\"subscribe-form\"]/button")
+    @FindBy(xpath = "//*[@id='subscribe-form']/button")
     public WebElement subscribeButton;
 
     @FindBy(className = "col-xl-4")
     public List<WebElement> sectionLinks;
 
-    @FindBy(xpath = "//*[class='social']//href")
-    public List<WebElement> socialLinks;
+    @FindBy(tagName = "//*[class='col-xl-4']//a")
+    public List<WebElement> internalLinks;
 
-    @FindBy(xpath = "//*[@class='img-holder']//img")
-    public WebElement image1;
+    @FindBy(tagName = "img")
+    public List<WebElement> images;
 
-    @FindBy(xpath = "//*[@class='container']//img")
-    public WebElement image2;
-
-    @FindBy(xpath = "//*[@class='animated']//img")
-    public WebElement image3;
-
-    @FindBy(xpath = "//*[@class='col-md-10']//img")
-    public WebElement image4;
+    @FindBy(xpath = "//*[@class='container']//a")
+    public List<WebElement> footerLinks;
 
 }
