@@ -1,4 +1,3 @@
 com\cloudents\AutomationTest\Pages\MainPage.class
+com\cloudents\AutomationTest\Resources.class
 com\cloudents\AutomationTest\CloudentsAutoTests.class
-com\cloudents\AutomationTest\Pages\HWpage.class
-com\cloudents\AutomationTest\Pages\LoginPage.class

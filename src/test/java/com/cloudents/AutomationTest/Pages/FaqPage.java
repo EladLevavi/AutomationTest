@@ -7,7 +7,7 @@ import java.util.List;
 
 public class FAQPage {
 
-    @FindBy(className = "v-expansion-panel__container")
+    @FindBy(xpath = "//*[@class='faq']//li")
     public List<WebElement> FaqHeaders;
 
 }
