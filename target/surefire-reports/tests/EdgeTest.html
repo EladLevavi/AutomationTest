@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/19</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 28 14:05:17 IDT 2018</td>
+<td>Started on:</td><td>Wed Aug 29 14:31:45 IDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (618 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (568 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -86,7 +86,7 @@ function toggleAllBoxes() {
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.setup(CloudentsAutoTests.java:42)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.setup(CloudentsAutoTests.java:39)
 Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: U. Last 1 characters read: U
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;EIDAN-DESKTOP&apos;, ip: &apos;192.168.2.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
@@ -97,9 +97,9 @@ Driver info: driver.version: EdgeDriver
 	at org.openqa.selenium.json.Json.toType(Json.java:60)
 	at org.openqa.selenium.json.Json.toType(Json.java:50)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:108)
-	... 39 more
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2044482328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2044482328'><pre>org.openqa.selenium.WebDriverException: Unable to parse remote response: Unknown error
+	... 37 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace995911260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace995911260'><pre>org.openqa.selenium.WebDriverException: Unable to parse remote response: Unknown error
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
@@ -109,7 +109,7 @@ Driver info: driver.version: EdgeDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at com.cloudents.AutomationTest.CloudentsAutoTests.setup(CloudentsAutoTests.java:42)
+	at com.cloudents.AutomationTest.CloudentsAutoTests.setup(CloudentsAutoTests.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,15 +131,13 @@ Driver info: driver.version: EdgeDriver
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
 	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
-	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
-	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
 Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: U. Last 1 characters read: U
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;EIDAN-DESKTOP&apos;, ip: &apos;192.168.2.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
@@ -150,10 +148,10 @@ Driver info: driver.version: EdgeDriver
 	at org.openqa.selenium.json.Json.toType(Json.java:60)
 	at org.openqa.selenium.json.Json.toType(Json.java:50)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:108)
-	... 39 more
+	... 37 more
 </pre></div></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -166,7 +164,7 @@ Driver info: driver.version: EdgeDriver
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.cleanupTestSeries()'><b>cleanupTestSeries</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -179,97 +177,97 @@ Driver info: driver.version: EdgeDriver
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.FAQ()'><b>FAQ</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.about()'><b>about</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.contact()'><b>contact</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.flashcards()'><b>flashcards</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
-<td title='com.cloudents.AutomationTest.CloudentsAutoTests.globalTesting()'><b>globalTesting</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
+<td title='com.cloudents.AutomationTest.CloudentsAutoTests.global()'><b>global</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.homePage()'><b>homePage</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.homeworkHelp()'><b>homeworkHelp</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.jobs()'><b>jobs</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.login()'><b>login</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.mainTabs()'><b>mainTabs</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.partners()'><b>partners</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.privacy()'><b>privacy</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.reps()'><b>reps</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.signUp()'><b>signUp</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.studyDocuments()'><b>studyDocuments</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.terms()'><b>terms</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.textbooks()'><b>textbooks</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.token()'><b>token</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 <tr>
 <td title='com.cloudents.AutomationTest.CloudentsAutoTests.tutors()'><b>tutors</b><br>Test class: com.cloudents.AutomationTest.CloudentsAutoTests</td>
 <td></td>
 <td>0</td>
-<td>com.cloudents.AutomationTest.CloudentsAutoTests@3d24753a</td></tr>
+<td>com.cloudents.AutomationTest.CloudentsAutoTests@13c78c0b</td></tr>
 </table><p>
 </body>
 </html>

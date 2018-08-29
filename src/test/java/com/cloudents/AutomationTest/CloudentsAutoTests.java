@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.ProfilesIni;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
@@ -27,24 +27,24 @@ public class CloudentsAutoTests {
             ProfilesIni profile = new ProfilesIni();
             FirefoxProfile myProfile = profile.getProfile("Automation");
             options.setProfile(myProfile);
-            System.setProperty("webdriver.gecko.driver", DRIVERS_LOCATION + "geckodriver.exe");
+            System.setProperty(GECKO_DRIVER, DRIVERS_LOCATION + GECKO_FILE);
             driver = new FirefoxDriver(options);
         }
         else if (browser.equalsIgnoreCase("Chrome")) {
-            System.setProperty("webdriver.chrome.driver", DRIVERS_LOCATION + "chromedriver.exe");
+            System.setProperty(CHROME_DRIVER, DRIVERS_LOCATION + CHROME_FILE);
             driver = new ChromeDriver();
         }
         else if (browser.equalsIgnoreCase("Edge")) {
-            System.setProperty("webdriver.edge.driver", DRIVERS_LOCATION + "MicrosoftWebDriver.exe");
+            System.setProperty(EDGE_DRIVER, DRIVERS_LOCATION + EDGE_FILE);
             driver = new EdgeDriver();
         }
         else if (browser.equalsIgnoreCase("Safari")) {
             driver = new SafariDriver();
         }
-        else if (browser.equalsIgnoreCase("IE")) {
-            System.setProperty("webdriver.ie.driver", DRIVERS_LOCATION + "IEDriverServer.exe");
+        /*else if (browser.equalsIgnoreCase("IE")) {
+            System.setProperty(IE_DRIVER, DRIVERS_LOCATION + IE_FILE);
             driver = new InternetExplorerDriver();
-        }
+        }*/
 
         Resources.initElements();
         Resources.winHandleBefore = driver.getWindowHandle();
@@ -89,28 +89,28 @@ public class CloudentsAutoTests {
     public void homePage() throws InterruptedException {
 
         driver.get(HOME_PAGE);
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
 
         mainPage.FAQlist.get(0).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         checkNewWindowAddress(FAQ_PAGE + "?id=0");
         mainPage.FAQlist.get(1).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         checkNewWindowAddress(FAQ_PAGE + "?id=1");
         mainPage.FAQlist.get(2).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         checkNewWindowAddress(FAQ_PAGE + "?id=2");
         mainPage.FAQlist.get(3).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         checkNewWindowAddress(FAQ_PAGE + "?id=3");
         mainPage.FAQlist.get(4).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         checkNewWindowAddress(FAQ_PAGE + "?id=4");
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
         mainPage.moreButton.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), FAQ_PAGE);
 
     }
@@ -232,7 +232,9 @@ public class CloudentsAutoTests {
         driver.get(HOMEWORK_PAGE);
         Thread.sleep(1000);
 
+        mainPage.filterHeaders.get(1).click();
         clickOnWebElements(mainPage.filters);
+        clickOnWebElements(mainPage.filterHeaders);
         Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Search questions");
         Assert.assertEquals(mainPage.banner.getText(), "Make money while helping others with their homework.");
         homeworkHelpPage.askButton.click();
@@ -359,7 +361,7 @@ public class CloudentsAutoTests {
     public void about() throws InterruptedException {
 
         driver.get(ABOUT_PAGE);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
 
         //clickOnWebElements(aboutPage.tabsHeader);
         for(int i=0 ; i < 7 ; i++) {
@@ -368,6 +370,7 @@ public class CloudentsAutoTests {
 
             if (i == 2) {
 
+                Thread.sleep(3000);
                 checkNewWindowAddress(MEDIUM_PAGE);
 
             }

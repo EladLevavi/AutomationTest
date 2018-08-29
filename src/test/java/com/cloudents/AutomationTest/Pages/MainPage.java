@@ -2,6 +2,7 @@ package com.cloudents.AutomationTest.Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import java.util.List;
 
@@ -34,8 +35,11 @@ public class MainPage {
     @FindBy(xpath = "//*[@class='sort-switch']//label")
     public List<WebElement> sort;
 
-    @FindBy(className = "filter-switch")
+    @FindBy(className = "filter")
     public List<WebElement> filters;
+
+    @FindBy(className = "v-expansion-panel__header__icon")
+    public List<WebElement> filterHeaders;
 
     @FindBy(className = "v-expansion-panel__header")
     public List<WebElement> sortSection;

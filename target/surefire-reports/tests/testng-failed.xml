@@ -7,31 +7,18 @@
     <classes>
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
         <methods>
-          <include name="flashcards"/>
-          <include name="contact"/>
-          <include name="terms"/>
           <include name="homePage"/>
-          <include name="signUp"/>
-          <include name="textbooks"/>
-          <include name="login"/>
-          <include name="privacy"/>
-          <include name="about"/>
-          <include name="studyDocuments"/>
-          <include name="reps"/>
+          <include name="token"/>
           <include name="homeworkHelp"/>
           <include name="setup"/>
           <include name="setup"/>
           <include name="setup"/>
           <include name="setup"/>
           <include name="setup"/>
-          <include name="partners"/>
+          <include name="about"/>
           <include name="cleanupTestSeries"/>
-          <include name="cleanupTestSeries"/>
-          <include name="token"/>
-          <include name="mainTabs"/>
+          <include name="global"/>
           <include name="jobs"/>
-          <include name="tutors"/>
-          <include name="globalTesting"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>
@@ -60,13 +47,12 @@
           <include name="setup"/>
           <include name="partners"/>
           <include name="cleanupTestSeries"/>
-          <include name="cleanupTestSeries"/>
+          <include name="global"/>
           <include name="FAQ"/>
           <include name="token"/>
           <include name="mainTabs"/>
           <include name="jobs"/>
           <include name="tutors"/>
-          <include name="globalTesting"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>
@@ -95,13 +81,12 @@
           <include name="setup"/>
           <include name="partners"/>
           <include name="cleanupTestSeries"/>
-          <include name="cleanupTestSeries"/>
+          <include name="global"/>
           <include name="FAQ"/>
           <include name="token"/>
           <include name="mainTabs"/>
           <include name="jobs"/>
           <include name="tutors"/>
-          <include name="globalTesting"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>
@@ -130,13 +115,12 @@
           <include name="setup"/>
           <include name="partners"/>
           <include name="cleanupTestSeries"/>
-          <include name="cleanupTestSeries"/>
+          <include name="global"/>
           <include name="FAQ"/>
           <include name="token"/>
           <include name="mainTabs"/>
           <include name="jobs"/>
           <include name="tutors"/>
-          <include name="globalTesting"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>
@@ -165,13 +149,12 @@
           <include name="setup"/>
           <include name="partners"/>
           <include name="cleanupTestSeries"/>
-          <include name="cleanupTestSeries"/>
+          <include name="global"/>
           <include name="FAQ"/>
           <include name="token"/>
           <include name="mainTabs"/>
           <include name="jobs"/>
           <include name="tutors"/>
-          <include name="globalTesting"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>

@@ -14,7 +14,15 @@ import static org.testng.Assert.assertTrue;
 class Resources {
 
     static WebDriver driver;
-    static String DRIVERS_LOCATION = "C:\\WebDrivers\\";
+    final static String DRIVERS_LOCATION = "C:\\WebDrivers\\";
+    final static String CHROME_DRIVER = "webdriver.chrome.driver";
+    final static String CHROME_FILE = "chromedriver.exe";
+    final static String GECKO_DRIVER = "webdriver.gecko.driver";
+    final static String GECKO_FILE = "geckodriver.exe";
+    final static String EDGE_DRIVER = "webdriver.edge.driver";
+    final static String EDGE_FILE = "MicrosoftWebDriver.exe";
+    final static String IE_DRIVER = "webdriver.ie.driver";
+    final static String IE_FILE = "IEDriverServer.exe";
 
     static MainPage mainPage;
     static HomeworkHelpPage homeworkHelpPage;
@@ -48,7 +56,7 @@ class Resources {
     final static String TERMS_PAGE = HOME_PAGE + "/terms";
     final static String CONTACT_PAGE = HOME_PAGE + "/contact";
     final static String FACEBOOK_PAGE = "https://www.facebook.com";
-    final static String TWITTER_PAGE = "https://www.twitter.com";
+    final static String TWITTER_PAGE = "https://twitter.com";
     final static String YOUTUBE_PAGE = "https://www.youtube.com";
     final static String INSTAGRAM_PAGE = "https://www.instagram.com";
     final static String MEDIUM_PAGE = "https://medium.com";
