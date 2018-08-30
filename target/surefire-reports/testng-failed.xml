@@ -5,8 +5,8 @@
     <classes>
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
         <methods>
-          <include name="homePage"/>
           <include name="setup"/>
+          <include name="global"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>

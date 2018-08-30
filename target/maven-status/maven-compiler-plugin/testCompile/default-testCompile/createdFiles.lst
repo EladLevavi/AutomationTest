@@ -1,3 +1,13 @@
+com\cloudents\AutomationTest\Pages\PrivacyPage.class
 com\cloudents\AutomationTest\Pages\MainPage.class
+com\cloudents\AutomationTest\Pages\SignUpPage.class
+com\cloudents\AutomationTest\Pages\PartnersPage.class
 com\cloudents\AutomationTest\Resources.class
+com\cloudents\AutomationTest\Pages\TokenPage.class
+com\cloudents\AutomationTest\Pages\TermsPage.class
+com\cloudents\AutomationTest\Pages\RepsPage.class
 com\cloudents\AutomationTest\CloudentsAutoTests.class
+com\cloudents\AutomationTest\Pages\AboutPage.class
+com\cloudents\AutomationTest\Pages\FAQPage.class
+com\cloudents\AutomationTest\Pages\HomeworkHelpPage.class
+com\cloudents\AutomationTest\Pages\ContactPage.class

@@ -8,26 +8,8 @@ import java.util.List;
 
 public class MainPage {
 
-    @FindBy(xpath = "//*[@class='settings-wrapper']//a")
+    @FindBy(className = "header-login")
     public List<WebElement> signButtons;
-
-    @FindBy(id="ask")
-    public WebElement homeworkHelpTab;
-
-    @FindBy(id="note")
-    public WebElement studyDocumentsTab;
-
-    @FindBy(id = "flashcard")
-    public WebElement flashcardsTab;
-
-    @FindBy(id = "tutor")
-    public WebElement tutorsTab;
-
-    @FindBy(id = "book")
-    public WebElement textbooksTab;
-
-    @FindBy(id = "job")
-    public WebElement jobsTab;
 
     @FindBy(id = "transcript")
     public WebElement searchBar;
@@ -43,12 +25,6 @@ public class MainPage {
 
     @FindBy(className = "v-expansion-panel__header")
     public List<WebElement> sortSection;
-
-    @FindBy(linkText = "Ask Your Question")
-    public WebElement AskQuestion;
-
-    @FindBy(className = "dialog-wrapp")
-    public WebElement loginPopup;
 
     @FindBy(xpath = "//*[@class='title-wrap']//h2")
     public WebElement banner;
@@ -70,5 +46,17 @@ public class MainPage {
 
     @FindBy(xpath = "//*[@class='footer']//button")
     public WebElement moreButton;
+
+    @FindBy(xpath = "//*[@class='v-tabs__container']//a")
+    public List<WebElement> tabsContainer;
+
+    @FindBy(className = "back-button")
+    public WebElement closeIcon;
+
+    @FindBy(className = "continue-btn")
+    public WebElement verifyExit;
+
+    @FindBy(className = "close-btn")
+    public WebElement cancelButton;
 
 }

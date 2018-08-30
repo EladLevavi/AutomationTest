@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="16467" started-at="2018-08-29T13:04:56Z" finished-at="2018-08-29T13:05:13Z">
+  <suite name="Surefire suite" duration-ms="261050" started-at="2018-08-30T13:16:16Z" finished-at="2018-08-30T13:20:37Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="16467" started-at="2018-08-29T13:04:56Z" finished-at="2018-08-29T13:05:13Z">
+    <test name="Surefire test" duration-ms="261050" started-at="2018-08-30T13:16:16Z" finished-at="2018-08-30T13:20:37Z">
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@59e84876]" name="setup" is-config="true" duration-ms="4377" started-at="2018-08-29T16:04:56Z" finished-at="2018-08-29T16:05:00Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@59e84876]" name="setup" is-config="true" duration-ms="4935" started-at="2018-08-30T16:16:16Z" finished-at="2018-08-30T16:16:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@59e84876]" name="login" duration-ms="12084" started-at="2018-08-29T16:05:00Z" finished-at="2018-08-29T16:05:13Z">
+        <test-method status="PASS" signature="global()[pri:0, instance:com.cloudents.AutomationTest.CloudentsAutoTests@59e84876]" name="global" duration-ms="256103" started-at="2018-08-30T16:16:21Z" finished-at="2018-08-30T16:20:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
+        </test-method> <!-- global -->
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
