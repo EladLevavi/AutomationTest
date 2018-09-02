@@ -28,6 +28,20 @@
         </dependency>
 
 
+        <!-- https://mvnrepository.com/artifact/io.selendroid/selendroid-standalone -->
+        <dependency>
+            <groupId>io.selendroid</groupId>
+            <artifactId>selendroid-standalone</artifactId>
+            <version>0.17.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.selendroid</groupId>
+            <version>0.17.0</version>
+            <artifactId>selendroid-client</artifactId>
+        </dependency>
+
 
     </dependencies>
 

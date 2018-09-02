@@ -1,18 +1,24 @@
 package com.cloudents.AutomationTest;
 
 
+import io.selendroid.client.SelendroidDriver;
+import io.selendroid.common.SelendroidCapabilities;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import java.util.concurrent.TimeUnit;
 import static com.cloudents.AutomationTest.Resources.*;
+import static org.testng.Assert.assertTrue;
 
 
 
@@ -20,36 +26,45 @@ public class CloudentsAutoTests {
 
     @Parameters("browser")
     @BeforeClass
-    public void setup(@Optional String browser) {
+    public void setup(@Optional String browser) throws Exception {
 
         if (browser.equalsIgnoreCase("Firefox")) {
             FirefoxOptions options = new FirefoxOptions();
             ProfilesIni profile = new ProfilesIni();
             FirefoxProfile myProfile = profile.getProfile("Automation");
             options.setProfile(myProfile);
+            //options.addArguments("--headless");
             System.setProperty(GECKO_DRIVER, DRIVERS_LOCATION + GECKO_FILE);
             driver = new FirefoxDriver(options);
         }
         else if (browser.equalsIgnoreCase("Chrome")) {
+            ChromeOptions options = new ChromeOptions();
+            //options.addArguments("--headless");
             System.setProperty(CHROME_DRIVER, DRIVERS_LOCATION + CHROME_FILE);
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(options);
         }
         else if (browser.equalsIgnoreCase("Edge")) {
             System.setProperty(EDGE_DRIVER, DRIVERS_LOCATION + EDGE_FILE);
             driver = new EdgeDriver();
         }
         else if (browser.equalsIgnoreCase("Safari")) {
+            DesiredCapabilities caps = DesiredCapabilities.safari();
+            caps.setCapability("platform", "macOS 10.12");
+            caps.setCapability("version", "11.0");
             driver = new SafariDriver();
         }
         /*else if (browser.equalsIgnoreCase("IE")) {
             System.setProperty(IE_DRIVER, DRIVERS_LOCATION + IE_FILE);
             driver = new InternetExplorerDriver();
         }*/
+        else if (browser.equalsIgnoreCase("Android")) {
+            driver = new SelendroidDriver(new SelendroidCapabilities("io.selendroid.testapp:0.9.0"));
+        }
 
         Resources.initElements();
         Resources.winHandleBefore = driver.getWindowHandle();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
@@ -59,59 +74,42 @@ public class CloudentsAutoTests {
     @Test
     public void global() throws InterruptedException {
 
-        homePage();
-        Thread.sleep(2000);
-        mainTabs();
-        Thread.sleep(2000);
-        //homeworkHelp();
-        //Thread.sleep(2000);
-        studyDocuments();
-        Thread.sleep(2000);
-        flashcards();
-        Thread.sleep(2000);
-        tutors();
-        Thread.sleep(2000);
-        textbooks();
-        Thread.sleep(2000);
-        //jobs();
-        //Thread.sleep(2000);
-        signUp();
-        Thread.sleep(2000);
-        login();
-        Thread.sleep(2000);
+        common();
         about();
-        Thread.sleep(2000);
+        mainTabs();
+        homeworkHelp();
+        studyDocuments();
+        flashcards();
+        tutors();
+        textbooks();
+        jobs();
+        signUp();
+        //login();
         //token();
 
     }
 
     @Test
-    public void homePage() throws InterruptedException {
+    public void common() throws InterruptedException {
 
         driver.get(HOME_PAGE);
-        Thread.sleep(3000);
+        mainPage.homeLink.click();
         Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
-
-        mainPage.FAQlist.get(0).click();
-        Thread.sleep(3000);
-        checkNewWindowAddress(FAQ_PAGE + "?id=0");
-        mainPage.FAQlist.get(1).click();
-        Thread.sleep(3000);
-        checkNewWindowAddress(FAQ_PAGE + "?id=1");
-        mainPage.FAQlist.get(2).click();
-        Thread.sleep(3000);
-        checkNewWindowAddress(FAQ_PAGE + "?id=2");
-        mainPage.FAQlist.get(3).click();
-        Thread.sleep(3000);
-        checkNewWindowAddress(FAQ_PAGE + "?id=3");
-        mainPage.FAQlist.get(4).click();
-        Thread.sleep(3000);
-        checkNewWindowAddress(FAQ_PAGE + "?id=4");
-        Thread.sleep(3000);
-
+        for (int i = 0 ; i < 5 ; i++) {
+            mainPage.FAQlist.get(i).click();
+            checkNewWindowAddress(FAQ_PAGE + "?id=" + i);
+        }
         mainPage.moreButton.click();
-        Thread.sleep(3000);
         Assert.assertEquals(driver.getCurrentUrl(), FAQ_PAGE);
+        driver.navigate().back();
+        mainPage.signButtons.get(0).click();
+        Thread.sleep(100);
+        String actualURL = driver.getCurrentUrl();
+        System.out.println(actualURL);
+        assertTrue(actualURL.contains(SIGNUP_PAGE));
+        driver.navigate().back();
+        mainPage.signButtons.get(1).click();
+        Assert.assertEquals(driver.getCurrentUrl(), LOGIN_PAGE);
 
     }
 
@@ -119,19 +117,7 @@ public class CloudentsAutoTests {
     public void mainTabs() throws InterruptedException {
 
         driver.get(HOME_PAGE);
-        Thread.sleep(3000);
-
         clickOnWebElements(mainPage.tabsContainer);
-        Thread.sleep(5000);
-
-        mainPage.signButtons.get(0).click();
-        Thread.sleep(3000);
-        Assert.assertEquals(driver.getCurrentUrl(), "https://dev.spitball.co/register?returnUrl=%2Fjob");
-        driver.navigate().back();
-        Thread.sleep(3000);
-        mainPage.signButtons.get(1).click();
-        Thread.sleep(3000);
-        Assert.assertEquals(driver.getCurrentUrl(), "https://dev.spitball.co/signin");
 
     }
 
@@ -139,39 +125,30 @@ public class CloudentsAutoTests {
     public void signUp() throws InterruptedException {
 
         driver.get(SIGNUP_PAGE);
-        Thread.sleep(1000);
-
         Assert.assertEquals(signUpPage.image.getAttribute("src"),SIGNUP_IMAGE);
-        signUpPage.googleButton.click();
-        Assert.assertEquals(signUpPage.errorMessage.getText(), "Please agree to Terms And Services in order to proceed");
         signUpPage.termsLinks.get(0).click();
-        Thread.sleep(2000);
+        Thread.sleep(300);
         Assert.assertEquals(driver.getCurrentUrl(), TERMS_PAGE);
         driver.navigate().back();
         signUpPage.termsLinks.get(1).click();
-        Thread.sleep(2000);
+        Thread.sleep(750);
         Assert.assertEquals(driver.getCurrentUrl(), PRIVACY_PAGE);
         driver.navigate().back();
-        Thread.sleep(1000);
+        Thread.sleep(300);
+        signUpPage.loginLink.click();
+        Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
+        driver.get(SIGNUP_PAGE);
+        signUpPage.googleButton.click();
+        Assert.assertEquals(signUpPage.errorMessage.getText(), "Please agree to Terms And Services in order to proceed");
+        driver.navigate().refresh();
+        signUpPage.signWithEmail.click();
+        Assert.assertEquals(signUpPage.errorMessage.getText(), "Please agree to Terms And Services in order to proceed");
         signUpPage.agreeCheckbox.click();
         signUpPage.googleButton.click();
         checkNewWindowAddress(GOOGLE_SIGNIN_PAGE);
-        Thread.sleep(1000);
-        checkExit();
-        Thread.sleep(1000);
-        signUpPage.signInLink.click();
-        Thread.sleep(1000);
-        Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
-        Thread.sleep(2000);
-        driver.get(SIGNUP_PAGE);
-        Thread.sleep(1000);
-        signUpPage.agreeCheckbox.click();
         signUpPage.signWithEmail.click();
         Assert.assertEquals(signUpPage.emailInput.getAttribute("placeholder"),"Enter your email address");
         signUpPage.emailInput.sendKeys("elad@cloudents.com");
-        signUpPage.emailInput.clear();
-        signUpPage.emailInput.sendKeys("elad@cloudents.com");
-        Thread.sleep(1000);
         checkExit();
 
     }
@@ -180,16 +157,12 @@ public class CloudentsAutoTests {
     public void login() throws InterruptedException {
 
         driver.get(LOGIN_PAGE);
-        Thread.sleep(1000);
-
         Assert.assertEquals(loginPage.emailInput.getAttribute("placeholder"),"Enter your email address");
         Assert.assertEquals(loginPage.image.getAttribute("src"),LOGIN_IMAGE);
         loginPage.emailInput.sendKeys("elad@cloudents.com");
-        Thread.sleep(1000);
-        checkExit();
         loginPage.signUpLink.click();
-        Thread.sleep(1000);
         Assert.assertEquals(signUpPage.image.getAttribute("src"), SIGNUP_IMAGE);
+        checkExit();
 
     }
 
@@ -223,10 +196,10 @@ public class CloudentsAutoTests {
         Assert.assertEquals(driver.getCurrentUrl(), STUDY_PAGE + "?sort=Date");
 
 
-        mainPage.sortSection.get(0).click();
-        Thread.sleep(1000);
-        mainPage.sortSection.get(0).click();
-        Thread.sleep(2000);
+        //mainPage.sortSection.get(0).click();
+        //Thread.sleep(1000);
+        //mainPage.sortSection.get(0).click();
+        //Thread.sleep(2000);
         clickOnWebElements(mainPage.filters);
         Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Find study documents in...");
         Assert.assertEquals(mainPage.banner.getText(), "Notes, study guides, exams and more from the best sites.");
@@ -324,31 +297,18 @@ public class CloudentsAutoTests {
     }
 
     @Test
-    public void about() throws InterruptedException {
+    public void about() {
 
         driver.get(ABOUT_PAGE);
-        Thread.sleep(3000);
-
-        //clickOnWebElements(aboutPage.tabsHeader);
         for(int i=0 ; i < 7 ; i++) {
-
             aboutPage.tabsHeader.get(i).click();
-
             if (i == 2) {
-
-                Thread.sleep(3000);
                 checkNewWindowAddress(MEDIUM_PAGE);
-
             }
-
         }
-
-        FAQ();
-        partners();
-        reps();
-        privacy();
-        terms();
-        contact();
+        Assert.assertEquals(aboutPage.images.get(0).getAttribute("src"), HOME_PAGE + ABOUT_IMAGE1);
+        Assert.assertEquals(aboutPage.images.get(1).getAttribute("src"), ABOUT_IMAGE2);
+        Assert.assertEquals(aboutPage.images.get(2).getAttribute("src"), ABOUT_IMAGE3);
 
     }
 
@@ -356,12 +316,9 @@ public class CloudentsAutoTests {
     public void FAQ() throws InterruptedException {
 
         driver.get(FAQ_PAGE);
-        Thread.sleep(1000);
-
+        faqPage.cookieApprove.click();
         clickOnWebElements(faqPage.FaqHeaders);
-        Thread.sleep(300);
         faqPage.FaqHeaders.get(8).click();
-        Thread.sleep(1000);
         mainPage.termsLink.click();
         driver.navigate().back();
 
@@ -371,23 +328,16 @@ public class CloudentsAutoTests {
     }
 
     @Test
-    public void partners() throws InterruptedException {
+    public void partners() {
 
-        driver.get(ABOUT_PAGE);
-        aboutPage.tabsHeader.get(3).click();
-        Thread.sleep(1000);
-        Assert.assertEquals(driver.getCurrentUrl(), PARTNERS_PAGE);
         Assert.assertEquals(partnersPage.image.getAttribute("src"), PARTNERS_IMAGE);
 
     }
 
     @Test
-    public void reps() throws InterruptedException {
+    public void reps() {
 
-        driver.get(ABOUT_PAGE);
-        aboutPage.tabsHeader.get(4).click();
-        Thread.sleep(1000);
-        Assert.assertEquals(driver.getCurrentUrl(), REPS_PAGE);
+        driver.get(REPS_PAGE);
         Assert.assertEquals(repsPage.image.getAttribute("src"), REPS_IMAGE);
 
     }
@@ -395,65 +345,48 @@ public class CloudentsAutoTests {
     @Test
     public void privacy() throws InterruptedException {
 
-        driver.get(ABOUT_PAGE);
-        aboutPage.tabsHeader.get(5).click();
-        Thread.sleep(1000);
-        Assert.assertEquals(driver.getCurrentUrl(), PRIVACY_PAGE);
-
+        driver.get(PRIVACY_PAGE);
         privacyPage.link1.click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         checkNewWindowAddress(HOME_PAGE_PROD);
-
+        scroll(privacyPage.link1, 30);
         privacyPage.link2.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         checkNewWindowAddress(GOOGLE_MARKETING);
+
     }
 
     @Test
     public void terms() throws InterruptedException {
 
-        driver.get(ABOUT_PAGE);
-        aboutPage.tabsHeader.get(6).click();
-        Thread.sleep(1000);
+        driver.get(TERMS_PAGE);
         Assert.assertEquals(driver.getCurrentUrl(), TERMS_PAGE);
-
-        termsPage.docLink.click();
-        Thread.sleep(1000);
-        checkNewWindowAddress(TERMS_DOC);
+        scroll(termsPage.anchor, 50);
+        termsPage.copyrights.click();
+        checkNewWindowAddress(COPYRIGHTS_DOC);
 
     }
 
     @Test
-    public void contact() throws InterruptedException {
+    public void contact() {
 
-        driver.get(ABOUT_PAGE);
-        aboutPage.tabsHeader.get(7).click();
-        Thread.sleep(2000);
-        Assert.assertEquals(driver.getCurrentUrl(), CONTACT_PAGE);
+        driver.get(CONTACT_PAGE);
         Assert.assertNotNull(contactPage.map);
         contactPage.links.get(0).click();
-        Thread.sleep(2000);
         checkNewWindowAddress(FACEBOOK_PAGE);
         contactPage.links.get(1).click();
-        Thread.sleep(2000);
         checkNewWindowAddress(TWITTER_PAGE);
         contactPage.links.get(2).click();
-        Thread.sleep(2000);
         checkNewWindowAddress(YOUTUBE_PAGE);
         contactPage.links.get(3).click();
-        Thread.sleep(2000);
         checkNewWindowAddress(INSTAGRAM_PAGE);
         contactPage.links.get(4).click();
-        Thread.sleep(2000);
         checkNewWindowAddress(TELEGRAM_PAGE);
         contactPage.links.get(5).click();
-        Thread.sleep(2000);
         checkNewWindowAddress(MEDIUM_PAGE);
         contactPage.links.get(6).click();
-        Thread.sleep(2000);
         checkNewWindowAddress(GITHUB_PAGE);
         contactPage.links.get(7).click();
-        Thread.sleep(2000);
         checkNewWindowAddress(LINKEDIN_PAGE);
 
     }

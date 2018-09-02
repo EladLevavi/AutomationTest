@@ -6,7 +6,7 @@
       <class name="com.cloudents.AutomationTest.CloudentsAutoTests">
         <methods>
           <include name="setup"/>
-          <include name="global"/>
+          <include name="about"/>
         </methods>
       </class> <!-- com.cloudents.AutomationTest.CloudentsAutoTests -->
     </classes>

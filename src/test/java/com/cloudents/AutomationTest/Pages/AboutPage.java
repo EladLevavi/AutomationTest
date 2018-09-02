@@ -11,4 +11,7 @@ public class AboutPage {
     @FindBy(className = "v-tabs__div")
     public List<WebElement> tabsHeader;
 
+    @FindBy(tagName = "img")
+    public List<WebElement> images;
+
 }

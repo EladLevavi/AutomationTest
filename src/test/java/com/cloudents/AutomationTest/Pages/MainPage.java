@@ -17,7 +17,7 @@ public class MainPage {
     @FindBy(xpath = "//*[@class='sort-switch']//label")
     public List<WebElement> sort;
 
-    @FindBy(className = "filter")
+    @FindBy(className = "title-label")
     public List<WebElement> filters;
 
     @FindBy(className = "v-expansion-panel__header__icon")
@@ -41,7 +41,7 @@ public class MainPage {
     @FindBy(xpath = "//*[@class='layout column']//input")
     public WebElement searchSchool;
 
-    @FindBy(xpath = "//*[@class='content']//a")
+    @FindBy(xpath = "//*[@class='list']//a")
     public List<WebElement> FAQlist;
 
     @FindBy(xpath = "//*[@class='footer']//button")
@@ -50,13 +50,19 @@ public class MainPage {
     @FindBy(xpath = "//*[@class='v-tabs__container']//a")
     public List<WebElement> tabsContainer;
 
-    @FindBy(className = "back-button")
-    public WebElement closeIcon;
+    @FindBy(className = "v-icon")
+    public List<WebElement> closeIcons;
 
     @FindBy(className = "continue-btn")
     public WebElement verifyExit;
 
     @FindBy(className = "close-btn")
     public WebElement cancelButton;
+
+    @FindBy(className = "v-overlay")
+    public WebElement exitDialog;
+
+    @FindBy(className = "logo-link")
+    public WebElement homeLink;
 
 }

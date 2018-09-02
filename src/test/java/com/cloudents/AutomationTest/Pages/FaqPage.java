@@ -7,7 +7,10 @@ import java.util.List;
 
 public class FAQPage {
 
-    @FindBy(xpath = "//*[@class='faq']//li")
+    @FindBy(className = "v-expansion-panel__container")
     public List<WebElement> FaqHeaders;
+
+    @FindBy(xpath = "//*[@class='cookie-approve']//button")
+    public WebElement cookieApprove;
 
 }

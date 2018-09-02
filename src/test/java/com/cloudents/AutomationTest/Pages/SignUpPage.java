@@ -16,9 +16,6 @@ public class SignUpPage {
     @FindBy(className = "google-signin")
     public WebElement googleButton;
 
-    @FindBy(className = "dialog__content dialog__content__active")
-    public WebElement exitDialog;
-
     @FindBy(id = "agreeTermDesk")
     public WebElement agreeCheckbox;
 
@@ -29,7 +26,7 @@ public class SignUpPage {
     public WebElement errorMessage;
 
     @FindBy(className = "click")
-    public WebElement signInLink;
+    public WebElement loginLink;
 
     @FindBy(xpath = "//*[@class='side-wrapper image']//img")
     public WebElement image;
