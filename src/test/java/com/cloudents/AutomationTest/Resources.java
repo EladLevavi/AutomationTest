@@ -9,8 +9,11 @@ import org.testng.Assert;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertTrue;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 class Resources {
 
@@ -130,16 +133,15 @@ class Resources {
 
 
     // Get the new window handle and test the current URL by comparing it to the URL address parameter
-    static void checkNewWindowAddress(String address) {
+    static void checkNewWindowAddress(String address) throws InterruptedException {
 
-        for(String winHandle : driver.getWindowHandles()){
+        /*for(String winHandle : driver.getWindowHandles()){
             driver.switchTo().window(winHandle);
-        }
-
+        }*/
+        driver.switchTo().window(driver.getWindowHandles().iterator().next());
         String actualURL = driver.getCurrentUrl();
         System.out.println(actualURL);
         assertTrue(actualURL.contains(address));
-
         driver.close();
         driver.switchTo().window(winHandleBefore);
 
@@ -152,9 +154,9 @@ class Resources {
 
         for(Iterator<WebElement> items = list.iterator(); items.hasNext();) {
 
+            Thread.sleep(3000);
             WebElement item = items.next();
             item.click();
-            scroll(item,10);
 
         }
 
@@ -177,15 +179,12 @@ class Resources {
     // Checking the exit from signup / login page back to home page
     static void checkExit() throws InterruptedException {
 
-        mainPage.closeIcons.get(2).click();
+        mainPage.backButton.click();
+        Thread.sleep(1000);
         Assert.assertNotNull(mainPage.exitDialog);
-        Thread.sleep(250);
-        mainPage.cancelButton.click();
-        Thread.sleep(250);
-        mainPage.closeIcons.get(0).click();
-        Thread.sleep(250);
+        Thread.sleep(2000);
         mainPage.verifyExit.click();
-        Thread.sleep(250);
+        Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
         driver.navigate().back();
 

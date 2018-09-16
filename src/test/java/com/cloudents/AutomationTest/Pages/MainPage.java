@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class MainPage {
 
@@ -17,8 +18,17 @@ public class MainPage {
     @FindBy(xpath = "//*[@class='sort-switch']//label")
     public List<WebElement> sort;
 
-    @FindBy(className = "title-label")
+    @FindBy(className = "filter")
     public List<WebElement> filters;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li[1]/div[2]/div/div[1]")
+    public WebElement unanswered;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li[1]/div[2]/div/div[2]")
+    public WebElement answered;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/main/div/div[2]/div/div/div/div[1]/div/div/div/ul/li[1]/div[2]/div/div[3]")
+    public WebElement sold;
 
     @FindBy(className = "v-expansion-panel__header__icon")
     public List<WebElement> filterHeaders;
@@ -56,13 +66,16 @@ public class MainPage {
     @FindBy(className = "continue-btn")
     public WebElement verifyExit;
 
-    @FindBy(className = "close-btn")
-    public WebElement cancelButton;
+    @FindBy(className = "back-button")
+    public WebElement backButton;
 
     @FindBy(className = "v-overlay")
     public WebElement exitDialog;
 
     @FindBy(className = "logo-link")
     public WebElement homeLink;
+
+    @FindBy(xpath = "//*[@class='cookie-approve']//button")
+    public WebElement cookieApprove;
 
 }

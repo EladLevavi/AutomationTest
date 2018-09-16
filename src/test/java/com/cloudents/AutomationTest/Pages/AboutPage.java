@@ -8,7 +8,7 @@ import java.util.List;
 
 public class AboutPage {
 
-    @FindBy(className = "v-tabs__div")
+    @FindBy(xpath = "//*[@class='v-tabs__wrapper']//a")
     public List<WebElement> tabsHeader;
 
     @FindBy(tagName = "img")
