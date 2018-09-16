@@ -50,19 +50,19 @@ public class MainPage {
     @FindBy(xpath = "//*[@class='v-tabs__container']//a")
     public List<WebElement> tabsContainer;
 
-    @FindBy(className = "v-icon")
-    public List<WebElement> closeIcons;
-
     @FindBy(className = "continue-btn")
     public WebElement verifyExit;
-
-    @FindBy(className = "close-btn")
-    public WebElement cancelButton;
 
     @FindBy(className = "v-overlay")
     public WebElement exitDialog;
 
     @FindBy(className = "logo-link")
     public WebElement homeLink;
+
+    @FindBy(className = "back-button")
+    public WebElement backButton;
+
+    @FindBy(xpath = "//*[@class='cookie-approve']//button")
+    public WebElement cookieApprove;
 
 }

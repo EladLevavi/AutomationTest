@@ -10,7 +10,4 @@ public class FAQPage {
     @FindBy(className = "v-expansion-panel__container")
     public List<WebElement> FaqHeaders;
 
-    @FindBy(xpath = "//*[@class='cookie-approve']//button")
-    public WebElement cookieApprove;
-
 }
