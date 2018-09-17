@@ -10,4 +10,7 @@ public class FAQPage {
     @FindBy(className = "v-expansion-panel__container")
     public List<WebElement> FaqHeaders;
 
+    @FindBy(linkText = "support@spitball.co")
+    public WebElement support;
+
 }

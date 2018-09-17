@@ -8,4 +8,7 @@ public class RepsPage {
     @FindBy(tagName = "img")
     public WebElement image;
 
+    @FindBy(linkText = "work@spitball.co")
+    public WebElement workEmail;
+
 }

@@ -1,6 +1,7 @@
 package com.cloudents.AutomationTest;
 
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -75,12 +76,14 @@ public class CloudentsAutoTests {
         driver = new FirefoxDriver(options);*/
 
         ChromeOptions options = new ChromeOptions();
+        System.setProperty(CHROME_DRIVER, DRIVERS_LOCATION + CHROME_FILE);
         //options.addArguments("--incognito");
         //options.addArguments("--disable-notifications");
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.managed_default_content_settings.geolocation", 2);
         options.setExperimentalOption("prefs", prefs);
-        System.setProperty(CHROME_DRIVER, DRIVERS_LOCATION + CHROME_FILE);
+        // Attach to already opened chrome instance
+        //options.setExperimentalOption("debuggerAddress", "127.0.0.1:9222");
         driver = new ChromeDriver(options);
 
 
@@ -90,23 +93,29 @@ public class CloudentsAutoTests {
         driver.manage().window().maximize();
         Resources.initElements();
         Resources.winHandleBefore = driver.getWindowHandle();
+        driver.get(HOME_PAGE);
+        mainPage.cookieApprove.click();
 
     }
-
-
 
     @Test
     public void global() throws InterruptedException {
 
         //common();
-        //about();
+        about();
+        FAQ();
+        partners();
+        reps();
+        privacy();
+        terms();
+        contact();
         //mainTabs();
-        homeworkHelp();
+        /*homeworkHelp();
         studyDocuments();
         flashcards();
         tutors();
         textbooks();
-        jobs();
+        jobs();*/
         //signUp();
         //login();
         //token();
@@ -201,7 +210,6 @@ public class CloudentsAutoTests {
         Thread.sleep(3000);
         Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Search questions");
         Assert.assertEquals(mainPage.banner.getText(), "Make money while helping others with their homework.");
-        mainPage.cookieApprove.click();
         Assert.assertEquals(mainPage.filterHeaders.size(), 2);
         Assert.assertEquals(mainPage.filters.size(), 26);
         clickOnWebElements(mainPage.filters);
@@ -247,8 +255,8 @@ public class CloudentsAutoTests {
         mainPage.sort.get(0).click();
         Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), FLASHCARD_PAGE + "?sort=Date");
-        Assert.assertEquals(mainPage.filters.size(), 8);
         Assert.assertEquals(mainPage.filterHeaders.size(), 1);
+        Assert.assertEquals(mainPage.filters.size(), 8);
         clickOnWebElements(mainPage.filters);
         clickOnWebElements(mainPage.sortSection);
 
@@ -268,8 +276,8 @@ public class CloudentsAutoTests {
         mainPage.sort.get(0).click();
         Thread.sleep(1000);
         Assert.assertEquals(driver.getCurrentUrl(), TUTOR_PAGE + "?sort=Relevance");
-        Assert.assertEquals(mainPage.filters.size(), 2);
         Assert.assertEquals(mainPage.filterHeaders.size(), 1);
+        Assert.assertEquals(mainPage.filters.size(), 2);
         clickOnWebElements(mainPage.filters);
         clickOnWebElements(mainPage.sortSection);
 
@@ -285,8 +293,8 @@ public class CloudentsAutoTests {
         Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Textbook title or ISBN...");
         driver.get(BOOK_PAGE + "/9781400201655");
         Thread.sleep(1000);
-        Assert.assertEquals(mainPage.filters.size(), 3);
         Assert.assertEquals(mainPage.filterHeaders.size(), 1);
+        Assert.assertEquals(mainPage.filters.size(), 3);
         clickOnWebElements(mainPage.filters);
         mainPage.sort.get(1).click();
         mainPage.sort.get(0).click();
@@ -302,8 +310,8 @@ public class CloudentsAutoTests {
         Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Your field of expertise...");
         Assert.assertEquals(mainPage.banner.getText().trim(), "Find jobs and internships catered specifically to students.");
         Thread.sleep(3000);
-        Assert.assertEquals(mainPage.filters.size(), 4);
         Assert.assertEquals(mainPage.filterHeaders.size(), 1);
+        Assert.assertEquals(mainPage.filters.size(), 4);
         clickOnWebElements(mainPage.filters);
         mainPage.sortSection.get(0).click();
 
@@ -331,29 +339,40 @@ public class CloudentsAutoTests {
     public void FAQ() throws InterruptedException {
 
         driver.get(FAQ_PAGE);
-        //mainPage.cookieApprove.click();
+        Thread.sleep(500);
         clickOnWebElements(faqPage.FaqHeaders);
         faqPage.FaqHeaders.get(8).click();
         mainPage.termsLink.click();
-        driver.navigate().back();
+        driver.get(FAQ_PAGE);
+        Thread.sleep(500);
+        for(int i=0 ; i < 2 ; i++) {
+            faqPage.FaqHeaders.get(i + 9).click();
+            Thread.sleep(500);
+            faqPage.support.click();
+            Thread.sleep(500);
+        }
         Assert.assertEquals(mainPage.images.get(1).getAttribute("src"), AMAZON_IMAGE);
         Assert.assertEquals(mainPage.images.get(1).getAttribute("src"), AMAZON_IMAGE);
 
     }
 
     @Test
-    public void partners() {
+    public void partners() throws InterruptedException {
 
         driver.get(PARTNERS_PAGE);
         Assert.assertEquals(partnersPage.image.getAttribute("src"), PARTNERS_IMAGE);
+        partnersPage.partnerEmail.click();
+        Thread.sleep(500);
 
     }
 
     @Test
-    public void reps() {
+    public void reps() throws InterruptedException {
 
         driver.get(REPS_PAGE);
         Assert.assertEquals(repsPage.image.getAttribute("src"), REPS_IMAGE);
+        repsPage.workEmail.click();
+        Thread.sleep(500);
 
     }
 
@@ -362,12 +381,20 @@ public class CloudentsAutoTests {
 
         driver.get(PRIVACY_PAGE);
         privacyPage.link1.click();
-        Thread.sleep(500);
+        Thread.sleep(1000);
         checkNewWindowAddress(HOME_PAGE_PROD);
-        scroll(privacyPage.link1, 20);
+        scroll(privacyPage.link2, 1);
         privacyPage.link2.click();
-        Thread.sleep(2000);
         checkNewWindowAddress(GOOGLE_MARKETING);
+        scroll(privacyPage.support.get(0), 1);
+        privacyPage.support.get(0).click();
+        Thread.sleep(500);
+        scroll(privacyPage.support.get(1), 1);
+        privacyPage.support.get(1).click();
+        Thread.sleep(500);
+        scroll(privacyPage.support.get(2), 1);
+        privacyPage.support.get(2).click();
+        Thread.sleep(500);
 
     }
 
@@ -376,10 +403,15 @@ public class CloudentsAutoTests {
 
         driver.get(TERMS_PAGE);
         Assert.assertEquals(driver.getCurrentUrl(), TERMS_PAGE);
-        scroll(termsPage.copyrights, 8);
-        termsPage.copyrights.click();
         Thread.sleep(1000);
+        scroll(termsPage.copyrights, 1);
+        termsPage.copyrights.click();
+        Thread.sleep(5000);
         checkNewWindowAddress(COPYRIGHTS_DOC);
+        scroll(termsPage.support, 1);
+        Thread.sleep(3000);
+        termsPage.support.click();
+        Thread.sleep(1000);
 
     }
 
@@ -412,6 +444,8 @@ public class CloudentsAutoTests {
         contactPage.links.get(7).click();
         Thread.sleep(2000);
         checkNewWindowAddress(LINKEDIN_PAGE);
+        contactPage.support.click();
+        Thread.sleep(1000);
 
     }
 
@@ -457,6 +491,7 @@ public class CloudentsAutoTests {
         Assert.assertEquals(tokenPage.contactForm.get(1).getText(), "");
         Assert.assertEquals(tokenPage.contactForm.get(2).getText(), "");
         Assert.assertEquals(tokenPage.contactForm.get(3).getText(), "");*/
+        tokenPage.support.click();
         tokenPage.joinTelegram.get(1).click();
         Thread.sleep(1000);
         checkNewWindowAddress(TELEGRAM_PAGE);

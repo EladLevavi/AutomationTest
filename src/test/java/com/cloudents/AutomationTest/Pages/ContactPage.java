@@ -12,4 +12,7 @@ public class ContactPage {
 
     @FindBy(xpath = "//*[@class='icons']")
     public List<WebElement> links;
+
+    @FindBy(linkText = "support@spitball.co")
+    public WebElement support;
 }

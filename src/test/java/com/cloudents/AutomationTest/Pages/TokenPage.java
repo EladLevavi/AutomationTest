@@ -52,4 +52,7 @@ public class TokenPage {
     @FindBy(className = "footer-brand")
     public WebElement footerBrand;
 
+    @FindBy(linkText = "token@spitball.co")
+    public WebElement support;
+
 }
