@@ -28,6 +28,7 @@ class Resources {
     // All pages instances
     static MainPage mainPage;
     static HomeworkHelpPage homeworkHelpPage;
+    static StudyDocPage studyDocPage;
     static LoginPage loginPage;
     static AboutPage aboutPage;
     static FAQPage faqPage;
@@ -110,6 +111,7 @@ class Resources {
 
         mainPage = PageFactory.initElements(driver, MainPage.class);
         homeworkHelpPage = PageFactory.initElements(driver, HomeworkHelpPage.class);
+        studyDocPage = PageFactory.initElements(driver, StudyDocPage.class);
         loginPage = PageFactory.initElements(driver, LoginPage.class);
         aboutPage = PageFactory.initElements(driver, AboutPage.class);
         faqPage = PageFactory.initElements(driver, FAQPage.class);

@@ -12,4 +12,10 @@ public class HomeworkHelpPage {
     @FindBy(className="ask-question")
     public WebElement askButton;
 
+    @FindBy(className = "q-text")
+    public List<WebElement> questionBox;
+
+    @FindBy(className = "p-result")
+    public WebElement resultsArea;
+
 }
