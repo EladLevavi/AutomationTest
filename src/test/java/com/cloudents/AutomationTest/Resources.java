@@ -176,6 +176,7 @@ class Resources {
     static void checkExit() throws InterruptedException {
 
         mainPage.backButton.click();
+        Thread.sleep(500);
         Assert.assertNotNull(mainPage.exitDialog);
         Thread.sleep(1000);
         mainPage.verifyExit.click();

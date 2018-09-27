@@ -29,7 +29,7 @@ public class CloudentsAutoTests {
 
     @Parameters("browser")
     @BeforeClass
-    public void setup(@Optional String browser) throws Exception {
+    public void setup(@Optional String browser) {
 
         /*if (browser.equalsIgnoreCase("Firefox")) {
             FirefoxOptions options = new FirefoxOptions();
@@ -91,9 +91,9 @@ public class CloudentsAutoTests {
         driver = new ChromeDriver(options);
 
 
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         Resources.initElements();
         Resources.winHandleBefore = driver.getWindowHandle();
@@ -105,23 +105,24 @@ public class CloudentsAutoTests {
     @Test
     public void global() throws InterruptedException {
 
-        //common();
+        common();
+        mainTabs();
+        //homeworkHelp();
+        studyDocuments();
+        flashcards();
+        tutors();
+        textbooks();
+        jobs();
+        signUp();
+        login();
+        resetPassword();
         about();
         FAQ();
         partners();
         reps();
         privacy();
-        terms();
+        //terms();
         contact();
-        //mainTabs();
-        /*homeworkHelp();
-        studyDocuments();
-        flashcards();
-        tutors();
-        textbooks();
-        jobs();*/
-        //signUp();
-        //login();
         //token();
 
     }
@@ -164,46 +165,124 @@ public class CloudentsAutoTests {
     @Test
     public void signUp() throws InterruptedException {
 
-        driver.get(SIGNUP_PAGE);
-        Assert.assertEquals(signUpPage.image.getAttribute("src"),SIGNUP_IMAGE);
+        mainPage.signButtons.get(0).click();
+        Thread.sleep(1000);
+        assertTrue(driver.getCurrentUrl().contains(SIGNUP_PAGE));
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Ask Questions & receive instant help or Answer Questions & make money");
         Assert.assertEquals(signUpPage.googleButton.getText(),"Sign Up with Google");
         Assert.assertEquals(signUpPage.signWithEmail.getText(),"Sign Up with Email");
+        Assert.assertEquals(signUpPage.checkboxTerms.getText(), "I agree to Spitball's Terms of Services and Privacy Policy");
+        Assert.assertEquals(signUpPage.signinStrip.getText(), "Do you already have an account?   Sign in");
+        Assert.assertEquals(signUpPage.image.getAttribute("src"),SIGNUP_IMAGE);
         signUpPage.termsLinks.get(0).click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         Assert.assertEquals(driver.getCurrentUrl(), TERMS_PAGE);
         driver.navigate().back();
         signUpPage.termsLinks.get(1).click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         Assert.assertEquals(driver.getCurrentUrl(), PRIVACY_PAGE);
         driver.navigate().back();
-        signUpPage.loginLink.click();
-        Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
-        driver.get(SIGNUP_PAGE);
         signUpPage.googleButton.click();
         Assert.assertEquals(signUpPage.errorMessage.getText(), "Please agree to Terms And Services in order to proceed");
         driver.navigate().refresh();
         signUpPage.signWithEmail.click();
         Assert.assertEquals(signUpPage.errorMessage.getText(), "Please agree to Terms And Services in order to proceed");
         signUpPage.agreeCheckbox.click();
+        //Assert.assertNull(signUpPage.errorMessage);
         signUpPage.googleButton.click();
         checkNewWindowAddress(GOOGLE_SIGNIN_PAGE);
         signUpPage.signWithEmail.click();
-        Assert.assertEquals(signUpPage.emailInput.getAttribute("placeholder"),"Enter your email address");
-        signUpPage.emailInput.sendKeys("elad@cloudents.com");
+        //Assert.assertEquals(signUpPage.stepTitle.getText(), "Start with your email. We need to know how to contact you.");
+        Assert.assertEquals(signUpPage.emailInput.getAttribute("placeholder"), "Enter your email");
+        Assert.assertEquals(signUpPage.passwordField.getAttribute("placeholder"), "Choose password");
+        Assert.assertEquals(signUpPage.passwordConfirm.getAttribute("placeholder"), "Confirm password");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), "Continue");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.enterEmail.sendKeys("elad@cloudents.com");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.passwordField.sendKeys("12345678");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.passwordConfirm.sendKeys("12345678");
+        //Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), null);
+        Assert.assertEquals(signUpPage.passwordHelp.getText(), "Weak");
+        driver.navigate().back();
+        signUpPage.loginLink.click();
+        Assert.assertEquals(driver.getCurrentUrl(), LOGIN_PAGE);
+        signUpPage.signWithEmail.click();
+        signUpPage.continueButtons.get(1).click();
+        Thread.sleep(2000);
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Welcome back\nplease login");
+        driver.navigate().back();
         checkExit();
+
+    }
+
+    @Test
+    public void resetPassword() {
+
+        mainPage.signButtons.get(1).click();
+        signUpPage.signWithEmail.click();
+        signUpPage.continueButtons.get(1).click();
+        signUpPage.signinStrip.click();
+        Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Reset your password");
+        Assert.assertEquals(signUpPage.subTitle.getText(), "Don’t be ashamed. It happens to the best.");
+        Assert.assertEquals(signUpPage.enterEmail.getAttribute("placeholder"), "Enter your email");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.enterEmail.sendKeys("elad@cloudents.com");
+        Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
+        signUpPage.enterEmail.clear();
+        signUpPage.enterEmail.sendKeys(" ");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        Assert.assertEquals(signUpPage.signWithPassword.getText(), "I remember now!");
+        signUpPage.signWithPassword.click();
+        Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Welcome back\nplease login");
 
     }
 
     @Test
     public void login() throws InterruptedException {
 
-        driver.get(LOGIN_PAGE);
-        Assert.assertEquals(loginPage.emailInput.getAttribute("placeholder"),"Enter your email address");
-        Assert.assertEquals(loginPage.image.getAttribute("src"),LOGIN_IMAGE);
+        mainPage.signButtons.get(1).click();
+        Thread.sleep(500);
+        Assert.assertEquals(driver.getCurrentUrl(), LOGIN_PAGE);
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Ask Questions & receive instant help or Answer Questions & make money");
+        Assert.assertEquals(signUpPage.googleButton.getText(),"Sign In with Google");
+        Assert.assertEquals(signUpPage.signWithEmail.getText(),"Sign In with Email");
+        Assert.assertEquals(signUpPage.signinStrip.getText(), "Need an account?  Sign up");
+        Assert.assertEquals(loginPage.image.getAttribute("src"),SIGNUP_IMAGE);
+        signUpPage.googleButton.click();
+        checkNewWindowAddress(GOOGLE_SIGNIN_PAGE);
+        signUpPage.signWithEmail.click();
+        signUpPage.createPassword.click();
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Create your password");
+        Assert.assertEquals(signUpPage.enterEmail.getAttribute("placeholder"), "Enter your email");
+        Assert.assertEquals(signUpPage.signWithPassword.getText(), "I already have a password!");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), "Create password");
+        Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.enterEmail.sendKeys("elad@cloudents.com");
+        Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
+        signUpPage.enterEmail.clear();
+        signUpPage.enterEmail.sendKeys(" ");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.signinStrip.click();
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Welcome back\nplease login");
+        Assert.assertEquals(loginPage.emailInput.getAttribute("placeholder"), "Enter your email");
+        Assert.assertEquals(loginPage.password.getAttribute("placeholder"), "Enter password");
+        Assert.assertEquals(signUpPage.signinStrip.getText(), "Forgot password?");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("value"), "Login");
+        //Assert.assertEquals(signUpPage.continueButtons.get(0).getAttribute("disabled"), true);
         loginPage.emailInput.sendKeys("elad@cloudents.com");
-        loginPage.signUpLink.click();
-        Assert.assertEquals(signUpPage.image.getAttribute("src"), SIGNUP_IMAGE);
+        //Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), true);
+        loginPage.password.sendKeys("12345678");
+        //Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), null);
+        signUpPage.signinStrip.click();
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Reset your password");
+        driver.navigate().back();
         checkExit();
+        loginPage.signUpLink.click();
 
     }
 
@@ -400,6 +479,7 @@ public class CloudentsAutoTests {
         checkNewWindowAddress(HOME_PAGE_PROD);
         scroll(privacyPage.link2, 1);
         privacyPage.link2.click();
+        Thread.sleep(2000);
         checkNewWindowAddress(GOOGLE_MARKETING);
         scroll(privacyPage.support.get(0), 1);
         privacyPage.support.get(0).click();

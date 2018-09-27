@@ -20,7 +20,7 @@ public class MainPage {
     @FindBy(className = "title-label")
     public List<WebElement> filters;
 
-    @FindBy(className = "v-expansion-panel__header__icon")
+    @FindBy(className = "v-expansion-panel__header")
     public List<WebElement> filterHeaders;
 
     @FindBy(className = "v-expansion-panel__header")
@@ -68,4 +68,6 @@ public class MainPage {
     @FindBy(className = "v-menu v-menu--inline")
     public WebElement userMenu;
 
+    @FindBy(xpath = "//*[@class='v-card__text limited-width']//h1")
+    public WebElement exitWindowText;
 }
