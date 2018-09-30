@@ -198,22 +198,31 @@ public class CloudentsAutoTests {
         Assert.assertEquals(signUpPage.passwordConfirm.getAttribute("placeholder"), "Confirm password");
         Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), "Continue");
         Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.enterEmail.sendKeys("elad@cloudents.com");
+        signUpPage.enterEmail.sendKeys(USERNAME);
         Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.passwordField.sendKeys("12345678");
+        signUpPage.passwordField.sendKeys(PASSWORD);
         Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.passwordConfirm.sendKeys("12345678");
-        //Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), null);
+        signUpPage.passwordConfirm.sendKeys(PASSWORD);
+        //Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
         Assert.assertEquals(signUpPage.passwordHelp.getText(), "Weak");
         driver.navigate().back();
         signUpPage.loginLink.click();
         Assert.assertEquals(driver.getCurrentUrl(), LOGIN_PAGE);
         signUpPage.signWithEmail.click();
+        Thread.sleep(500);
         signUpPage.continueButtons.get(1).click();
-        Thread.sleep(2000);
+        Thread.sleep(500);
         Assert.assertEquals(signUpPage.stepTitle.getText(), "Welcome back\nplease login");
         driver.navigate().back();
-        checkExit();
+        mainPage.backButton.click();
+        Thread.sleep(500);
+        Assert.assertNotNull(mainPage.exitDialog);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), "Exit");
+        Assert.assertEquals(mainPage.exitWindowText.getText(), "Are you sure you want to exit?");
+        Thread.sleep(2000);
+        signUpPage.continueButtons.get(1).click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
 
     }
 
@@ -229,7 +238,7 @@ public class CloudentsAutoTests {
         Assert.assertEquals(signUpPage.subTitle.getText(), "Don’t be ashamed. It happens to the best.");
         Assert.assertEquals(signUpPage.enterEmail.getAttribute("placeholder"), "Enter your email");
         Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.enterEmail.sendKeys("elad@cloudents.com");
+        signUpPage.enterEmail.sendKeys(USERNAME);
         Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
         signUpPage.enterEmail.clear();
         signUpPage.enterEmail.sendKeys(" ");
@@ -262,7 +271,7 @@ public class CloudentsAutoTests {
         Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), "Create password");
         Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
         Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.enterEmail.sendKeys("elad@cloudents.com");
+        signUpPage.enterEmail.sendKeys(USERNAME);
         Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
         signUpPage.enterEmail.clear();
         signUpPage.enterEmail.sendKeys(" ");
@@ -274,14 +283,21 @@ public class CloudentsAutoTests {
         Assert.assertEquals(signUpPage.signinStrip.getText(), "Forgot password?");
         Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("value"), "Login");
         //Assert.assertEquals(signUpPage.continueButtons.get(0).getAttribute("disabled"), true);
-        loginPage.emailInput.sendKeys("elad@cloudents.com");
+        loginPage.emailInput.sendKeys(USERNAME);
         //Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), true);
-        loginPage.password.sendKeys("12345678");
+        loginPage.password.sendKeys(PASSWORD);
         //Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), null);
         signUpPage.signinStrip.click();
         Assert.assertEquals(signUpPage.stepTitle.getText(), "Reset your password");
         driver.navigate().back();
-        checkExit();
+        mainPage.backButton.click();
+        Thread.sleep(500);
+        Assert.assertNotNull(mainPage.exitDialog);
+        Thread.sleep(2000);
+        signUpPage.continueButtons.get(0).click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
+        driver.navigate().back();
         loginPage.signUpLink.click();
 
     }
@@ -557,7 +573,7 @@ public class CloudentsAutoTests {
         tokenPage.innerLinks.get(1).click();
         checkNewWindowAddress(TELEGRAM_PAGE);
         Assert.assertEquals(tokenPage.emailText.getAttribute("placeholder"), "Enter your email");
-        tokenPage.emailText.sendKeys("elad@cloudents.com");
+        tokenPage.emailText.sendKeys(USERNAME);
         //tokenPage.subscribeButton.click();
         //Assert.assertNull(tokenPage.emailText.getText());
         scroll(tokenPage.innerLinks.get(0), 22);
@@ -579,9 +595,9 @@ public class CloudentsAutoTests {
         Assert.assertEquals(tokenPage.placeHolders.get(0).getText(), "Your Name");
         Assert.assertEquals(tokenPage.placeHolders.get(1).getText(), "Your Email");
         Assert.assertEquals(tokenPage.placeHolders.get(2).getText(), "Your Message");
-        tokenPage.contactForm.get(0).sendKeys("Elad");
-        tokenPage.contactForm.get(1).sendKeys("elad@cloudents.com");
-        tokenPage.textArea.sendKeys("Hi, my name is Elad.");
+        tokenPage.contactForm.get(0).sendKeys(FIRST_NAME);
+        tokenPage.contactForm.get(1).sendKeys(USERNAME);
+        tokenPage.textArea.sendKeys(MESSAGE);
         /*tokenPage.submitButton.click();
         Assert.assertEquals(tokenPage.contactForm.get(1).getText(), "");
         Assert.assertEquals(tokenPage.contactForm.get(2).getText(), "");

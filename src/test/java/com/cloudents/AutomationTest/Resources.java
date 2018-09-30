@@ -72,6 +72,10 @@ class Resources {
     final static String TELEGRAM_PAGE = "https://t.me";
     final static String GOOGLE_SIGNIN_PAGE = "https://accounts.google.com/signin/";
     final static String[] TOKEN_SOCIAL = {TELEGRAM_PAGE, FACEBOOK_PAGE, TWITTER_PAGE, YOUTUBE_PAGE, GITHUB_PAGE, LINKEDIN_PAGE, MEDIUM_PAGE};
+    final static String USERNAME = "elad@cloudents.com";
+    final static String PASSWORD = "12345678";
+    final static String FIRST_NAME = "Elad";
+    final static String MESSAGE = "Hi, My name is Elad.";
 
 
     // All instances of images appearing on pages
@@ -167,22 +171,6 @@ class Resources {
             element.sendKeys(Keys.ARROW_DOWN);
             Thread.sleep(1);
         }
-
-    }
-
-
-
-    // Checking the exit from signup / login page back to home page
-    static void checkExit() throws InterruptedException {
-
-        mainPage.backButton.click();
-        Thread.sleep(500);
-        Assert.assertNotNull(mainPage.exitDialog);
-        Thread.sleep(1000);
-        mainPage.verifyExit.click();
-        Thread.sleep(1000);
-        Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
-        driver.navigate().back();
 
     }
 

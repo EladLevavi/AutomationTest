@@ -65,9 +65,6 @@ public class MainPage {
     @FindBy(xpath = "//*[@class='cookie-approve']//button")
     public WebElement cookieApprove;
 
-    @FindBy(className = "v-menu v-menu--inline")
-    public WebElement userMenu;
-
     @FindBy(xpath = "//*[@class='v-card__text limited-width']//h1")
     public WebElement exitWindowText;
 }
