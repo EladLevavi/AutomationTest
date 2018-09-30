@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17b3fc1a-ab91-4c31-bf82-736e12ce3328" name="Default Changelist" comment="More fixes for signup &amp; login pages.">
+    <list default="true" id="17b3fc1a-ab91-4c31-bf82-736e12ce3328" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/FAQPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/FAQPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/CloudentsAutoTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/CloudentsAutoTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/MainPage.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -100,14 +97,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="47" />
-          <entry key="java" value="71938" />
+          <entry key="java" value="71990" />
           <entry key="txt" value="814" />
           <entry key="xml" value="543" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="71938" />
+          <entry key="JAVA" value="71990" />
           <entry key="PLAIN_TEXT" value="861" />
           <entry key="XML" value="543" />
         </counts>
@@ -118,7 +115,7 @@
           <entry key="class" value="7" />
           <entry key="fxml" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="253" />
+          <entry key="java" value="254" />
           <entry key="jpeg" value="3" />
           <entry key="xml" value="35" />
         </counts>
@@ -128,7 +125,7 @@
           <entry key="CLASS" value="7" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="253" />
+          <entry key="JAVA" value="254" />
           <entry key="XML" value="36" />
         </counts>
       </usages-collector>
@@ -144,15 +141,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
+            <state relative-caret-position="189">
+              <caret line="234" column="23" selection-start-line="234" selection-start-column="23" selection-end-line="234" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3294#3310#0" expanded="true" />
                 <element signature="method#common#0;class#CloudentsAutoTests#0" />
                 <element signature="method#mainTabs#0;class#CloudentsAutoTests#0" />
-                <element signature="method#signUp#0;class#CloudentsAutoTests#0" />
-                <element signature="method#resetPassword#0;class#CloudentsAutoTests#0" />
-                <element signature="method#login#0;class#CloudentsAutoTests#0" />
                 <element signature="method#homeworkHelp#0;class#CloudentsAutoTests#0" />
                 <element signature="method#studyDocuments#0;class#CloudentsAutoTests#0" />
                 <element signature="method#flashcards#0;class#CloudentsAutoTests#0" />
@@ -173,6 +168,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="539">
@@ -184,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SignUpPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-232">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="-147">
+              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -391,7 +395,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538294766578" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538300111363" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/TestNG.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -415,7 +419,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CloudentsAutoTests.login">
+  <component name="RunManager" selected="TestNG.CloudentsAutoTests.resetPassword">
     <configuration name="C:/Users/Elad/IdeaProjects/AutomationTest/src/test/resources/TestNG.xml" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <extension name="coverage">
         <pattern>
@@ -668,9 +672,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CloudentsAutoTests.resetPassword" />
         <item itemvalue="TestNG.CloudentsAutoTests.login" />
         <item itemvalue="TestNG.CloudentsAutoTests.signUp" />
-        <item itemvalue="TestNG.CloudentsAutoTests.resetPassword" />
         <item itemvalue="TestNG.CloudentsAutoTests.mainTabs" />
         <item itemvalue="TestNG.CloudentsAutoTests.contact" />
       </list>
@@ -813,25 +817,17 @@
       <option name="project" value="LOCAL" />
       <updated>1538288818711</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="More fixes for signup &amp; login pages.">
+      <created>1538294818455</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1538294818455</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CloudentsAutoTests_mainTabs - 2018.09.30 at 09h 32m 47s.xml">
-      <configuration name="CloudentsAutoTests.mainTabs" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CloudentsAutoTests_resetPassword - 2018.09.30 at 10h 48m 11s.xml">
-      <configuration name="CloudentsAutoTests.resetPassword" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CloudentsAutoTests_signUp - 2018.09.30 at 10h 50m 13s.xml">
-      <configuration name="CloudentsAutoTests.signUp" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CloudentsAutoTests_signUp - 2018.09.30 at 10h 52m 46s.xml">
-      <configuration name="CloudentsAutoTests.signUp" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CloudentsAutoTests_signUp - 2018.09.30 at 10h 54m 28s.xml">
-      <configuration name="CloudentsAutoTests.signUp" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="CloudentsAutoTests_signUp - 2018.09.30 at 10h 55m 26s.xml">
       <configuration name="CloudentsAutoTests.signUp" configurationId="TestNG" />
     </history-entry>
@@ -846,6 +842,21 @@
     </history-entry>
     <history-entry file="CloudentsAutoTests_login - 2018.09.30 at 11h 03m 16s.xml">
       <configuration name="CloudentsAutoTests.login" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CloudentsAutoTests_resetPassword - 2018.09.30 at 12h 32m 25s.xml">
+      <configuration name="CloudentsAutoTests.resetPassword" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CloudentsAutoTests_resetPassword - 2018.09.30 at 12h 32m 53s.xml">
+      <configuration name="CloudentsAutoTests.resetPassword" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CloudentsAutoTests_resetPassword - 2018.09.30 at 12h 33m 52s.xml">
+      <configuration name="CloudentsAutoTests.resetPassword" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CloudentsAutoTests_resetPassword - 2018.09.30 at 12h 34m 47s.xml">
+      <configuration name="CloudentsAutoTests.resetPassword" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CloudentsAutoTests_resetPassword - 2018.09.30 at 12h 35m 20s.xml">
+      <configuration name="CloudentsAutoTests.resetPassword" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -870,15 +881,15 @@
       <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.21481876" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.641258" weight="0.2751896" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.64072496" visible="true" weight="0.2751896" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4946695" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4978678" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.42697227" side_tool="true" visible="true" weight="0.32719395" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.57302773" visible="true" weight="0.32719395" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.35927504" side_tool="true" visible="true" weight="0.2751896" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.57302773" weight="0.32719395" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1076,13 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1093,10 +1097,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SignUpPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="272">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1107,17 +1111,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SignUpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
+        <state relative-caret-position="189">
+          <caret line="234" column="23" selection-start-line="234" selection-start-column="23" selection-end-line="234" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3294#3310#0" expanded="true" />
             <element signature="method#common#0;class#CloudentsAutoTests#0" />
             <element signature="method#mainTabs#0;class#CloudentsAutoTests#0" />
-            <element signature="method#signUp#0;class#CloudentsAutoTests#0" />
-            <element signature="method#resetPassword#0;class#CloudentsAutoTests#0" />
-            <element signature="method#login#0;class#CloudentsAutoTests#0" />
             <element signature="method#homeworkHelp#0;class#CloudentsAutoTests#0" />
             <element signature="method#studyDocuments#0;class#CloudentsAutoTests#0" />
             <element signature="method#flashcards#0;class#CloudentsAutoTests#0" />

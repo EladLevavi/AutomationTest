@@ -227,11 +227,12 @@ public class CloudentsAutoTests {
     }
 
     @Test
-    public void resetPassword() {
+    public void resetPassword() throws InterruptedException {
 
         mainPage.signButtons.get(1).click();
         signUpPage.signWithEmail.click();
         signUpPage.continueButtons.get(1).click();
+        Thread.sleep(1000);
         signUpPage.signinStrip.click();
         Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
         Assert.assertEquals(signUpPage.stepTitle.getText(), "Reset your password");
@@ -293,6 +294,8 @@ public class CloudentsAutoTests {
         mainPage.backButton.click();
         Thread.sleep(500);
         Assert.assertNotNull(mainPage.exitDialog);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), "Exit");
+        Assert.assertEquals(mainPage.exitWindowText.getText(), "Are you sure you want to exit?");
         Thread.sleep(2000);
         signUpPage.continueButtons.get(0).click();
         Thread.sleep(1000);
