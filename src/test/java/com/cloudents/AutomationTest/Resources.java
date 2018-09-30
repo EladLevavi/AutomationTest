@@ -73,6 +73,11 @@ class Resources {
     final static String LINKEDIN_PAGE = "https://www.linkedin.com";
     final static String TELEGRAM_PAGE = "https://t.me";
     final static String GOOGLE_SIGNIN_PAGE = "https://accounts.google.com/signin/";
+    final static String USER_NAME = "elad@cloudents.com";
+    final static String PASSWORD = "12345678";
+    final static String FIRST_NAME = "Elad";
+    final static String MESSAGE = "Hi, My name is Elad.";
+
 
 
     // All instances of images appearing on pages
@@ -133,12 +138,13 @@ class Resources {
 
 
     // Get the new window handle and test the current URL by comparing it to the URL address parameter
-    static void checkNewWindowAddress(String address) throws InterruptedException {
+    static void checkNewWindowAddress(String address) {
 
         /*for(String winHandle : driver.getWindowHandles()){
+            System.out.println(driver.getCurrentUrl());
             driver.switchTo().window(winHandle);
         }*/
-        driver.switchTo().window(driver.getWindowHandles().iterator().next());
+        //driver.switchTo().window(driver.getWindowHandles().iterator().next());
         String actualURL = driver.getCurrentUrl();
         System.out.println(actualURL);
         assertTrue(actualURL.contains(address));
@@ -154,7 +160,7 @@ class Resources {
 
         for(Iterator<WebElement> items = list.iterator(); items.hasNext();) {
 
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             WebElement item = items.next();
             item.click();
 
@@ -171,22 +177,6 @@ class Resources {
             element.sendKeys(Keys.ARROW_DOWN);
             Thread.sleep(1);
         }
-
-    }
-
-
-
-    // Checking the exit from signup / login page back to home page
-    static void checkExit() throws InterruptedException {
-
-        mainPage.backButton.click();
-        Thread.sleep(1000);
-        Assert.assertNotNull(mainPage.exitDialog);
-        Thread.sleep(2000);
-        mainPage.verifyExit.click();
-        Thread.sleep(2000);
-        Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
-        driver.navigate().back();
 
     }
 

@@ -12,4 +12,7 @@ public class HomeworkHelpPage {
     @FindBy(className="ask-question")
     public WebElement askButton;
 
+    @FindBy(className = "box-stroke")
+    public List<WebElement> questionBox;
+
 }

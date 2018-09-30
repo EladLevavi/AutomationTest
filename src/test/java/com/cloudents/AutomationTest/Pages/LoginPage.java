@@ -8,6 +8,9 @@ public class LoginPage {
     @FindBy(name="email")
     public WebElement emailInput;
 
+    @FindBy(name = "user password")
+    public WebElement password;
+
     @FindBy(linkText = "Sign up")
     public WebElement signUpLink;
 

@@ -8,4 +8,7 @@ public class PartnersPage {
     @FindBy(tagName = "img")
     public WebElement image;
 
+    @FindBy(linkText = "partner@spitball.co")
+    public WebElement partnerEmail;
+
 }

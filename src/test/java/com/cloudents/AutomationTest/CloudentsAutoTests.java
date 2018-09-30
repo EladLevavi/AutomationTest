@@ -32,16 +32,19 @@ public class CloudentsAutoTests {
 
 
     @BeforeTest
-    public void setup() {
+    public void setup() throws InterruptedException {
 
         driver = new SafariDriver();
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         Resources.initElements();
         Resources.winHandleBefore = driver.getWindowHandle();
+        driver.get(HOME_PAGE);
+        Thread.sleep(2000);
+        mainPage.cookieApprove.click();
 
     }
 
@@ -58,7 +61,7 @@ public class CloudentsAutoTests {
         tutors();
         textbooks();
         jobs();
-        //signUp();
+        signUp();
         login();
         //token();
 
@@ -106,88 +109,193 @@ public class CloudentsAutoTests {
     @Test
     public void signUp() throws InterruptedException {
 
-        driver.get(SIGNUP_PAGE);
-        Assert.assertEquals(signUpPage.image.getAttribute("src"),SIGNUP_IMAGE);
+        mainPage.signButtons.get(0).click();
+        Thread.sleep(3000);
+        assertTrue(driver.getCurrentUrl().contains(SIGNUP_PAGE));
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Ask Questions & receive instant help \n or \n Answer Questions & make money");
         Assert.assertEquals(signUpPage.googleButton.getText(), "Sign Up with Google");
         Assert.assertEquals(signUpPage.signWithEmail.getText(), "Sign Up with Email");
-        Thread.sleep(2000);
+        Assert.assertEquals(signUpPage.checkboxTerms.getText(), "I agree to Spitball's Terms of Services and Privacy Policy");
+        Assert.assertEquals(signUpPage.signinStrip.getText(), "Do you already have an account?   \n" + "                    Sign in");
+        Assert.assertEquals(signUpPage.image.getAttribute("src"),SIGNUP_IMAGE);
         signUpPage.termsLinks.get(0).click();
         Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), TERMS_PAGE);
-        driver.get(SIGNUP_PAGE);
+        Thread.sleep(1000);
+        driver.navigate().back();
         signUpPage.termsLinks.get(1).click();
         Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), PRIVACY_PAGE);
-        driver.get(SIGNUP_PAGE);
-        signUpPage.loginLink.click();
-        Thread.sleep(2000);
-        Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
-        driver.get(SIGNUP_PAGE);
+        driver.navigate().back();
+        Thread.sleep(1000);
         signUpPage.googleButton.click();
-        Assert.assertEquals(signUpPage.errorMessage.getText().trim(), "Please agree to Terms And Services in order to proceed");
-        driver.get(SIGNUP_PAGE);
-        Thread.sleep(2000);
+        Assert.assertEquals(signUpPage.errorMessage.getText(), "Please agree to Terms And Services in order to proceed");
+        driver.navigate().refresh();
         signUpPage.signWithEmail.click();
-        Assert.assertEquals(signUpPage.errorMessage.getText().trim(), "Please agree to Terms And Services in order to proceed");
+        Assert.assertEquals(signUpPage.errorMessage.getText(), "Please agree to Terms And Services in order to proceed");
         signUpPage.agreeCheckbox.click();
+        //Assert.assertNull(signUpPage.errorMessage);
         //signUpPage.googleButton.click();
-        Thread.sleep(2000);
         //checkNewWindowAddress(GOOGLE_SIGNIN_PAGE);
         signUpPage.signWithEmail.click();
-        Assert.assertEquals(signUpPage.emailInput.getAttribute("placeholder"),"Enter your email address");
-        signUpPage.emailInput.sendKeys("elad@cloudents.com");
-        checkExit();
+        Thread.sleep(3000);
+        //Assert.assertEquals(signUpPage.stepTitle.getText(), "Start with your email. We need to know how to contact you.");
+        Assert.assertEquals(signUpPage.emailInput.getAttribute("placeholder"), "Enter your email");
+        Assert.assertEquals(signUpPage.passwordField.getAttribute("placeholder"), "Choose password");
+        Assert.assertEquals(signUpPage.confirmPassword.getAttribute("placeholder"), "Confirm password");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), "Continue");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.enterEmail.sendKeys(USER_NAME);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.passwordField.sendKeys(PASSWORD);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.confirmPassword.sendKeys(PASSWORD);
+        //Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
+        Assert.assertEquals(signUpPage.passwordHelp.getText(), "Weak");
+        driver.navigate().back();
+        Thread.sleep(2000);
+        signUpPage.loginLink.click();
+        Assert.assertEquals(driver.getCurrentUrl(), LOGIN_PAGE);
+        signUpPage.signWithEmail.click();
+        signUpPage.continueButtons.get(1).click();
+        Thread.sleep(2000);
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Welcome back\nplease login");
+        driver.navigate().back();
+        mainPage.backButton.click();
+        Thread.sleep(500);
+        Assert.assertNotNull(mainPage.exitDialog);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), "Exit");
+        Assert.assertEquals(mainPage.exitWindowText.getText(), "Are you sure you want to exit?");
+        Thread.sleep(2000);
+        signUpPage.continueButtons.get(1).click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
+
+    }
+
+    @Test
+    public void resetPassword() throws InterruptedException {
+
+        mainPage.signButtons.get(1).click();
+        Thread.sleep(1500);
+        signUpPage.signWithEmail.click();
+        Thread.sleep(1500);
+        signUpPage.continueButtons.get(1).click();
+        Thread.sleep(1500);
+        signUpPage.signinStrip.click();
+        Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Reset your password");
+        Assert.assertEquals(signUpPage.subTitle.getText(), "Don’t be ashamed. It happens to the best.");
+        Assert.assertEquals(signUpPage.enterEmail.getAttribute("placeholder"), "Enter your email");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.enterEmail.sendKeys(USER_NAME);
+        Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
+        signUpPage.enterEmail.clear();
+        signUpPage.enterEmail.sendKeys(" ");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        Assert.assertEquals(signUpPage.signWithPassword.getText(), "I remember now!");
+        signUpPage.signWithPassword.click();
+        Thread.sleep(1500);
+        Assert.assertEquals(loginPage.image.getAttribute("src"), LOGIN_IMAGE);
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Welcome back please login");
 
     }
 
     @Test
     public void login() throws InterruptedException {
 
-        driver.get(LOGIN_PAGE);
-        Assert.assertEquals(loginPage.emailInput.getAttribute("placeholder"),"Enter your email address");
-        Assert.assertEquals(loginPage.image.getAttribute("src"),LOGIN_IMAGE);
+        mainPage.signButtons.get(1).click();
+        Thread.sleep(500);
+        Assert.assertEquals(signUpPage.stepTitle.getText(),"Ask Questions & receive instant help or Answer Questions & make money");
+        Assert.assertEquals(signUpPage.googleButton.getText(),"Sign In with Google");
+        Assert.assertEquals(signUpPage.signWithEmail.getText(),"Sign In with Email");
+        Assert.assertEquals(signUpPage.signinStrip.getText(),"Need an account?  Sign up");
+        Assert.assertEquals(loginPage.image.getAttribute("src"),SIGNUP_IMAGE);
         Thread.sleep(1000);
-        loginPage.emailInput.sendKeys("elad@cloudents.com");
-        loginPage.signUpLink.click();
+        //signUpPage.googleButton.click();
+        //checkNewWindowAddress(GOOGLE_SIGNIN_PAGE);
+        signUpPage.signWithEmail.click();
+        signUpPage.createPassword.click();
+        Assert.assertEquals(signUpPage.stepTitle.getText(),"Create your password");
+        Assert.assertEquals(signUpPage.enterEmail.getText(),"Enter your email");
+        Assert.assertEquals(signUpPage.signWithPassword.getText(),"I already have a password");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getText(),"Create password");
+        Assert.assertEquals(loginPage.image.getAttribute("src"),LOGIN_IMAGE);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.enterEmail.sendKeys(USER_NAME);
+        Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
+        signUpPage.enterEmail.clear();
+        signUpPage.enterEmail.sendKeys(" ");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.signinStrip.click();
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Welcome back\nplease login");
+        Assert.assertEquals(loginPage.emailInput.getAttribute("placeholder"),"Enter your email");
+        Assert.assertEquals(loginPage.password.getAttribute("placeholder"),"Enter password");
+        Assert.assertEquals(signUpPage.signinStrip.getText(), "Forgot password?");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("value"), "Login");
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        loginPage.emailInput.sendKeys(USER_NAME);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        loginPage.password.sendKeys(PASSWORD);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
+        signUpPage.signinStrip.click();
+        Assert.assertEquals(signUpPage.stepTitle.getText(), "Reset your password");
+        driver.navigate().back();
+        mainPage.backButton.click();
+        Thread.sleep(500);
+        Assert.assertNotNull(mainPage.exitDialog);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), "Exit");
+        Assert.assertEquals(mainPage.exitWindowText.getText(), "Are you sure you want to exit?");
         Thread.sleep(2000);
-        Assert.assertEquals(signUpPage.image.getAttribute("src"), SIGNUP_IMAGE);
-        checkExit();
+        signUpPage.continueButtons.get(0).click();
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
+        driver.navigate().back();
+        loginPage.signUpLink.click();
 
     }
 
     @Test
     public void homeworkHelp() throws InterruptedException {
 
-        driver.get(HOMEWORK_PAGE);
-        Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Search questions");
+        mainPage.tabsContainer.get(0).click();
+        /*Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Search questions");
         Assert.assertEquals(mainPage.banner.getText(), "Make money while helping others with their homework.");
         Thread.sleep(3000);
         scroll(mainPage.moreButton, 15);
-        //mainPage.cookieApprove.click();
         Thread.sleep(3000);
-        //clickOnWebElements(mainPage.filters);
-        clickOnWebElements(mainPage.filterHeaders);
+        Assert.assertEquals(mainPage.filterHeaders.size(),2 );
+        Assert.assertEquals(mainPage.filters.size(), 26);
+        clickOnWebElements(mainPage.filters);
+        clickOnWebElements(mainPage.filterHeaders);*/
+        Actions actions = new Actions(driver);
+        actions.keyDown(Keys.CONTROL).sendKeys(Keys.END).perform();
         Thread.sleep(3000);
-        homeworkHelpPage.askButton.click();
+        System.out.println(homeworkHelpPage.questionBox.size());
+        if (homeworkHelpPage.questionBox.size() <= 50)
+            Assert.fail();
+        /*homeworkHelpPage.askButton.click();
         Thread.sleep(1000);
-        Assert.assertTrue(mainPage.signPopup.isDisplayed());
+        Assert.assertTrue(mainPage.signPopup.isDisplayed());*/
 
     }
 
     @Test
     public void studyDocuments() throws InterruptedException {
 
-        driver.get(STUDY_PAGE);
+        mainPage.tabsContainer.get(1).click();
         Thread.sleep(2000);
         Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Find study documents in...");
         Assert.assertEquals(mainPage.banner.getText(), "Notes, study guides, exams and more from the best sites.");
         Assert.assertEquals(mainPage.searchSchool.getAttribute("placeholder"), "Where do you go to school?");
         mainPage.sort.get(1).click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         Assert.assertEquals(driver.getCurrentUrl(), STUDY_PAGE + "?sort=Relevance");
         mainPage.sort.get(0).click();
         Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), STUDY_PAGE + "?sort=Date");
+        Assert.assertEquals(mainPage.filterHeaders.size(),1 );
+        Assert.assertEquals(mainPage.filters.size(), 5);
         clickOnWebElements(mainPage.filters);
         clickOnWebElements(mainPage.sortSection);
 
@@ -196,7 +304,7 @@ public class CloudentsAutoTests {
     @Test
     public void flashcards() throws InterruptedException {
 
-        driver.get(FLASHCARD_PAGE);
+        mainPage.tabsContainer.get(2).click();
         Thread.sleep(2000);
         Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Look for flashcards...");
         Assert.assertEquals(mainPage.banner.getText(), "Study from millions of flashcard sets to improve your grades.");
@@ -207,6 +315,8 @@ public class CloudentsAutoTests {
         mainPage.sort.get(0).click();
         Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), FLASHCARD_PAGE + "?sort=Date");
+        Assert.assertEquals(mainPage.filterHeaders.size(),1 );
+        Assert.assertEquals(mainPage.filters.size(), 8);
         clickOnWebElements(mainPage.filters);
         clickOnWebElements(mainPage.sortSection);
 
@@ -215,7 +325,8 @@ public class CloudentsAutoTests {
     @Test
     public void tutors() throws InterruptedException {
 
-        driver.get(TUTOR_PAGE);
+        mainPage.tabsContainer.get(3).click();
+        Thread.sleep(500);
         Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Find a tutor...");
         Assert.assertEquals(mainPage.banner.getText(), "Find an expert to help you ace your classes in-person or online.");
         Assert.assertEquals(mainPage.searchSchool.getAttribute("placeholder"), "Where do you go to school?");
@@ -225,6 +336,8 @@ public class CloudentsAutoTests {
         mainPage.sort.get(0).click();
         Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), TUTOR_PAGE + "?sort=Relevance");
+        Assert.assertEquals(mainPage.filterHeaders.size(),1 );
+        Assert.assertEquals(mainPage.filters.size(), 2);
         clickOnWebElements(mainPage.filters);
         clickOnWebElements(mainPage.sortSection);
 
@@ -233,13 +346,16 @@ public class CloudentsAutoTests {
     @Test
     public void textbooks() throws InterruptedException {
 
-        driver.get(BOOK_PAGE);
+        mainPage.tabsContainer.get(4).click();
+        Thread.sleep(500);
         Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Textbook title or ISBN...");
         Assert.assertEquals(mainPage.banner.getText(), "Compare the best prices to buy, rent or sell your textbooks.");
         Assert.assertEquals(mainPage.searchSchool.getAttribute("placeholder"), "Where do you go to school?");
         driver.get(BOOK_PAGE + "/9781400201655");
         Thread.sleep(1000);
-        //clickOnWebElements(mainPage.filters);
+        Assert.assertEquals(mainPage.filterHeaders.size(),1 );
+        Assert.assertEquals(mainPage.filters.size(), 3);
+        clickOnWebElements(mainPage.filters);
         clickOnWebElements(mainPage.sortSection);
 
     }
@@ -247,10 +363,13 @@ public class CloudentsAutoTests {
     @Test
     public void jobs() throws InterruptedException {
 
-        driver.get(JOB_PAGE);
+        mainPage.tabsContainer.get(5).click();
+        Thread.sleep(500);
         Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Your field of expertise...");
         Assert.assertEquals(mainPage.banner.getText().trim(), "Find jobs and internships catered specifically to students.");
         Thread.sleep(2000);
+        Assert.assertEquals(mainPage.filterHeaders.size(),1 );
+        Assert.assertEquals(mainPage.filters.size(), 4);
         clickOnWebElements(mainPage.filters);
         clickOnWebElements(mainPage.sort);
 
@@ -267,7 +386,7 @@ public class CloudentsAutoTests {
             Thread.sleep(2000);
             aboutPage.tabsHeader.get(i).click();
             if (i == 2) {
-                //Thread.sleep(2000);
+                Thread.sleep(2000);
                 checkNewWindowAddress(MEDIUM_PAGE);
             }
         }
@@ -282,7 +401,14 @@ public class CloudentsAutoTests {
         clickOnWebElements(faqPage.FaqHeaders);
         faqPage.FaqHeaders.get(8).click();
         mainPage.termsLink.click();
-        driver.navigate().back();
+        driver.get(FAQ_PAGE);
+        Thread.sleep(2000);
+        for(int i=0 ; i < 2 ; i++) {
+            faqPage.FaqHeaders.get(i + 9).click();
+            Thread.sleep(2000);
+            faqPage.support.click();
+            Thread.sleep(2000);
+        }
         Assert.assertEquals(mainPage.images.get(1).getAttribute("src"), AMAZON_IMAGE);
         Assert.assertEquals(mainPage.images.get(1).getAttribute("src"), AMAZON_IMAGE);
 
@@ -291,7 +417,9 @@ public class CloudentsAutoTests {
     @Test
     public void partners() {
 
+        driver.get(PARTNERS_PAGE);
         Assert.assertEquals(partnersPage.image.getAttribute("src"), PARTNERS_IMAGE);
+        partnersPage.partnerEmail.click();
 
     }
 
@@ -300,6 +428,7 @@ public class CloudentsAutoTests {
 
         driver.get(REPS_PAGE);
         Assert.assertEquals(repsPage.image.getAttribute("src"), REPS_IMAGE);
+        repsPage.workEmail.click();
 
     }
 
@@ -329,7 +458,7 @@ public class CloudentsAutoTests {
     }
 
     @Test
-    public void contact() throws InterruptedException {
+    public void contact() {
 
         driver.get(CONTACT_PAGE);
         Assert.assertNotNull(contactPage.map);
@@ -369,7 +498,7 @@ public class CloudentsAutoTests {
         checkNewWindowAddress(TELEGRAM_PAGE);
         Thread.sleep(1000);
         Assert.assertEquals(tokenPage.emailText.getAttribute("placeholder"), "Enter your email");
-        tokenPage.emailText.sendKeys("elad@cloudents.com");
+        tokenPage.emailText.sendKeys(USERNAME);
         //tokenPage.subscribeButton.click();
         //Assert.assertNull(tokenPage.emailText.getText());
         scroll(tokenPage.downloadWhitepaper, 22);
@@ -408,9 +537,9 @@ public class CloudentsAutoTests {
         //Assert.assertEquals(tokenPage.contactForm.get(1).getText(), "Your Name");
         //Assert.assertEquals(tokenPage.contactForm.get(2).getText(), "Your Email");
         //Assert.assertEquals(tokenPage.contactForm.get(3).getText(), "Your Message");
-        tokenPage.contactForm.get(1).sendKeys("Elad");
-        tokenPage.contactForm.get(2).sendKeys("elad@cloudents.com");
-        tokenPage.contactForm.get(3).sendKeys("Hi, my name is Elad.");
+        tokenPage.contactForm.get(1).sendKeys(FIRST_NAME);
+        tokenPage.contactForm.get(2).sendKeys(USER_NAME);
+        tokenPage.contactForm.get(3).sendKeys(MESSAGE);
         //Actions actions = new Actions(driver);
         //actions.moveToElement(tokenPage.contactForm.get(4)).build().perform();
         //tokenPage.contactForm.get(4).click();
