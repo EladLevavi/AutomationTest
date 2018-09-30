@@ -203,7 +203,7 @@ public class CloudentsAutoTests {
         signUpPage.passwordField.sendKeys(PASSWORD);
         Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
         signUpPage.passwordConfirm.sendKeys(PASSWORD);
-        //Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
         Assert.assertEquals(signUpPage.passwordHelp.getText(), "Weak");
         driver.navigate().back();
         signUpPage.loginLink.click();
@@ -282,11 +282,11 @@ public class CloudentsAutoTests {
         Assert.assertEquals(loginPage.password.getAttribute("placeholder"), "Enter password");
         Assert.assertEquals(signUpPage.signinStrip.getText(), "Forgot password?");
         Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("value"), "Login");
-        //Assert.assertEquals(signUpPage.continueButtons.get(0).getAttribute("disabled"), true);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
         loginPage.emailInput.sendKeys(USERNAME);
-        //Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), true);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
         loginPage.password.sendKeys(PASSWORD);
-        //Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), null);
+        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
         signUpPage.signinStrip.click();
         Assert.assertEquals(signUpPage.stepTitle.getText(), "Reset your password");
         driver.navigate().back();

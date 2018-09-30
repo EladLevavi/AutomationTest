@@ -67,4 +67,5 @@ public class MainPage {
 
     @FindBy(xpath = "//*[@class='v-card__text limited-width']//h1")
     public WebElement exitWindowText;
+
 }
