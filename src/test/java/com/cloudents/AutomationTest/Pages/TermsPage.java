@@ -7,8 +7,8 @@ import java.util.List;
 
 public class TermsPage {
 
-    @FindBy(linkText = "http://www.copyright.gov/legislation/dmca.pdf")
-    public WebElement copyrights;
+    @FindBy(xpath = "//*[@class='term']//a")
+    public List<WebElement> links;
 
     @FindBy(className = "term")
     public WebElement anchor;
