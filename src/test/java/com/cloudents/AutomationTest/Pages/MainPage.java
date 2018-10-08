@@ -38,8 +38,8 @@ public class MainPage {
     @FindBy(tagName = "img")
     public List<WebElement> images;
 
-    @FindBy(xpath = "//*[@class='layout column']//input")
-    public WebElement searchSchool;
+    @FindBy(xpath = "//*[@class='v-text-field__slot']//input")
+    public List<WebElement> searchBars;
 
     @FindBy(xpath = "//*[@class='list']//a")
     public List<WebElement> FAQlist;
@@ -68,4 +68,24 @@ public class MainPage {
     @FindBy(xpath = "//*[@class='v-card__text limited-width']//h1")
     public WebElement exitWindowText;
 
+    @FindBy(className = "close-btn")
+    public WebElement closePopupWindow;
+
+    @FindBy(className = "dialog-body-text")
+    public WebElement dialogPopupText;
+
+    @FindBy(xpath = "//*[@class='btn-container']//a")
+    public List<WebElement> signButtonsPopup;
+
+    @FindBy(className = "v-menu__activator")
+    public WebElement userMenuIcon;
+
+    @FindBy(className = "v-list menu-list theme--light")
+    public WebElement userMenuPopup;
+
+    @FindBy(className = "v-list__tile__content")
+    public List<WebElement> userMenuItems;
+
+    @FindBy(xpath = "//*[@class='image-section']//img")
+    public WebElement aboutImage;
 }

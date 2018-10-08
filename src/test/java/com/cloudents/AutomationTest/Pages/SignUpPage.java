@@ -49,9 +49,6 @@ public class SignUpPage {
     @FindBy(className = "continue-btn")
     public List<WebElement> continueButtons;
 
-    @FindBy(className = "click")
-    public WebElement signWithPassword;
-
     @FindBy(className = "sub-title")
     public WebElement subTitle;
 

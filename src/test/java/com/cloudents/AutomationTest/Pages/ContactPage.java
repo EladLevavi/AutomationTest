@@ -10,7 +10,7 @@ public class ContactPage {
     @FindBy(className = "gm-style-pbc")
     public WebElement map;
 
-    @FindBy(xpath = "//*[@class='icons']")
+    @FindBy(xpath = "//*[@class='flex social-btns mr-4 align-start justify-start']//a")
     public List<WebElement> links;
 
     @FindBy(linkText = "support@spitball.co")
