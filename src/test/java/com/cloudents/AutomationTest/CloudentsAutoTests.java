@@ -1,27 +1,21 @@
 package com.cloudents.AutomationTest;
 
 
-import org.testng.Assert;
-import org.testng.annotations.*;
 
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
+import org.testng.annotations.*;
 import java.util.concurrent.TimeUnit;
 import static com.cloudents.AutomationTest.Resources.*;
-import static org.testng.Assert.assertTrue;
 
 
 
 
 public class CloudentsAutoTests {
 
-    @Parameters("browser")
+    /*@Parameters("browser")
     @BeforeClass
     public void setup(@Optional String browser) {
 
-        /*if (browser.equalsIgnoreCase("Firefox")) {
+        if (browser.equalsIgnoreCase("Firefox")) {
             FirefoxOptions options = new FirefoxOptions();
             ProfilesIni profile = new ProfilesIni();
             FirefoxProfile myProfile = profile.getProfile("Automation");
@@ -51,9 +45,9 @@ public class CloudentsAutoTests {
         Resources.initElements();
         Resources.winHandleBefore = driver.getWindowHandle();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);*/
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-    }
+    }*/
 
     @BeforeTest
     public void driverSetup() {

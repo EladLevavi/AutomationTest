@@ -1,9 +1,14 @@
 package com.cloudents.AutomationTest;
 
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Set;
+
 import static com.cloudents.AutomationTest.Resources.*;
+
+
 
 public class Token extends CloudentsAutoTests {
 
@@ -12,14 +17,15 @@ public class Token extends CloudentsAutoTests {
     public void token() throws InterruptedException {
 
         driver.get(TOKEN_PAGE);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
+        Assert.assertEquals(tokenPage.logoHeaderLink.getAttribute("href"), HOME_PAGE_PROD);
         Assert.assertNotNull(tokenPage.youtube);
         tokenPage.logo.get(0).click();
-        //checkNewWindowAddress(HOME_PAGE_PROD);
-        tokenPage.innerLinks.get(0).click();
-        //checkNewWindowAddress(WHITEPAPER_DOC);
-        tokenPage.innerLinks.get(1).click();
-        //checkNewWindowAddress(TELEGRAM_PAGE);
+        newWindow(HOME_PAGE_PROD);
+        for(int i = 0 ; i < 3 ; i++) {
+            tokenPage.headerLinks.get(i).click();
+            newWindow(TOKEN_HEADER_LINKS[i]);
+        }
         Assert.assertEquals(tokenPage.emailText.getAttribute("placeholder"), "Enter your email");
         tokenPage.emailText.sendKeys(USERNAME);
         //tokenPage.subscribeButton.click();
@@ -40,9 +46,11 @@ public class Token extends CloudentsAutoTests {
         Thread.sleep(1000);
         //scroll(tokenPage.innerLinks.get(0), 17);
         Thread.sleep(2000);
-        Assert.assertEquals(tokenPage.placeHolders.get(0).getText(), "Your Name");
-        Assert.assertEquals(tokenPage.placeHolders.get(1).getText(), "Your Email");
-        Assert.assertEquals(tokenPage.placeHolders.get(2).getText(), "Your Message");
+        Actions action = new Actions(driver);
+        action.moveToElement(tokenPage.contactFields.get(0)).perform();
+        Assert.assertEquals(tokenPage.contactFields.get(0).getText(), "Your Name");
+        Assert.assertEquals(tokenPage.contactFields.get(1).getText(), "Your Email");
+        Assert.assertEquals(tokenPage.contactFields.get(2).getText(), "Your Message");
         tokenPage.contactForm.get(0).sendKeys(FIRST_NAME);
         tokenPage.contactForm.get(1).sendKeys(USERNAME);
         tokenPage.textArea.sendKeys(MESSAGE);
@@ -61,7 +69,7 @@ public class Token extends CloudentsAutoTests {
             Thread.sleep(1000);
             //checkNewWindowAddress(TOKEN_SOCIAL[i]);
         }
-        tokenPage.innerLinks.get(6).click();
+        /*tokenPage.innerLinks.get(6).click();
         Thread.sleep(5000);
         //checkNewWindowAddress(WHITEPAPER_DOC);
         tokenPage.innerLinks.get(7).click();
@@ -81,7 +89,7 @@ public class Token extends CloudentsAutoTests {
         }
         tokenPage.footerBrand.click();
         Thread.sleep(2000);
-        Assert.assertEquals(driver.getCurrentUrl(), TOKEN_PAGE + "/");
+        Assert.assertEquals(driver.getCurrentUrl(), TOKEN_PAGE + "/");*/
     }
 
 

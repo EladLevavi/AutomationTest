@@ -2,10 +2,10 @@ package com.cloudents.AutomationTest;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import static com.cloudents.AutomationTest.Resources.*;
-import static com.cloudents.AutomationTest.Resources.driver;
 import static org.testng.Assert.assertTrue;
+
+
 
 public class Common extends CloudentsAutoTests {
 
@@ -30,7 +30,7 @@ public class Common extends CloudentsAutoTests {
 
         for (int i = 0 ; i < 5 ; i++) {
             Thread.sleep(500);
-            Assert.assertEquals(mainPage.FAQlist.get(i).getAttribute("href"), FAQ_PAGE + "?id=" + i);
+            Assert.assertEquals(mainPage.faqList.get(i).getAttribute("href"), FAQ_PAGE + "?id=" + i);
         }
 
         mainPage.signButtons.get(0).click();

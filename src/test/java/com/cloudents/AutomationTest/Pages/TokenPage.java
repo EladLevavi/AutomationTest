@@ -25,8 +25,8 @@ public class TokenPage {
     @FindBy(className = "footer-brand")
     public WebElement homePage;
 
-    @FindBy(className = "input-title")
-    public List<WebElement> placeHolders;
+    @FindBy(xpath = "//*[@class='input-field animated fadeInUp']//input")
+    public List<WebElement> contactFields;
 
     @FindBy(className = "input-round")
     public WebElement emailText;
@@ -46,13 +46,16 @@ public class TokenPage {
     @FindBy(xpath = "//*[@class='social']//a")
     public List<WebElement> socialLinks;
 
-    @FindBy(className = "menu-link")
-    public List<WebElement> innerLinks;
+    @FindBy(xpath = "//*[@class='navbar-nav animated remove-animation fadeInDown']//li")
+    public List<WebElement> headerLinks;
 
     @FindBy(className = "footer-brand")
     public WebElement footerBrand;
 
     @FindBy(linkText = "token@spitball.co")
     public WebElement support;
+
+    @FindBy(xpath = "//*[@class='navbar-brand animated fadeInDown']//a")
+    public WebElement logoHeaderLink;
 
 }
