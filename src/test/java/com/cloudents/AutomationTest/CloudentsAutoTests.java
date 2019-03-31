@@ -2,14 +2,41 @@ package com.cloudents.AutomationTest;
 
 
 
+import com.cloudents.AutomationTest.Pages.*;
+import static com.cloudents.AutomationTest.Resources.Methods.*;
+import static com.cloudents.AutomationTest.Resources.Drivers.*;
+import static com.cloudents.AutomationTest.Resources.Pages.*;
 import org.testng.annotations.*;
 import java.util.concurrent.TimeUnit;
-import static com.cloudents.AutomationTest.Resources.*;
+
 
 
 
 
 public class CloudentsAutoTests {
+
+    // All pages instances
+    public static MainPage mainPage;
+    public static LandingPage landingPage;
+    public static HomeworkHelpPage homeworkHelpPage;
+    public static StudyDocumentsPage studyDocumentsPage;
+    public static FlashcardsPage flashcardsPage;
+    public static SignPage signPage;
+    public static AboutPage aboutPage;
+    public static TokenPage tokenPage;
+    public static MyWalletPage myWalletPage;
+    public static AskPopup askPopup;
+    public static UniversityPage universityPage;
+    public static ProfilePage profilePage;
+
+
+
+
+    // Handle for the main window
+    public static String winHandleBefore;
+
+
+
 
     /*@Parameters("browser")
     @BeforeClass
@@ -62,8 +89,8 @@ public class CloudentsAutoTests {
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        Resources.initElements();
-        Resources.winHandleBefore = driver.getWindowHandle();
+        initElements();
+        winHandleBefore = driver.getWindowHandle();
 
     }
 
@@ -71,7 +98,7 @@ public class CloudentsAutoTests {
     public void homePage() {
 
         driver.get(HOME_PAGE);
-        mainPage.cookieApprove.click();
+        //mainPage.cookieApprove.click();
 
     }
 

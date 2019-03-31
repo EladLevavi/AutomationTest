@@ -7,6 +7,15 @@ import java.util.List;
 
 public class SignPage {
 
+    // *******   Header   **********
+
+    @FindBy(className = "back-button")
+    public List<WebElement> closeIcon;
+
+
+
+
+
 
     // ******   Left side   ********
 
@@ -25,27 +34,34 @@ public class SignPage {
     @FindBy(className = "sub-title")
     public WebElement subTitle;
 
-    @FindBy(id = "agreeTermDesk")
+    @FindBy(xpath = "//*[@class='checkbox-terms']//span")
     public WebElement agreeCheckbox;
 
-    @FindBy(className = "checkbox-terms")
-    public WebElement checkboxTerms;
-
-    @FindBy(xpath = "//*[@class='checkbox-terms']//a")
-    public List<WebElement> termsLinks;
-
-    @FindBy(className = "has-error")
-    public WebElement errorMessage;
-
-    @FindBy(className = "google-signin")
-    public List<WebElement> googleButtons;
+    @FindBy(id = "agreeTermDesk")
+    public WebElement checkBox;
 
     @FindBy(className = "seperator-text")
     public WebElement textSeperator;
 
-    @FindBy(className = "sign-with-email")
-    public List<WebElement> signWithEmailButtons;
 
+
+
+
+
+
+    // ******* Signup *********
+
+    @FindBy(xpath = "//*[@class='limited-width form-wrap']//button[2]")
+    public WebElement signupWithGoogle;
+
+    @FindBy(xpath = "//*[@class='limited-width form-wrap']//button[4]")
+    public WebElement signupWithEmail;
+
+    @FindBy(id = "recaptcha-anchor")
+    public WebElement recaptcha;
+
+    @FindBy(xpath = "//*[@class='form-one']//button")
+    public WebElement continueSignup;
 
 
 
@@ -53,11 +69,38 @@ public class SignPage {
 
     // ******* Login   ********
 
+    @FindBy(xpath = "//*[@class='limited-width form-wrap']//button[1]")
+    public WebElement signWithGoogle;
+
+    @FindBy(id = "identifierId")
+    public WebElement gmailInput;
+
+    @FindBy(id = "identifierNext")
+    public WebElement gmailNext;
+
+    @FindBy(name = "password")
+    public WebElement gmailPassword;
+
+    @FindBy(id = "passwordNext")
+    public WebElement passwordNext;
+
+    @FindBy(xpath = "//*[@class='limited-width form-wrap']//button[3]")
+    public WebElement signWithEmail;
+
     @FindBy(name="email")
     public WebElement enterEmail;
 
     @FindBy(name = "user password")
     public WebElement password;
+
+    @FindBy(xpath = "//*[@class='form-one']//button")
+    public WebElement continueButton;
+
+    @FindBy(xpath = "//*[@class='signin-strip']//a")
+    public WebElement forgotPassword;
+
+    @FindBy(xpath = "//*[@class='limited-width']//button")
+    public WebElement loginButton;
 
 
 
@@ -80,7 +123,7 @@ public class SignPage {
 
     // *******   Privacy popup window   *******
 
-    @FindBy(className = "continue-btn")
+    @FindBy(className = "v-btn__content")
     public List<WebElement> continueButtons;
 
 
@@ -91,17 +134,11 @@ public class SignPage {
 
     // ******   Create password   ********
 
-    @FindBy(className = "continue-registr")
-    public WebElement createPassword;
-
     @FindBy(className = "input-field")
     public WebElement emailInput;
 
     @FindBy(name = "pass")
     public WebElement passwordField;
-
-    @FindBy(className = "input-hint")
-    public WebElement passwordHelp;
 
     @FindBy(name = "confirm")
     public WebElement passwordConfirm;

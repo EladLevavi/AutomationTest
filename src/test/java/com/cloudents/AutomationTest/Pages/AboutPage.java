@@ -19,13 +19,25 @@ public class AboutPage {
 
 
 
+    // *******   How Spitball works   *******
+
+    @FindBy(xpath = "//*[@class='flex text']//p")
+    public List<WebElement> paragraphs;
+
+
+
+
+
+
     // ******* FAQs   *********
 
-    @FindBy(className = "v-expansion-panel__container")
+    @FindBy(xpath = "//*[@class='v-expansion-panel__header']")
     public List<WebElement> faqHeaders;
 
-    @FindBy(xpath = "//*[@class='v-expansion-panel__body']//p")
+    @FindBy(xpath = "//*[@class='v-expansion-panel__body']//div//div//p")
     public List<WebElement> faqText;
+
+
 
 
 
@@ -97,20 +109,7 @@ public class AboutPage {
     @FindBy(className = "gm-style-pbc")
     public WebElement map;
 
-
-
-
-
-
-
-
-
-
-
-    @FindBy(xpath = "//*[@class='flex social-btns mr-4 align-start justify-start']//a")
+    @FindBy(xpath = "//*[@class='flex social-btns align-start justify-start']//a")
     public List<WebElement> links;
-
-    @FindBy(xpath = "//*[@class='flex text']//p")
-    public List<WebElement> paragraphs;
 
 }

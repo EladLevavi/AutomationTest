@@ -3,165 +3,145 @@ package com.cloudents.AutomationTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.Set;
-import static com.cloudents.AutomationTest.Resources.*;
+import static com.cloudents.AutomationTest.Resources.Drivers.*;
+import static com.cloudents.AutomationTest.Resources.Pages.*;
+import static com.cloudents.AutomationTest.Resources.Strings.*;
+import static com.cloudents.AutomationTest.Resources.Images.*;
+import static com.cloudents.AutomationTest.Resources.Methods.*;
 import static org.testng.Assert.assertTrue;
 
 public class Sign extends CloudentsAutoTests {
 
     @Test
-    public void signUp() throws InterruptedException {
+    public void signupWithGoogle() throws InterruptedException {
 
-        mainPage.signButtons.get(0).click();
-        Thread.sleep(5000);
+        landingPage.signupButton.click();
+        Thread.sleep(1000);
         assertTrue(driver.getCurrentUrl().contains(SIGNUP_PAGE));
-        Assert.assertEquals(signUpPage.stepTitle.getText(), SIGNUP_TITLES[0]);
-        Assert.assertEquals(signUpPage.googleButtons.get(1).getText(),SIGN_BUTTONS_TEXT[0]);
-        Assert.assertEquals(signUpPage.signWithEmailButtons.get(1).getText(),SIGN_BUTTONS_TEXT[1]);
-        Assert.assertEquals(signUpPage.checkboxTerms.getText(), AGREEMENT_TEXT);
-        Assert.assertEquals(signUpPage.signinStrip.getText(), SIGNIN_LINK);
-        Assert.assertEquals(signUpPage.image.getAttribute("src"),SIGNUP_IMAGE);
-        Assert.assertEquals(signUpPage.textSeperator.getText(), SEPERATOR_TEXT);
-        signUpPage.termsLinks.get(0).click();
+        Assert.assertTrue(signPage.stepTitle.getText().equalsIgnoreCase(SIGNUP_TITLES[0]));
+        Assert.assertTrue(signPage.signupWithGoogle.getText().equalsIgnoreCase(SIGN_BUTTONS_TEXT[0]));
+        Assert.assertTrue(signPage.signupWithEmail.getText().equalsIgnoreCase(SIGN_BUTTONS_TEXT[1]));
+        Assert.assertTrue(signPage.agreeCheckbox.getText().equalsIgnoreCase(AGREEMENT_TEXT));
+        Assert.assertTrue(signPage.signinStrip.getText().equalsIgnoreCase(SIGNIN_LINK));
+        Assert.assertEquals(signPage.image.getAttribute("src"),SIGNUP_IMAGE);
+        Assert.assertTrue(signPage.textSeperator.getText().equalsIgnoreCase(SEPERATOR_TEXT));
+        signPage.checkBox.click();
         Thread.sleep(1000);
-        Assert.assertEquals(driver.getCurrentUrl(), TERMS_PAGE);
-        driver.navigate().back();
-        signUpPage.termsLinks.get(1).click();
+        signPage.signupWithGoogle.click();
         Thread.sleep(1000);
-        Assert.assertEquals(driver.getCurrentUrl(), PRIVACY_PAGE);
-        driver.navigate().back();
-        signUpPage.googleButtons.get(1).click();
-        Assert.assertEquals(signUpPage.errorMessage.getText(), AGREEMENT_NOT_CHECKED);
-        driver.navigate().refresh();
-        signUpPage.signWithEmailButtons.get(1).click();
-        Assert.assertEquals(signUpPage.errorMessage.getText(), AGREEMENT_NOT_CHECKED);
-        signUpPage.agreeCheckbox.click();
-        Thread.sleep(500);
-        signUpPage.googleButtons.get(1).click();
         Set<String> winHandles = driver.getWindowHandles();
         winHandles.forEach(winHandle -> driver.switchTo().window(winHandle));
         Assert.assertTrue(driver.getCurrentUrl().contains(GOOGLE_SIGNIN_PAGE));
-        driver.close();
-        driver.switchTo().window(winHandleBefore);
-        signUpPage.signWithEmailButtons.get(1).click();
-        //Assert.assertEquals(signUpPage.stepTitle.getText(), SIGNUP_TITLES[1]);
-        Assert.assertEquals(signUpPage.emailInput.getAttribute("placeholder"), EMAIL_PLACEHOLDER);
-        Assert.assertEquals(signUpPage.passwordField.getAttribute("placeholder"), PASSWORD_PLACEHOLDER[0]);
-        Assert.assertEquals(signUpPage.passwordConfirm.getAttribute("placeholder"), CONFIRM_PASSWORD_PLACEHOLDER);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), CONTINUE_BUTTON_TEXT);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.enterEmail.sendKeys(USERNAME);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.passwordField.sendKeys(PASSWORD);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.passwordConfirm.sendKeys(PASSWORD);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        Assert.assertEquals(signUpPage.passwordHelp.getText(), PASSWORD_TIP);
-        driver.navigate().back();
-        Thread.sleep(2000);
-        signUpPage.loginLink.get(1).click();
-        Thread.sleep(10000);
-        Assert.assertEquals(driver.getCurrentUrl(), LOGIN_PAGE);
-        signUpPage.signWithEmailButtons.get(0).click();
-        Thread.sleep(500);
-        signUpPage.continueButtons.get(0).click();
-        Thread.sleep(500);
-        Assert.assertEquals(signUpPage.stepTitle.getText(), LOGIN_TITLES[0]);
-        driver.navigate().back();
-        driver.navigate().back();
-        driver.navigate().back();
-        exitDialog();
+        signPage.gmailInput.sendKeys(USERNAME);
+        signPage.gmailNext.click();
         Thread.sleep(1000);
-        Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
+        signPage.gmailPassword.sendKeys("3l@d*1805");
+        signPage.passwordNext.click();
+        Thread.sleep(8000);
+        driver.switchTo().window(winHandleBefore);
+        Assert.assertEquals(driver.getCurrentUrl(), STUDY_PAGE);
+
+    }
+
+    @Test
+    public void signupWithEmail() throws InterruptedException {
+
+        landingPage.signupButton.click();
+        Thread.sleep(1000);
+        assertTrue(driver.getCurrentUrl().contains(SIGNUP_PAGE));
+        Assert.assertTrue(signPage.stepTitle.getText().equalsIgnoreCase(SIGNUP_TITLES[0]));
+        Assert.assertTrue(signPage.signupWithGoogle.getText().equalsIgnoreCase(SIGN_BUTTONS_TEXT[0]));
+        Assert.assertTrue(signPage.signupWithEmail.getText().equalsIgnoreCase(SIGN_BUTTONS_TEXT[1]));
+        Assert.assertTrue(signPage.agreeCheckbox.getText().equalsIgnoreCase(AGREEMENT_TEXT));
+        Assert.assertTrue(signPage.signinStrip.getText().equalsIgnoreCase(SIGNIN_LINK));
+        Assert.assertEquals(signPage.image.getAttribute("src"),SIGNUP_IMAGE);
+        Assert.assertTrue(signPage.textSeperator.getText().equalsIgnoreCase(SEPERATOR_TEXT));
+        signPage.checkBox.click();
+        Thread.sleep(1000);
+        signPage.signupWithEmail.click();
+        Thread.sleep(1000);
+        signPage.emailInput.sendKeys("elad+2@cloudents.com");
+        signPage.passwordField.sendKeys(PASSWORD);
+        signPage.passwordConfirm.sendKeys(PASSWORD);
+        signPage.recaptcha.click();
+        signPage.continueSignup.click();
+        Thread.sleep(5000);
+        Assert.assertEquals(driver.getCurrentUrl(), STUDY_PAGE);
 
     }
 
     @Test
     public void resetPassword() throws InterruptedException {
 
-        mainPage.signButtons.get(1).click();
-        signUpPage.signWithEmailButtons.get(0).click();
-        signUpPage.continueButtons.get(1).click();
+        landingPage.loginButton.click();
         Thread.sleep(1000);
-        signUpPage.signinStrip.click();
+        signPage.signWithEmail.click();
+        Thread.sleep(1000);
+        signPage.enterEmail.sendKeys(USERNAME);
+        signPage.continueButton.click();
+        Thread.sleep(1000);
+        signPage.forgotPassword.click();
+        Thread.sleep(1000);
         Assert.assertEquals(signPage.image.getAttribute("src"), LOGIN_IMAGE);
-        Assert.assertEquals(signUpPage.stepTitle.getText(), RESET_PASSWORD_LINK);
-        Assert.assertEquals(signUpPage.subTitle.getText(), RESET_PASSWORD_TITLE);
-        Assert.assertEquals(signUpPage.enterEmail.getAttribute("placeholder"), EMAIL_PLACEHOLDER);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.enterEmail.sendKeys(USERNAME);
-        Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
-        signUpPage.enterEmail.clear();
-        signUpPage.enterEmail.sendKeys(" ");
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        Assert.assertEquals(signUpPage.loginLink.get(0).getText(), LOGIN_LINK);
-        signUpPage.loginLink.get(0).click();
+        Assert.assertEquals(signPage.stepTitle.getText(), RESET_PASSWORD_LINK);
+        Assert.assertEquals(signPage.subTitle.getText(), RESET_PASSWORD_TITLE);
+        Assert.assertEquals(signPage.enterEmail.getAttribute("placeholder"), EMAIL_PLACEHOLDER);
+        signPage.enterEmail.sendKeys(USERNAME);
+        signPage.enterEmail.clear();
+        signPage.enterEmail.sendKeys(" ");
+        Assert.assertEquals(signPage.loginLink.get(0).getText(), LOGIN_LINK);
+        signPage.loginLink.get(0).click();
         Assert.assertEquals(signPage.image.getAttribute("src"), LOGIN_IMAGE);
-        Assert.assertEquals(signUpPage.stepTitle.getText(), LOGIN_TITLES[0]);
+        Assert.assertEquals(signPage.stepTitle.getText(), LOGIN_TITLES[0]);
         driver.navigate().back();
 
     }
 
     @Test
-    public void login() throws InterruptedException {
+    public void loginWithEmail() throws InterruptedException {
 
-        mainPage.signButtons.get(1).click();
+        landingPage.loginButton.click();
+        Thread.sleep(1000);
+        Assert.assertTrue(signPage.signWithGoogle.getText().equalsIgnoreCase(SIGN_BUTTONS_TEXT[2]));
+        Assert.assertTrue(signPage.signWithEmail.getText().equalsIgnoreCase(SIGN_BUTTONS_TEXT[3]));
+        Assert.assertEquals(signPage.signinStrip.getText(), SIGNUP_LINK);
+        signPage.signWithEmail.click();
         Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), LOGIN_PAGE);
-        Assert.assertEquals(signPage.stepTitle.getText(), LOGIN_TITLES[1]);
-        Assert.assertEquals(signPage.googleButtons.get(0).getText(),SIGN_BUTTONS_TEXT[2]);
-        Assert.assertEquals(signPage.signWithEmailButtons.get(0).getText(),SIGN_BUTTONS_TEXT[3]);
+        Assert.assertEquals(signPage.stepTitle.getText(), LOGIN_TITLES[0]);
+        //Assert.assertEquals(signPage.image.getAttribute("src"),SIGNUP_IMAGE);
+        signPage.emailInput.sendKeys(USERNAME);
+        signPage.continueButton.click();
+        signPage.password.sendKeys(PASSWORD);
+        signPage.loginButton.click();
+        Thread.sleep(5000);
+
+    }
+
+    @Test
+    public void loginWithGoogle() throws InterruptedException {
+
+        driver.navigate().to(HOME_PAGE);
+        landingPage.loginButton.click();
+        Thread.sleep(1000);
+        Assert.assertTrue(signPage.signWithGoogle.getText().equalsIgnoreCase(SIGN_BUTTONS_TEXT[2]));
+        Assert.assertTrue(signPage.signWithEmail.getText().equalsIgnoreCase(SIGN_BUTTONS_TEXT[3]));
         Assert.assertEquals(signPage.signinStrip.getText(), SIGNUP_LINK);
-        Assert.assertEquals(signPage.image.getAttribute("src"),SIGNUP_IMAGE);
-        signUpPage.googleButtons.get(0).click();
+        signPage.signWithGoogle.click();
         Thread.sleep(2000);
         Set<String> winHandles = driver.getWindowHandles();
         winHandles.forEach(winHandle -> driver.switchTo().window(winHandle));
         Assert.assertTrue(driver.getCurrentUrl().contains(GOOGLE_SIGNIN_PAGE));
-        driver.close();
+        signPage.gmailInput.sendKeys(USERNAME);
+        signPage.gmailNext.click();
+        Thread.sleep(1000);
+        signPage.gmailPassword.sendKeys("3l@d*1805");
+        signPage.passwordNext.click();
+        Thread.sleep(8000);
         driver.switchTo().window(winHandleBefore);
-        Thread.sleep(1000);
-        signUpPage.signWithEmailButtons.get(0).click();
-        Thread.sleep(1000);
-        signUpPage.createPassword.click();
-        Thread.sleep(2000);
-        Assert.assertEquals(signUpPage.stepTitle.getText(), CREATE_PASSWORD_TITLE);
-        Assert.assertEquals(signUpPage.enterEmail.getAttribute("placeholder"), EMAIL_PLACEHOLDER);
-        Assert.assertEquals(signUpPage.loginLink.get(0).getText(), NEW_PRIVACY_BUTTONS[1]);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getText(), NEW_PRIVACY_BUTTONS[0]);
-        Assert.assertEquals(signPage.image.getAttribute("src"), LOGIN_IMAGE);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.enterEmail.sendKeys(USERNAME);
-        Assert.assertNull(signUpPage.continueButtons.get(1).getAttribute("disabled"));
-        signUpPage.enterEmail.clear();
-        signUpPage.enterEmail.sendKeys(" ");
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.signinStrip.click();
-        Assert.assertEquals(signUpPage.stepTitle.getText(), LOGIN_TITLES[0]);
-        Assert.assertEquals(signPage.emailInput.getAttribute("placeholder"), EMAIL_PLACEHOLDER);
-        Assert.assertEquals(signPage.password.getAttribute("placeholder"), PASSWORD_PLACEHOLDER[1]);
-        Assert.assertEquals(signUpPage.signinStrip.getText(), FORGOT_PASSWORD_LINK);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("value"), LOGIN_BUTTON_TEXT);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signPage.emailInput.sendKeys(USERNAME);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signPage.password.sendKeys(PASSWORD);
-        Assert.assertEquals(signUpPage.continueButtons.get(1).getAttribute("disabled"), "true");
-        signUpPage.signinStrip.click();
-        Assert.assertEquals(signUpPage.stepTitle.getText(), RESET_PASSWORD_LINK);
-        Assert.assertEquals(signUpPage.signinStrip.getText(), LOGIN_LINK);
-        driver.navigate().back();
-        driver.navigate().back();
-        driver.navigate().back();
-        exitDialog();
-        Thread.sleep(2000);
-        signUpPage.continueButtons.get(1).click();
-        Thread.sleep(1000);
-        Assert.assertEquals(driver.getCurrentUrl(), HOMEWORK_PAGE);
-        driver.navigate().back();
-        signPage.signinStrip.click();
-        Assert.assertEquals(driver.getCurrentUrl(), SIGNUP_PAGE);
-        driver.get(HOME_PAGE);
+        Assert.assertEquals(driver.getCurrentUrl(), STUDY_PAGE);
 
     }
+
 
 }

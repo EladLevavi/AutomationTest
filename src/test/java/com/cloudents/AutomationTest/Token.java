@@ -1,12 +1,13 @@
 package com.cloudents.AutomationTest;
 
-import org.openqa.selenium.interactions.Actions;
+
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import static com.cloudents.AutomationTest.Resources.Drivers.*;
+import static com.cloudents.AutomationTest.Resources.Pages.*;
+import static com.cloudents.AutomationTest.Resources.Strings.*;
 
-import java.util.Set;
-
-import static com.cloudents.AutomationTest.Resources.*;
 
 
 
@@ -17,15 +18,28 @@ public class Token extends CloudentsAutoTests {
     public void token() throws InterruptedException {
 
         driver.get(TOKEN_PAGE);
-        Thread.sleep(3000);
-        Assert.assertEquals(tokenPage.logoHeaderLink.getAttribute("href"), HOME_PAGE_PROD);
-        Assert.assertNotNull(tokenPage.youtube);
-        tokenPage.logo.get(0).click();
-        newWindow(HOME_PAGE_PROD);
-        for(int i = 0 ; i < 3 ; i++) {
-            tokenPage.headerLinks.get(i).click();
-            newWindow(TOKEN_HEADER_LINKS[i]);
+        Thread.sleep(5000);
+        Assert.assertTrue(tokenPage.spitballLink.getAttribute("href").contains(HOME_PAGE_PROD));
+        Thread.sleep(2000);
+        for(int i = 0 ; i < 2 ; i++) {
+            Assert.assertEquals(tokenPage.headerLinks.get(i).getAttribute("href"),TOKEN_HEADER_LINKS[i]);
+            Assert.assertEquals(tokenPage.headerLinks.get(i).getText(), TOKEN_HEADER_TEXT[i]);
         }
+        Assert.assertEquals(tokenPage.paragraph1.getText().trim(),TOKEN_PARAGRAPHS[0].trim());
+        Assert.assertEquals(tokenPage.subscribtion.getText(), "Subscribe to our newsletter");
+        tokenPage.emailInput.sendKeys(USERNAME);
+        //tokenPage.subscribeButton.click();
+        tokenPage.youtube.click();
+        tokenPage.paragraph1.click();
+        tokenPage.paragraph1.sendKeys(Keys.SPACE);
+
+
+        Assert.assertEquals(tokenPage.para2part1.getText() +  tokenPage.para2part2.getText(), TOKEN_PARAGRAPHS[1]);
+        //Assert.assertEquals(tokenPage.hevreImage.getAttribute("src"),"/images/muscari/hevra.png");
+
+        Assert.assertEquals(tokenPage.paragraph3.getText(), TOKEN_PARAGRAPHS[3]);
+        Assert.assertEquals(tokenPage.laptopImage.getAttribute("src"), "/images/muscari/spitball_app.png");
+        /*Assert.assertNotNull(tokenPage.youtube);
         Assert.assertEquals(tokenPage.emailText.getAttribute("placeholder"), "Enter your email");
         tokenPage.emailText.sendKeys(USERNAME);
         //tokenPage.subscribeButton.click();
@@ -54,10 +68,10 @@ public class Token extends CloudentsAutoTests {
         tokenPage.contactForm.get(0).sendKeys(FIRST_NAME);
         tokenPage.contactForm.get(1).sendKeys(USERNAME);
         tokenPage.textArea.sendKeys(MESSAGE);
-            /*tokenPage.submitButton.click();
+            *//*tokenPage.submitButton.click();
             Assert.assertEquals(tokenPage.contactForm.get(1).getText(), "");
             Assert.assertEquals(tokenPage.contactForm.get(2).getText(), "");
-            Assert.assertEquals(tokenPage.contactForm.get(3).getText(), "");*/
+            Assert.assertEquals(tokenPage.contactForm.get(3).getText(), "");*//*
         tokenPage.support.click();
         tokenPage.joinTelegram.get(1).click();
         Thread.sleep(1000);
@@ -69,7 +83,7 @@ public class Token extends CloudentsAutoTests {
             Thread.sleep(1000);
             //checkNewWindowAddress(TOKEN_SOCIAL[i]);
         }
-        /*tokenPage.innerLinks.get(6).click();
+        *//*tokenPage.innerLinks.get(6).click();
         Thread.sleep(5000);
         //checkNewWindowAddress(WHITEPAPER_DOC);
         tokenPage.innerLinks.get(7).click();
