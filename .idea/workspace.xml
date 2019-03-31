@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b3fc1a-ab91-4c31-bf82-736e12ce3328" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AutomationTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/AskQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/BuyPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Filters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MyWallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/OnBoarding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/AskPopup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/FlashcardsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/LandingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MyWalletPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/StudyDocumentsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/UniversityPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/ReferralDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Drivers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Images.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Methods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Pages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/TopEarners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/University.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Upload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Walkthrough.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/AboutTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/AboutTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Common.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MainTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MainTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/AboutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/FaqPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/HomeworkHelpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/HomeworkHelpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SignPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SignPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/TokenPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/TokenPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sitemap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sitemap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/CloudentsAutoTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/CloudentsAutoTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/AboutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/AboutPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/MainPage.class" afterDir="false" />
@@ -72,23 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/University.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="510">
+              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,7 +144,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sitemap.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MyWalletPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MyWallet.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/University.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/UniversityPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Walkthrough.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/TopEarners.java" />
@@ -226,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Methods.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Strings.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/University.java" />
       </list>
     </option>
   </component>
@@ -316,7 +264,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Elad/IdeaProjects/AutomationTest/src/test/java/com/cloudents/AutomationTest/Resources/Strings.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554029541934" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554029563373" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/TestNG.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -849,16 +797,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539254061655</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Adding tests">
+      <created>1554029592363</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1554029592363</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Sign_signupWithEmail - 2019.03.31 at 13h 41m 45s.xml">
-      <configuration name="Sign.signupWithEmail" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Sign_resetPassword - 2019.03.31 at 13h 42m 03s.xml">
-      <configuration name="Sign.resetPassword" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Sign_loginWithEmail - 2019.03.31 at 13h 43m 20s.xml">
       <configuration name="Sign.loginWithEmail" configurationId="TestNG" />
     </history-entry>
@@ -881,6 +830,12 @@
       <configuration name="Walkthrough" configurationId="TestNG" />
     </history-entry>
     <history-entry file="University_university - 2019.03.31 at 13h 47m 55s.xml">
+      <configuration name="University.university" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="University_university - 2019.03.31 at 13h 49m 13s.xml">
+      <configuration name="University.university" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="University_university - 2019.03.31 at 13h 50m 37s.xml">
       <configuration name="University.university" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -982,7 +937,8 @@
     <MESSAGE value="Fixing the tests, also arranging them in seperate files according to site section tests." />
     <MESSAGE value="Fixing the tests, also arranging them in separate files according to site section tests." />
     <MESSAGE value="Arranging the Page Resource Files, deleting some extra page files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Arranging the Page Resource Files, deleting some extra page files." />
+    <MESSAGE value="Adding tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SitemapPage.java" />
@@ -1380,16 +1336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Upload.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1421,8 +1367,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/University.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="397">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
