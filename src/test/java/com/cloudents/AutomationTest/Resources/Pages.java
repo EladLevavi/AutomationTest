@@ -31,6 +31,11 @@ public class Pages {
     public final static String SITEMAP_PAGE = HOME_PAGE + "/sitemap.xml";
     public final static String SITEMAP_PAGE_PROD = HOME_PAGE_PROD + "/sitemap.xml";
     public final static String[] SITEMAP_ITEM_PAGE = {HOME_PAGE + "/sitemap-Item-0.xml", HOME_PAGE + "/sitemap-Item-1.xml", HOME_PAGE + "/sitemap-Item-2.xml", HOME_PAGE + "/sitemap-Item-3.xml", HOME_PAGE + "/sitemap-Flashcard-0.xml"};
-
+    public final static String STUDY_ROOM = "https://dev.spitball.co/studyroom/22984383-ebf7-491a-b6d9-aa5b00d3f33e";
+    final static String STUDYROOM_PAGE = "https://dev.spitball.co/studyroom";
+    public final static String TUTOR_LIST_PAGE = HOME_PAGE + "/tutor-list";
+    public final static String COURSES_EDIT = HOME_PAGE + "/courses/edit";
+    public final static String COURSES_ADD = HOME_PAGE + "/courses/add";
+    public final static String PROFILE_PAGE = "https://dev.spitball.co/profile";
 
 }

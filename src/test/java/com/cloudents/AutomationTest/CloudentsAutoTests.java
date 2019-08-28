@@ -28,6 +28,10 @@ public class CloudentsAutoTests {
     public static AskPopup askPopup;
     public static UniversityPage universityPage;
     public static ProfilePage profilePage;
+    public static StudyRoomPage studyRoomPage;
+    public static TutorListPage tutorListPage;
+    public static CoursesPage coursesPage;
+
 
 
 

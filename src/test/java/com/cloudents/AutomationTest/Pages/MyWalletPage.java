@@ -8,7 +8,7 @@ import java.util.List;
 public class MyWalletPage {
 
     // ******* Header   **********
-    @FindBy(className = "header-title")
+    @FindBy(xpath = "//*[@class='header-title']")
     public WebElement headerTitle;
 
     @FindBy(xpath = "//*[@class='v-tabs__div']/a")
@@ -23,8 +23,9 @@ public class MyWalletPage {
     @FindBy(xpath = "//*[@class='column sortable text-xs-left']//span")
     public List<WebElement> headers;
 
-    @FindBy(className = "text-xs-left")
+    @FindBy(xpath = "//*[@class='text-xs-left']")
     public List<WebElement> sblTypes;
+
 
 
 

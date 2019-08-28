@@ -16,33 +16,28 @@ public class MyWallet extends CloudentsAutoTests {
 
         // Initialize
         loginUser();
-        Thread.sleep(1000);
-        mainPage.nextWindow.click();
-        Thread.sleep(1000);
-        mainPage.nextWindow.click();
-        Thread.sleep(1000);
-        mainPage.finishButton.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         mainPage.userMenuIcon.click();
         Thread.sleep(500);
         mainPage.userMenuItems.get(0).click();
         Thread.sleep(1000);
 
         Assert.assertEquals(myWalletPage.headerTitle.getText(), WALLET_TITLE);
+
         for(int i = 0 ; i < 3 ; i++)
             Assert.assertEquals(myWalletPage.tabs.get(i).getText(), WALLET_TABS[i]);
-        Assert.assertEquals(myWalletPage.headers.get(0).getAttribute("innerText"), BALANCES_HEADER[0]);
-        Assert.assertEquals(myWalletPage.headers.get(1).getAttribute("innerText"), BALANCES_HEADER[1]);
-        //for(int i = 0 ; i < 5 ; i++)
-            //Assert.assertEquals(myWalletPage.sblTypes.get(i+1).getAttribute("innerText"), TRANSACTION_TYPES[i]);
+
+        for(int i = 0 ; i < 2 ; i++) {
+            Assert.assertEquals(myWalletPage.sblTypes.get(i+1).getAttribute("innerText"), BALANCES_HEADER[i]);
+        }
+        for(int i = 0 , j = 3 ; i < 4 ; i++ , j = j + 3)
+            Assert.assertEquals(myWalletPage.sblTypes.get(j).getAttribute("innerText"), TRANSACTION_TYPES[i]);
 
         myWalletPage.tabs.get(1).click();
         Thread.sleep(1000);
-        Assert.assertEquals(myWalletPage.tableHeaders.get(0).getAttribute("innerText"), DATE_HEADER);
-        Assert.assertEquals(myWalletPage.tableHeaders.get(1).getAttribute("innerText"), ACTION_HEADER);
-        Assert.assertEquals(myWalletPage.tableHeaders.get(2).getAttribute("innerText"), TYPE_HEADER);
-        Assert.assertEquals(myWalletPage.tableHeaders.get(3).getAttribute("innerText"), AMOUNT_HEADER);
-        Assert.assertEquals(myWalletPage.tableHeaders.get(4).getAttribute("innerText"), BALANCE_HEADER);
+        for(int i = 0 ; i < 5 ; i++) {
+            Assert.assertEquals(myWalletPage.tableHeaders.get(i).getAttribute("innerText"), TRANSACTION_TABLE[i]);
+        }
 
         myWalletPage.tabs.get(2).click();
         Thread.sleep(1000);

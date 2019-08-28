@@ -1,31 +1,35 @@
 package com.cloudents.AutomationTest.Resources;
 
+import static com.cloudents.AutomationTest.Resources.Pages.*;
+
+
 public class Strings {
 
 
-
+    public final static String[] SIGN_BUTTONS = {"Sign up", "Login"};
+    public final static String SIGNUP_ASK = SIGNUP_PAGE + "?returnUrl=%2Fask";
+    public final static String LOGIN_ASK = LOGIN_PAGE + "?returnUrl=%2Fask";
     public final static String[] CONTACT_LINKS = {"www.facebook.com", "twitter.com", "www.youtube.com", "www.instagram.com", "t.me", "medium.com", "github.com", "www.linkedin.com"};
     public final static String[] TOKEN_SOCIAL = {"https://t.me", "https://www.facebook.com", "https://twitter.com", "https://www.youtube.com",
                                             "https://github.com", "https://www.linkedin.com", "https://medium.com"};
-    public final static String USERNAME = "elad@cloudents.com";
+    public final static String USERNAME = "elad12@cloudents.com";
+    public final static String GOOGLE_USERNAME = "elad@cloudents.com";
     public final static String PASSWORD = "123456789";
     public final static String FIRST_NAME = "Elad";
     public final static String MESSAGE = "Hi, My name is Elad.";
-    public final static String[] TABS_TITLE = {"Study Documents", "Homework Help", "Flashcards", "Tutors", "Textbooks", "Jobs"};
-    public final static String[] ABOUT_TABS_TITLE = {"HOW SPITBALL WORKS", "FAQ", "BLOG", "PARTNERS", "REPS", "PRIVACY", "TERMS", "CONTACT"};
+    public final static String[] TABS_TITLE = {"Homework Help", "Study Documents", "Tutors"};
+    public final static String[] ABOUT_TABS_TITLE = {"How Spitball Works", "FAQ", "Blog", "Partners", "Reps", "Privacy", "Terms", "Students Help", "Tutors Help", "Contact"};
     public final static String SPITBALL_MAIL = "mailto:support@spitball.co";
     public final static String PARTNER_MAIL = "mailto:partner@spitball.co";
     public final static String WORK_MAIL = "mailto:work@spitball.co";
-    public final static String ASK_QUESTION_POPUP_TEXT = "You are only a couple clicks away from learning and earning with Spitball.";
-    public final static String PERSONALIZE_POPUP_TEXT = "You are only a couple of mouse clicks away from unlocking instant homework help and the ability to make serious money";
+    final static String ASK_QUESTION_POPUP_TEXT = "You are only a couple clicks away from learning and earning with Spitball.";
+    static String PERSONALIZE_POPUP_TEXT = "You are only a couple of mouse clicks away from unlocking instant homework help and the ability to make serious money";
     public final static String[] BANNER_TEXT = {"Make money while helping others with their homework.",
                                                  "Notes, study guides, exams and more from the best sites.",
                                                  "Study from millions of flashcard sets to improve your grades.",
                                                  "Find an expert to help you ace your classes in-person or online.",
                                                  "Compare the best prices to buy, rent or sell your textbooks.",
                                                     "Find jobs and internships catered specifically to students."};
-    public final static String[] SEARCHBAR_PLACEHOLDER = {"Search questions", "Find study documents in...", "Look for flashcards...", "Find a tutor...",
-                                                   "Textbook title or ISBN...", "Your field of expertise..."};
     public final static String PERSONALIZE_SEARCHBAR = "Where do you go to school?";
     public final static String[] ABOUT_TEXT = {"Our Homework Help offers students a quick and simple way to Ask and Answer tricky homework questions. Spitball incentivizes knowledgeable students to support one another for profit, " +
                                                "bringing students from all over the world together to help each other succeed in school. Ask Your Question OR answer someone else’s, a win-win.",
@@ -48,18 +52,8 @@ public class Strings {
                                                 "What is Spitball's policy regarding academic integrity?",
                                                 "Is Spitball free?",
                                                 "How do I edit my profile?",
-                                                "Why did we introduce the upvote and downvote system?",
-                                                "What is the reputation system?",
                                                 "What are Spitball Reputation Levels?",
-                                                "What are the Reputation Privileges?",
-                                                "What is the purpose of the upvote and downvote system?",
-                                                "How does upvote and downvote work?",
-                                                "How does voting impact you?",
-                                                "How does voting impact Answers?",
-                                                "How does voting impact Questions?",
-                                                "How does voting impact Documents?",
-                                                "Why should I stay active on Spitball?",
-                                                "Will redeeming points hurt my Reputation?"};
+                                                "Why should I stay active on Spitball?"};
     public final static String[] FAQ_TEXT = {"Spitball is an online marketplace where students acquire knowledge and earn from helping others. Our platform allows students to ask and answer homework problems, share study documents and buy books. On Spitball students get the right incentives to learn and earn and help each other.",
                                       "It's simple. If you have a question, ask it and if you see a question that you know the answer to, answer it. You will get rewarded for correct answers with points, which you can convert into Amazon gift cards. Besides that, you can also search for study documents from your school specifically and personalize the results to your liking, ask tutors for help or search for textbooks. All your student needs covered in one place.",
                                       "Spitball brings power back to the students, no subscription fees, no ads, no catch. With Spitball you get the tools to learn smarter and earn points so you can enjoy life.",
@@ -77,18 +71,8 @@ public class Strings {
                                       "Spitball was created as a community for collaborative learning. Students benefit from sharing knowledge, and our objective is to make students' lives easier by creating one unified platform to meet all of their academic needs. We are founded on the principles of transparency and collaboration and are firmly opposed to plagiarism, cheating, and any form of academic misconduct.",
                                       "Yes, Spitball is a free service. Some of our partner sites, however, may require you to pay to unlock certain content, meet with a tutor, find homework help or buy a textbook.",
                                       "Once signed in, click on your avatar on the top right hand side to update your profile, university and courses.",
-                                      "In our ongoing efforts to provide users with the highest quality content and the best service, we are introducing the Spitball reputation system. The reputation system will allow you to quickly find the highest quality content and see the most knowledgeable users.",
-                                      "The Spitball reputation system is based on your earned Points. When you Sign Up to Spitball you earn points, just for signing up! On Spitball you can earn additional points by answering other students questions and commit other actions that benefit the Spitball community. With every earned point, you increase your reputation and more and more privileges actions around Spitball unlock.",
                                       "There are 4 levels:",
-                                      "As you increase your reputation you unlock different privileges around the Spitball platform.\n\nSome of the privileges are:\nIn the upcoming weeks, we will add more privileges to Spitball that will be based on your reputation. If you want to enjoy all that Spitball has to offer you simply need to keep asking good questions, answer other students questions, and upload your genuine study documents.",
-                                      "By using the wisdom of the crowd, we believe the best content will rank higher quickly. This is why we encourage our users to share their knowledge by upvoting or downvoting content. Upvoting rewards the contributor and increases the visibility of the content, while downvoting penalizes the contributor and reduces the visibility of content, until it is ultimately removed.",
-                                      "By pressing the upvoting button on a question, answer or document card, you show your support for the content and rewards the person that provided it with 1 point for his effort. By pressing the downvote button on a question, answer or document card, you show you disagree with the content and penalizes the person that provided it by removing 3 points from his account. Each question, answer or document starts with a value of 0 and gets +1 for each upvote and -1 for each downvote. Once the value of a question, answer or document reaches -3, it will be hidden from spitball and put up for review.",
-                                      "You are getting an additional way to earn points simply for asking good questions, giving helpful answers and uploading insightful documents. On the same note you benefit from seeing the highest quality content first while others are discouraged to provide low quality content as they will be penalized for it.",
-                                      "The Answer with the highest value is the first answer you will see below the Question.",
-                                      "Questions with a high value stay more visible even as time progresses.",
-                                      "Documents with a high value rank higher in your search results.",
-                                      "Staying active on Spitball is worth your while. Every positive action, such as accepting an answer, providing a correct answer and more, will be expressed in your wallet as additional earned points.",
-                                      "The answer is NO. The Spitball reputation system is based on your earned points, and not on your wallet status. If you are an active student using Spitball, answering other student questions, uploading academic documents and staying engaged you will earn more and more points. If you decide to redeem some of your points, your wallet status drops but your reputation will stay the same."};
+                                      "Staying active on Spitball is worth your while. Every positive action, such as accepting an answer, providing a correct answer and more, will be expressed in your wallet as additional earned points."};
     public final static String PARTNERS_TEXT = "Does your company make students’ lives easier? Are you interested in joining the community or accepting points on your website? Reach out to us at";
     public final static String REPS_TEXT = "Want to help grow the Spitball community at your school or university? Reach out to us at";
     public final static String CONTACT_TEXT = "79 Madison Ave, New York, New York, 10016";
@@ -214,6 +198,10 @@ public class Strings {
             "13. By using the Refer a Friend Program, participants agree to the processing of their personal information by Spitball.\n\n" +
             "14. By using the Refer a Friend Program, the Qualified Referred Friend agrees to their contact information being sent to the Referring Customer, who sent them the RAF Link, from which the Qualified Friend claimed their credit reward.\n\n" +
             "15. The Program and these terms and conditions will be governed by Israeli Law and any disputes will be subject to the exclusive jurisdiction of the courts of Israel.\n" +
+            "Spitball Upload Policy\n" +
+            "Users are prohibited from uploading or submitting copyright infringing materials (including without limitation copies made without the consent of the copyright owner of testing materials, textbooks, instructor's solution manuals, test banks, lecture notes, slide presentations or related copyrighted works, in whole or in part).\n" +
+            "By submitting Documents you are representing that: (1) you own the copyrights covering the files to be uploaded or have express permission from the copyright owners to upload those files; (2) your uploading of the files you have selected will not violate any law, regulation or ethics code; and (3) uploading the files to be uploaded will not violate Spitball's terms of use.\n" +
+            "Documents should add value to the Spitball community; be tagged to their relevant course or subject; not be blank, duplicates, or have random filler content; and not contain any obscene or offensive material. Spitball reserves the right to remove any uploaded content from our site at any time, for any reason in our sole discretion, and without notice.\n" +
             "Copyright Agent\n" +
             "Cloudents LTD.\n" +
             "Hanasi Harishon, 38\n" +
@@ -221,22 +209,24 @@ public class Strings {
             "support@spitball.co\n" +
             "\n";
 
-    public final static String[] SIGN_BUTTONS_TEXT = {"Sign Up with Google", "Sign Up with Email", "Sign In with Google", "Sign In with Email"};
-    public final static String AGREEMENT_TEXT = "I agree to Spitball's Terms of Services  and Privacy Policy.";
+    public final static String[] SIGN_BUTTONS_TEXT = {"Sign up with Gmail", "Sign up with email", "Sign in with Gmail", "Sign in with email"};
+    public final static String AGREEMENT_TEXT = "  I agree to Spitball'sTerms of ServicesandPrivacy Policy";
     public final static String AGREEMENT_NOT_CHECKED = "Please agree to Terms And Services in order to proceed";
-    public final static String[] SIGNUP_TITLES = {"Ask Questions & receive instant help or Answer Questions & make money", "Start with your email. We need to know how to contact you."};
+    public final static String[] SIGNUP_TITLES = {"Register now to Spitball", "100% Free. No credit card needed."};
     public final static String RESET_PASSWORD_LINK = "Reset your password";
     public final static String EMAIL_PLACEHOLDER = "Enter your email";
     public final static String[] PASSWORD_PLACEHOLDER = {"Choose password ( Use 8 characters or more )"};
     public final static String CONFIRM_PASSWORD_PLACEHOLDER = "Confirm password";
-    public final static String EXIT_CONFIRM_TEXT = "Are you sure you want to exit?";
-    public final static String SIGNIN_LINK = "Do you already have an account?  Sign in";
+    final static String EXIT_CONFIRM_TEXT = "Are you sure you want to exit?";
     public final static String PASSWORD_TIP = "Weak";
     public final static String RESET_PASSWORD_TITLE = "Don’t be ashamed. It happens to the best.";
-    public final static String LOGIN_LINK = "I remember now";
-    public final static String[] LOGIN_TITLES = {"Welcome back\nplease login", "Ask Questions & receive instant help or Answer Questions & make money"};
-    public final static String SIGNUP_LINK = "Need an account?  Sign up";
-    public final static String EXIT_BUTTON_TEXT = "Exit";
+    public final static String[] LOGIN_TITLES = {"Welcome back. Please login", "Welcome back"};
+    public final static String SIGNUP_LINK = "Need an account?";
+    public final static String SIGNIN_LINK = "Have an account?";
+    public final static String SIGN_LINK = "Sign up";
+    public final static String LOGIN_LINK = "Log in";
+    public final static String SIGN_LEFT_SECTION = "Ace your exams with the\nbest study tools and \ntutors";
+    static String EXIT_BUTTON_TEXT = "Exit";
     public final static String FORGOT_PASSWORD_LINK = "Forgot password?";
     public final static String LOGIN_BUTTON_TEXT = "Login";
     public final static String CREATE_PASSWORD_TITLE = "Create your password";
@@ -265,16 +255,12 @@ public class Strings {
     public final static String[] WALLET_TABS = {"Balances", "Transaction", "Cash Out"};
     public final static String[] BALANCES_HEADER = {"Points", "Value"};
     public final static String[] TRANSACTION_TABLE = {"Date", "Action", "Type", "Amount", "Balance"};
-    public final static String DATE_HEADER = "Date";
-    public final static String ACTION_HEADER = "Action";
-    public final static String TYPE_HEADER = "Type";
-    public final static String AMOUNT_HEADER = "Amount";
-    public final static String BALANCE_HEADER = "Balance";
     public final static String CASH_OUT_TITLE = "The more SBL you have, the more valuable they are.";
     public final static String REDEEM_BUTTON = "Redeem";
     public final static String REDEEM_VALUES = "1,000";
     public final static String[] TRANSACTION_TYPES = {"Earned", "Spent", "Stake", "Total"};
-    public final static String[] USERMENU_ITEMS = {"עברית", "About Spitball", "Help", "Terms Of Service", "Privacy Policy"};
+    public final static String[] USERMENU_ITEMS = {"Test Study Room", "עברית", "About Spitball", "Help", "Terms Of Service", "Privacy Policy"};
+    public final static String[] USERMENU_LINKS = {STUDYROOM_PAGE, "", ABOUT_PAGE, FAQ_PAGE, TERMS_PAGE, PRIVACY_PAGE};
     public final static String[] FAQ_LIST = {"What is Spitball?", "How does Spitball work?", "How does Spitball differ from other student websites?", "What is an SBL?", "What can I do with my SBL?"};
     public final static String QUESTION_TEXT = "This is general related question";
     public final static String[] QUESTION_SUBJECTS = {"Pick a subject", "Accounting", "Anthropology","Arts","Biology","Blockchain","Business","Chemistry","Computer Science",
@@ -286,22 +272,15 @@ public class Strings {
     public final static String QUESTION_PLACEHOLDER = "Type your question...";
     public final static String[] SBL_AMOUNTS = {"10 SBL", "20 SBL", "40 SBL", "80 SBL", "Other amount"};
     public final static String[] QUESTION_COLORS = {"default", "green", "purple", "red", "yellow", "blue", "turquoise", "lightblue", "grey", "olive", "pink"};
-    public final static String SET_SCHOOL = "Select school";
-    public final static String SET_CLASS = "Select Class";
-    public final static String EXPLAIN_TEXT = "By setting this up you will get the best questions & study info fit for your shool & classes";
-    public final static String NO_WORRIES = ":) No Worries";
-    public final static String SELECT_LATER = "You can select school & classes at any time from your user menu.";
-    public final static String CLEAR_BUTTON = "Got It!";
-    public final static String SELECT_NOW = "Select School now";
-    public final static String CHANGING_SCHOOLS = "Changing Schools?";
-    public final static String DESCRIPTION = "and all of the selected classes\n will be deleted";
-    public final static String[] CHANGING_BUTTONS = {"Keep Current School", "YES, Change School"};
-    public final static String SELECT_CLASS = "Select Class";
-    public final static String CLASS_PLACEHOLDER = "Type your Class name";
+    public final static String UNIVERSITY_TITLE = "Choose your university";
+    public final static String UNIVERSITY_DONE = "Done";
+    public final static String UNIVERSITY_INPUT_PLACEHOLDER = "Type a university name";
+    public final static String UNIVERSITY_BAR_ILAN = "אוניברסיטת בר אילן";
+
     public final static String[] BUY_TITLES = {"Answer", "Upload", "Invite"};
     public final static String[] BUY_SUBTITLES = {"Provide correct answers", "Upload your resources", "Invite your friends & classmates"};
     public final static String[] POINTS_CONVERTION = {"$0.015  / point", "$0.012  / point", "$0.010  / point"};
-    public final static String[] POINTS_OPTION = {"100\n  Pts", "500\n  Pts", "1,000\n  Pts"};
+    public final static String[] POINTS_OPTION = {"100\n  Pts", "500\n  Pts", "1,400\n  Pts"};
     public final static String[] ONBOARDING_TITLES = {"Welcome to Spitball", "How does it work?", "Jump right in!"};
     public final static String[] ONBOARDING_BOTTOM_TEXT = {"The community where students access study resources and learn from each other.", "Every student can offer study resources to other students for free or for a fee."};
     public final static String ONBOARDING_FINAL_TEXT = "Start and access documents from your class";
@@ -309,16 +288,143 @@ public class Strings {
     public final static String[] WALKTHROGH_CONTENT = {"Upload your documents and earn points whenever someone downloads them", "Very important: Upvote or Downvote to grade the questions, answers and documents you see. Example: The correct answer deserves your upvote, but the incorrect answer needs your downvote.",
                                                      "You can redeem your points for Amazon gift cards.", "Use your points to reward students helping you with the correct answer", "Reply to Q's with the right answer to earn points."};
     public final static String[] WALKTHROUGH_NAV = {"Previous", "Next", "Skip", "Don't show again"};
-    public final static String[] FILTER_TYPES = {"Type", "Subject"};
-    public final static String[] FILTER_ITEMS = {"Unanswered", "Answered", "Accepted", "Accounting", "Anthropology", "Arts", "Biology", "Blockchain", "Business", "Chemistry", "Computer Science",
+    public final static String FILTER_TYPE = "Type";
+    public final static String[] FILTER_ITEMS = {"Unanswered", "Answered", "Answer accepted", "Accounting", "Anthropology", "Arts", "Biology", "Blockchain", "Business", "Chemistry", "Computer Science",
                                                  "Economics", "Education", "Geography", "Health & Medicine", "History", "Languages", "Law & Politics", "Literature", "Mathematics", "Physics",
                                                  "Psychology", "Religion Philosophy", "Social Studies", "Sports", "Technology", "Miscellaneous", "None", "אחר", "מבחנים", "סיכומים", "תרגילים", "מבחנים 2005 - 2017",
                                                  "מבחנים 2006 - 2017", "Lecture", "Textbook", "הרצאות"};
-    public final static String[] PROFILE_MENU = {"Questions", "Answers", "Uploaded Documents", "Purchased Documents"};
+    public final static String FILTER_APPLY = "Apply";
+    public final static String FILTER_NONE = "None";
+    public final static String FILTER_QUERY = HOMEWORK_PAGE + "?Filter=Unanswered";
+    public final static String FILTER_QUERY2 = STUDY_PAGE + "?Filter=None";
+    public final static String[] PROFILE_TABS = {"About", "Questions", "Answers", "Uploaded Documents", "Purchased Documents"};
     public final static String[] REFERRAL_SHARING_ICONS = {"Share", "Tweet", "Email", "Text"};
 
 
 
+    public final static String TUTOR_LOGIN = "Login";
+    public final static String TUTOR_SIGNUP = "Sign Up";
+    public final static String TUTOR_LOGIN_H = "כניסה";
+    public final static String TUTOR_SIGNUP_H = "הרשמה";
+    public final static String TUTOR_HEBREW = "עברית";
+    public final static String TUTOR_ENGLISH = "English";
+    public final static String TUTOR_LIST_TITLE = "Get a 1-on-1 lesson for ₪55/hr";
+    public final static String TUTOR_LIST_TITLE_H = "קבל שיעור פרטי עבור ₪55/שעה";
+    public final static String[] TUTOR_SUB_TITLES = {"Find tutors who have experience teaching your course online","95% \n  reviews"};
+    public final static String[] TUTOR_SUB_TITLES_H = {"מצא מורים פרטיים עם ניסיון בלימוד הקורסים שלך אונליין", "95% \n  ביקורות"};
+    public final static String TUTOR_SEARCH_PLACEHOLDER = "Enter a course to find relevant tutors";
+    public final static String TUTOR_SEARCH_PLACEHOLDER_H = "חפש קורס כדי למצוא מורים פרטיים רלוונטיים";
+    public final static String TUTOR_COURSES_COUNTER = "9,575 Courses";
+    public final static String TUTOR_COURSES_COUNTER_H = "9,575 קורסים";
+    public final static String TUTOR_TUTORS_COUNTER = "827 Tutors";
+    public final static String TUTOR_TUTORS_COUNTER_H = "827 מורים פרטיים";
+    static String[] TUTOR_FOOTER_CONTACT = {"https://medium.com/@spitballstudy", "https://linkedin.com/company/spitball", "https://www.facebook.com/spitballstudy/", "https://www.youtube.com/channel/UCamYabfxHUP3A9EFt1p94Lg/", "https://t.me/Spitball", "https://twitter.com/spitballstudy"};
+    static String[] TUTOR_FOOTER_LINKS = {"About Spitball", "Feedback", "Terms & Conditions", "Privacy Policy", "FAQ", "Ambassadors", "Blog", "Contact us", "Partnerships", "Public Relationships"};
+    static String[] TUTOR_FOOTER_LINKS_H = {"אודות ספיטבול", "פידבק", "תנאי שימוש", "מדיניות פרטיות", "שאלות נפוצות", "שגרירים", "בלוג", "צור קשר", "שותפויות", "יחסי ציבור"};
+    static String[] TUTOR_FOOTER_REDIRECT = {"https://dev.spitball.co/about", "", "https://dev.spitball.co/terms", "https://dev.spitball.co/privacy", "https://dev.spitball.co/faq", "https://dev.spitball.co/reps", "https://medium.com/@spitballstudy", "https://dev.spitball.co/contact", "https://dev.spitball.co/partners", "https://dev.spitball.co/reps"};
+    static String[] TUTOR_CAROUSEL_TEXT = {"Love it all!!! Spitball's the best. It's the most helpful site out there.", "What an amazing site! The setup is so user-friendly and there are tons of effective and up-to-date resources.", "I found myself looking for a new way to communicate and study with my classmates. Spitball. It's genius!"};
+    static String[] TUTOR_CAROUSEL_TEXT_H = {"אוהבים את הכל!!! אין על ספיטבול, האתר הכי עוזר שיש.", "אתר מדהים! ממשק פשוט ונוח עם מאגר חומרי לימוד יעיל ועדכני.", "כסטודנט טרי, מצאתי את עצמי שובר את הראש לבד. עד שסיפרו לי על ספיטבול."};
+    static String[] TUTOR_CAROUSEL_NAME = {"Hannah Newman", "Daniel Kaplan", "Ron Sawyer"};
+    static String[] TUTOR_CAROUSEL_NAME_H = {"ורד סלקמן", "חן נעים", "טובי כהן"};
+    static String[] TUTOR_CAROUSEL_TITLE = {"Arizona State University", "University of Washington","Sophomore at UC Davis"};
+    public final static String[] TUTOR_CAROUSEL_TITLE_H = {"המכללה האקדמית אשקלון", "האוניברסיטה הפתוחה", "האוניברסיטה הפתוחה"};
 
+
+    public final static String[] LANDING_TITLE = {"Ace your exams with the best study tools and tutors"};
+    public final static String[] LANDING_TITLE_H = {"להצליח במבחנים בעזרת מיטב הסיכומים והמורים הפרטיים"};
+    public final static String[] LANDING_SUB_TITLE = {"Private lessons with outstanding teachers of your choice"};
+    public final static String[] LANDING_SUB_TITLE_H = {"שיעור פרטי אחד על אחד עם מורה מצטיין לבחירתך"};
+    public final static String LANDING_UPPER_CTA = "From 55 NIS for a private lesson";
+    public final static String LANDING_UPPER_CTA_H = "לשיעור פרטי רק מ- 55 ₪";
+    public final static String[] LANDING_COUNTERS = {"250,234 study resources", "9,575 courses", "827 lecturers"};
+    public final static String[] LANDING_COUNTERS_H = {"250,234 מסמכי לימוד", "9,575 קורסים", "827 מורים פרטיים"};
+    public final static String LANDING_SECOND_TITLE = "Experienced tutors that have mastered your course material";
+    public final static String LANDING_SECOND_TITLE_H = "מורים פרטיים מנוסים השולטים בחומרי הקורסים שלך";
+    public final static String LANDING_SECOND_SUBTITLE = "Our tutors are proficient in your course curriculum and the majority of them are outstanding students that have recently completed the same courses. This ensures that the focus will be on what your really need to know and to stay on track throughout the semester and ace the exams.";
+    public final static String LANDING_SECOND_SUBTITLE_H = "המורים הפרטיים שלנו מעודכנים בתוכנית הלימודים של הקורס שלך, ומרביתם הם סטודנטים מצטיינים שעשו אותו לאחרונה בעצמם. מה שמבטיח לך שהלימוד יתמקד בכל מה שחשוב לדעת כדי להישאר בעניינים במשך הסמסטר ולהצליח במבחנים.";
+    public final static String LANDING_THIRD_TITLE = "Check tutor compatibility, free of charge";
+    public final static String LANDING_THIRD_TITLE_H = "לא למדת? לא שילמת";
+    public final static String LANDING_THIRD_SUBTITLE = "Find the best tutor for you. Even if you read stellar reviews, we offer the option of checking compatibility with";
+    public final static String LANDING_THIRD_SUBTITLE_H = "מצא את המורה הפרטי המתאים בדיוק עבורך. גם אם קיבלת המלצות וקראת את הביקורות, אנחנו נותנים לך אפשרות לבדוק אם הוא מתאים לך באופן אישי ב-";
+    public final static String LANDING_FORTH_TITLE = "It's never been easier to find an excellent and available tutor";
+    public final static String LANDING_FORTH_TITLE_H = "מעולם לא היה קל יותר למצוא מורה פרטי מעולה וזמין";
+    public final static String LANDING_FORTH_SUBTITLE = "With such an abundance of carefully-selected tutors, demo clips, and a system that highlights the highest rated tutors, it'll be easy for you to quickly find a tutor whose teaching style and availability suites you best.";
+    public final static String LANDING_FORTH_SUBTITLE_H = "עם מבחר גדול כל כך של מורים פרטיים הנבחרים בקפידה, סרטוני הדגמה להתרשמות ומערכת המבליטה עבורך את המתרגלים המובילים בדירוגים, יהיה לך קל למצוא במהירות את המורה הפרטי המתאים ביותר לצרכיך הן בסגנון ההוראה והן ברמת הזמינות.";
+    public final static String LANDING_FIFTH_TITLE = "At your convenience, without leaving home";
+    public final static String LANDING_FIFTH_TITLE_H = "בשעות שנוחות לך ובלי לצאת מהבית";
+    public final static String LANDING_FIFTH_SUBTITLE = "Who has the time or patience for transportation and parking? Save yourself the hassle and expense by learning online, from your home or dorm, at your convenience. Who says you need to travel for a good tutor?";
+    public final static String LANDING_FIFTH_SUBTITLE_H = "נסיעות? חניות? הרי אין לך זמן לזה בסדר היום העמוס שלך אז חסוך את הוצאות הנסיעה. מעכשיו לומדים אונליין, מהבית, בשעות הנוחות לך כי מי אמר שבשביל מורה פרטי טוב חייבים לנסוע רחוק?";
+    public final static String LANDING_SIXTH_TITLE = "The lessons are recorded and you can revisit them whenever you want (coming soon)";
+    public final static String LANDING_SIXTH_TITLE_H = "השיעורים מוקלטים וזמינים עבורך להאזנות חוזרות (בקרוב)";
+    public final static String LANDING_SIXTH_SUBTITLE = "Want to review the material you learned in the lesson? Is there something you've forgotten or are still unclear about? No worries! After each lesson you'll be sent a recording and you can revisit it whenever and as many times as you want.";
+    public final static String LANDING_SIXTH_SUBTITLE_H = "רוצה לחזור שוב על החומר שלמדת בשיעור? משהו לא ברור לך עד הסוף או שאולי קצת שכחת? אין לך מה לדאוג, בסוף כל שיעור תשלח אליך הקלטה שתהיה זמינה עבורך תמיד, לשמיעה חוזרת.";
+    public final static String LANDING_SEVENTH_TITLE = "Hundreds of thousands of excellent and up-to-date study resources at your disposal";
+    public final static String LANDING_SEVENTH_TITLE_H = "מאות אלפי מסמכי לימוד איכותיים ועדכניים לשימושך";
+    public final static String LANDING_SEVENTH_SUBTITLE = "There are hundreds of thousands of up-to-date study resources that will help you practice and solve problems to ace your exams. These resources are shared by students like you and by tutors that know exactly what you need to succeed.";
+    public final static String LANDING_SEVENTH_SUBTITLE_H = "מאגר עצום של מאות אלפי חומרים ומסמכי לימוד עדכניים שיעזרו לך לפתור מטלות ותרגילים ולהצליח במבחנים. שיתוף המסמכים נעשה על ידי סטודנטים כמוך ומורים פרטיים שיודעים בדיוק מה צריך כדי להצליח.";
+    public final static String LANDING_FOOTER_TITLE = "A limited offer of only 55 NIS per private lesson";
+    public final static String LANDING_FOOTER_TITLE_H = "שיעור פרטי Online ב- 55 ₪ לשעה לזמן מוגבל";
+    public final static String LANDING_FOOTER_CTA = "A private lesson from 55 NIS";
+    public final static String LANDING_FOOTER_CTA_H = "לשיעור פרטי מ- 55 ₪";
+
+    public final static String GET_POINTS_HEADER = "Get Points";
+    public final static String GET_POINTS_SUBTITLE = "Need points now?";
+    public final static String GET_POINTS_MOST = "MOST POPULAR";
+    public final static String POINTS_WARNING = "Please note, private lessons can not be paid with points.";
+    public final static String POINTS_NOTE = "Purchasing of points is solely to access documents on the Spitball platform.";
+    public final static String PAYPAL_USERNAME = "gaby@cloudents.com";
+    public final static String PAYPAL_PASSWORD = "12345678";
+    public final static String POINTS_ACTION = "Buy";
+    public final static String POINTS_TYPE = "Earned";
+    public final static String POINTS_AMOUNT = "1,400.00 Pts";
+    public final static String POINTS_RED = "color : red;";
+
+    public final static String[] SEARCHBAR_PLACEHOLDERS = {"Search in questions...", "Find study documents...", "Find a tutor..."};
+
+    public final static String REFERRAL_TITLE = "Spread the word at";
+    public final static String REFERRAL_SEC_TITLE = "Earn 10 points for each one that joins";
+    public final static String REFERRAL_SUB_TITLE = "The more classmates you get on Spitball, the better everyone’s grades will be!";
+    public final static String REFERRAL_SMALL_LETTERS = "Limited to 5 referrals";
+    public final static String[] REFERRAL_SHARE_TEXT = {"Share", "Tweet", "Email", "Text"};
+    public final static String REFERRAL_LINK = "http://www.spitball.co/?referral=Fn9&promo=referral";
+    public final static String[] REFERRAL_COPY_BUTTON = {"COPY", "COPIED"};
+
+    public final static String SEARCH_TEST = "Test";
+    public final static String ECONOMICS_COURSE = "economics";
+
+    public final static String COURSES_MY = "My Courses";
+    public final static String COURSES_JOIN = "Join courses";
+    public final static String COURSES_INPUT_PLACEHOLDER = "Type to Find Courses";
+
+    public final static String REQUEST_TITLE = "Request a Tutor";
+    public final static String[] REQUEST_PLACEHOLDERS = {"Name", "Email", "Phone", "I need help with this topic...", "In what course ?", "University"};
+    public final static String[] REQUEST_BUTTONS = {"SUBMIT REQUEST", "CLOSE"};
+    public final static String REUQEST_REQUIRED = "This field is required";
+    public final static String REQUEST_COURSE_SEARCH = "Economics";
+
+    public final static String DOC_PREVIEW_TITLE = "Students learn from students";
+    public final static String DOC_PREVIEW_SUBTITLE = "Get online tutoring and all the study materials to master your studies";
+    public final static String DOC_UNLOCK = "To unlock this document, please register";
+    public final static String DOC_UNLOCK_BUTTON = "Unlock";
+    public final static String[] DOC_TUTOR_TITLES = {"Uploaded by:", "Course:", "University:"};
+    public final static String DOC_MORE_TUTORS = "More Tutors for this course";
+    public final static String DOC_MORE = "More documents";
+    public final static String DOC_DOWNLOAD = "Download";
+    public final static String TUTOR_SEND = "Send";
+    public final static String TUTOR_MESSAGE = "a message";
+
+    public final static String PROFILE_USER_PAGE = PROFILE_PAGE + "/159039";
+    public final static String PROFILE_OTHER_USER_PAGE = PROFILE_PAGE + "/160468";
+    public final static String PROFILE_PRICE = "/ hour";
+    public final static String PROFILE_BIO = "Bio";
+    public final static String PROFILE_COURSES = "Courses I Can Help You With";
+    public final static String PROFILE_REVIEWS = "Reviews";
+    public final static String PROFILE_UNDEFINED = "Undefined";
+    public final static String PROFILE_INTRO = "Hey there, I’m";
+    public final static String PROFILE_MY_COURSES = "My Courses";
+    public final static String PROFILE_ACTIVE = "--active";
+
+    public final static String TUTOR_CARD_TITLE = "Tutor";
+    public final static String TUTOR_CARD_HEADER = "Course Tutors";
 
 }

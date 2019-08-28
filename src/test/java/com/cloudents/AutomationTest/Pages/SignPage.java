@@ -12,6 +12,9 @@ public class SignPage {
     @FindBy(className = "back-button")
     public List<WebElement> closeIcon;
 
+    @FindBy(tagName = "body")
+    public WebElement body;
+
 
 
 
@@ -19,8 +22,8 @@ public class SignPage {
 
     // ******   Left side   ********
 
-    @FindBy(xpath = "//*[@class='side-wrapper image']//img")
-    public WebElement image;
+    @FindBy(xpath = "//*[@class='leftSection']")
+    public WebElement leftSection;
 
 
 
@@ -28,20 +31,23 @@ public class SignPage {
 
     // ******* Right side   *********
 
-    @FindBy(className = "step-title")
+    @FindBy(xpath = "//*[@class='getStarted-top']//p")
     public WebElement stepTitle;
 
-    @FindBy(className = "sub-title")
+    @FindBy(xpath = "//*[@class='getStarted-top']//span")
     public WebElement subTitle;
 
-    @FindBy(xpath = "//*[@class='checkbox-terms']//span")
+    @FindBy(xpath = "//*[@class='line-terms']//label")
     public WebElement agreeCheckbox;
 
-    @FindBy(id = "agreeTermDesk")
+    @FindBy(id = "checkBox")
     public WebElement checkBox;
 
-    @FindBy(className = "seperator-text")
+    @FindBy(xpath = "//*[@class='hidden-xs-only or']")
     public WebElement textSeperator;
+
+    @FindBy(xpath = "//*[@class='setEmail']//p")
+    public WebElement loginTitle;
 
 
 
@@ -51,16 +57,13 @@ public class SignPage {
 
     // ******* Signup *********
 
-    @FindBy(xpath = "//*[@class='limited-width form-wrap']//button[2]")
+    @FindBy(xpath = "//*[@class='google elevation-5 btn-login v-btn v-btn--large v-btn--round theme--light']")
     public WebElement signupWithGoogle;
 
-    @FindBy(xpath = "//*[@class='limited-width form-wrap']//button[4]")
+    @FindBy(xpath = "//*[@class='email v-btn v-btn--flat v-btn--large v-btn--round theme--light']")
     public WebElement signupWithEmail;
 
-    @FindBy(id = "recaptcha-anchor")
-    public WebElement recaptcha;
-
-    @FindBy(xpath = "//*[@class='form-one']//button")
+    @FindBy(xpath = "//*[@class='ctnBtn white--text btn-login v-btn v-btn--large v-btn--round theme--light']")
     public WebElement continueSignup;
 
 
@@ -69,7 +72,7 @@ public class SignPage {
 
     // ******* Login   ********
 
-    @FindBy(xpath = "//*[@class='limited-width form-wrap']//button[1]")
+    @FindBy(xpath = "//*[@class='google elevation-5 btn-login v-btn v-btn--large v-btn--round theme--light']")
     public WebElement signWithGoogle;
 
     @FindBy(id = "identifierId")
@@ -78,28 +81,28 @@ public class SignPage {
     @FindBy(id = "identifierNext")
     public WebElement gmailNext;
 
-    @FindBy(name = "password")
+    @FindBy(xpath = "//*[@class='aXBtI I0VJ4d Wic03c']//input")
     public WebElement gmailPassword;
 
     @FindBy(id = "passwordNext")
     public WebElement passwordNext;
 
-    @FindBy(xpath = "//*[@class='limited-width form-wrap']//button[3]")
+    @FindBy(xpath = "//*[@class='email v-btn v-btn--flat v-btn--large v-btn--round theme--light']")
     public WebElement signWithEmail;
 
     @FindBy(name="email")
     public WebElement enterEmail;
 
-    @FindBy(name = "user password")
+    @FindBy(name = "pass")
     public WebElement password;
 
-    @FindBy(xpath = "//*[@class='form-one']//button")
+    @FindBy(xpath = "//*[@class='white--text btn-login v-btn v-btn--large v-btn--round theme--light']")
     public WebElement continueButton;
 
-    @FindBy(xpath = "//*[@class='signin-strip']//a")
+    @FindBy(xpath = "//*[@class='setPassword']//span")
     public WebElement forgotPassword;
 
-    @FindBy(xpath = "//*[@class='limited-width']//button")
+    @FindBy(xpath = "//*[@class='white--text btn-login v-btn v-btn--large v-btn--round theme--light']")
     public WebElement loginButton;
 
 
@@ -113,8 +116,8 @@ public class SignPage {
     @FindBy(className = "click")
     public List<WebElement> loginLink;
 
-    @FindBy(className = "signin-strip")
-    public WebElement signinStrip;
+    @FindBy(xpath = "//*[@class='getStarted-bottom']//span")
+    public List<WebElement> signinStrip;
 
 
 

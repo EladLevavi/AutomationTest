@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17b3fc1a-ab91-4c31-bf82-736e12ce3328" name="Default Changelist" comment="">
+    <list default="true" id="17b3fc1a-ab91-4c31-bf82-736e12ce3328" name="Default Changelist" comment="Last fixes to the tests.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Courses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/DocumentPreview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/CoursesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/StudyRoomPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/TutorListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/StudyRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/TutorCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/TutorList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/TutorRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/AboutTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/AboutTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/BuyPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/BuyPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Filters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Filters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MainTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MainTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MyWallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MyWallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/OnBoarding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Obsolete/OnBoarding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/HomeworkHelpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/HomeworkHelpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MyWalletPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MyWalletPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SignPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SignPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/StudyDocumentsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/StudyDocumentsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/UniversityPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/UniversityPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/ReferralDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/ReferralDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sitemap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sitemap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Obsolete/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/TopEarners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Obsolete/TopEarners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/University.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Upload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Upload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Walkthrough.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Obsolete/Walkthrough.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/CloudentsAutoTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/CloudentsAutoTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/AboutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/AboutPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cloudents/AutomationTest/Pages/MainPage.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,21 +67,8 @@
   <component name="CoverageViewManager">
     <option name="myElementSize" value="162" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,44 +77,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>EMAIL_PLACE</find>
-      <find>PASSWORD_PLACE</find>
-      <find>Enter your</find>
-      <find>v-</find>
-      <find>personalize</find>
-      <find>data:image</find>
-      <find>num</find>
-      <find>hands of</find>
-      <find>!</find>
-      <find>v-ta</find>
-      <find>min.</find>
-      <find>cta</find>
-      <find>intro-two-title</find>
-      <find>cta-sbl sb-rounded-btn</find>
-      <find>SBL</find>
-      <find>Earn points And Exchange Them To Gift Cards</find>
-      <find>LOGIN_LI</find>
-      <find>I agree</find>
-      <find>BALANCES</find>
-      <find>CASH</find>
-      <find>CASHOUT</find>
-      <find>SET_SC</find>
-      <find>checkoutButton</find>
-      <find>PAGE</find>
-      <find>HOME_PAGE</find>
-      <find>TABS_TITLE</find>
-      <find>TOKEN_HEADER</find>
-      <find>FILTER</find>
-      <find>placeholder</find>
-      <find>SET_SCHOOL</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>REPS_PAGE</replace>
-      <replace>protected</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -120,63 +106,6 @@
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="EladLevavi" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="AutomationTest" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/TermsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/PrivacyPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/FAQPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/StudyDocPage.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/TestNG.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SitemapPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/ContactPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/Token.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/TextbooksPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/PartnersPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/RepsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SignUpPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Drivers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/FlashcardsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Images.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/AskPopup.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sitemap.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MyWalletPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MyWallet.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/UniversityPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Walkthrough.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/TopEarners.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Pages.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/AboutTabs.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Common.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/TokenPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Token.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/OnBoarding.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/AboutPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SignPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Filters.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/LandingPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sign.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/HomeworkHelpPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Upload.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Search.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/ProfilePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Profile.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/AskQuestion.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/BuyPoints.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/ReferralDialog.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MainTabs.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/StudyDocumentsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Methods.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Strings.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/University.java" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -184,85 +113,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="AutomationTest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="AutomationTest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-415" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
+  <component name="ProjectId" id="1P6FkG4ZnA033mswJGvRtYqe9AM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AutomationTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutomationTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutomationTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutomationTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutomationTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AutomationTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutomationTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AutomationTest" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Elad/IdeaProjects/AutomationTest/src/test/java/com/cloudents/AutomationTest/Resources/Strings.java" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554029563373" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/TestNG.xml" />
@@ -270,7 +124,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -293,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.University.university">
+  <component name="RunManager" selected="TestNG.Sign.resetPassword">
     <configuration name="C:/Users/Elad/IdeaProjects/AutomationTest/src/test/resources/TestNG.xml" type="TestNG" nameIsGenerated="true">
       <extension name="coverage">
         <pattern>
@@ -434,7 +288,7 @@
       <module name="AutomationTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cloudents.AutomationTest.*" />
+          <option name="PATTERN" value="com.cloudents.AutomationTest.Obsolete.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -458,8 +312,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TopEarners" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTest" />
+    <configuration name="Sign.loginWithEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationtest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cloudents.AutomationTest.*" />
@@ -468,62 +322,8 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.cloudents.AutomationTest" />
-      <option name="MAIN_CLASS_NAME" value="com.cloudents.AutomationTest.TopEarners" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties>
-        <property name="" value="" />
-      </properties>
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="University" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloudents.AutomationTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="com.cloudents.AutomationTest" />
-      <option name="MAIN_CLASS_NAME" value="com.cloudents.AutomationTest.University" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties>
-        <property name="" value="" />
-      </properties>
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="University.university" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloudents.AutomationTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="com.cloudents.AutomationTest" />
-      <option name="MAIN_CLASS_NAME" value="com.cloudents.AutomationTest.University" />
-      <option name="METHOD_NAME" value="university" />
+      <option name="MAIN_CLASS_NAME" value="com.cloudents.AutomationTest.Sign" />
+      <option name="METHOD_NAME" value="loginWithEmail" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -540,8 +340,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Upload" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTest" />
+    <configuration name="Sign.loginWithGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationtest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cloudents.AutomationTest.*" />
@@ -550,9 +350,10 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.cloudents.AutomationTest" />
-      <option name="MAIN_CLASS_NAME" value="com.cloudents.AutomationTest.Upload" />
+      <option name="MAIN_CLASS_NAME" value="com.cloudents.AutomationTest.Sign" />
+      <option name="METHOD_NAME" value="loginWithGoogle" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -567,8 +368,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Walkthrough" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTest" />
+    <configuration name="Sign.resetPassword" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationtest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cloudents.AutomationTest.*" />
@@ -577,9 +378,66 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.cloudents.AutomationTest" />
-      <option name="MAIN_CLASS_NAME" value="com.cloudents.AutomationTest.Walkthrough" />
+      <option name="MAIN_CLASS_NAME" value="com.cloudents.AutomationTest.Sign" />
+      <option name="METHOD_NAME" value="resetPassword" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties>
+        <property name="" value="" />
+      </properties>
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sign.signupWithEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationtest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloudents.AutomationTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.cloudents.AutomationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.cloudents.AutomationTest.Sign" />
+      <option name="METHOD_NAME" value="signupWithEmail" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties>
+        <property name="" value="" />
+      </properties>
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sign.signupWithGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationtest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloudents.AutomationTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.cloudents.AutomationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.cloudents.AutomationTest.Sign" />
+      <option name="METHOD_NAME" value="signupWithGoogle" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -616,19 +474,19 @@
     <list>
       <item itemvalue="TestNG.C:/Users/Elad/IdeaProjects/AutomationTest/src/test/resources/TestNG.xml" />
       <item itemvalue="TestNG.CloudentsAutoTests.FAQ" />
-      <item itemvalue="TestNG.TopEarners" />
-      <item itemvalue="TestNG.University" />
-      <item itemvalue="TestNG.Upload" />
-      <item itemvalue="TestNG.Walkthrough" />
-      <item itemvalue="TestNG.University.university" />
+      <item itemvalue="TestNG.Sign.signupWithGoogle" />
+      <item itemvalue="TestNG.Sign.loginWithEmail" />
+      <item itemvalue="TestNG.Sign.signupWithEmail" />
+      <item itemvalue="TestNG.Sign.resetPassword" />
+      <item itemvalue="TestNG.Sign.loginWithGoogle" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.University.university" />
-        <item itemvalue="TestNG.Walkthrough" />
-        <item itemvalue="TestNG.Upload" />
-        <item itemvalue="TestNG.University" />
-        <item itemvalue="TestNG.TopEarners" />
+        <item itemvalue="TestNG.Sign.resetPassword" />
+        <item itemvalue="TestNG.Sign.loginWithGoogle" />
+        <item itemvalue="TestNG.Sign.loginWithEmail" />
+        <item itemvalue="TestNG.Sign.signupWithEmail" />
+        <item itemvalue="TestNG.Sign.signupWithGoogle" />
       </list>
     </recent_temporary>
   </component>
@@ -807,38 +665,6 @@
     <option name="localTasksCounter" value="24" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Sign_loginWithEmail - 2019.03.31 at 13h 43m 20s.xml">
-      <configuration name="Sign.loginWithEmail" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Sign_loginWithGoogle - 2019.03.31 at 13h 44m 32s.xml">
-      <configuration name="Sign.loginWithGoogle" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Sitemap - 2019.03.31 at 13h 44m 56s.xml">
-      <configuration name="Sitemap" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TopEarners - 2019.03.31 at 13h 45m 27s.xml">
-      <configuration name="TopEarners" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="University - 2019.03.31 at 13h 45m 53s.xml">
-      <configuration name="University" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Upload - 2019.03.31 at 13h 46m 41s.xml">
-      <configuration name="Upload" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Walkthrough - 2019.03.31 at 13h 47m 27s.xml">
-      <configuration name="Walkthrough" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="University_university - 2019.03.31 at 13h 47m 55s.xml">
-      <configuration name="University.university" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="University_university - 2019.03.31 at 13h 49m 13s.xml">
-      <configuration name="University.university" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="University_university - 2019.03.31 at 13h 50m 37s.xml">
-      <configuration name="University.university" configurationId="TestNG" />
-    </history-entry>
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -848,70 +674,18 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.20255864" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6130064" visible="true" weight="0.2751896" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49093816" weight="0.3391116" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4978678" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4978678" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.38699362" side_tool="true" weight="0.2751896" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.56289977" weight="0.32719395" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.21588486" />
-      <window_info anchor="right" id="Maven" order="9" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2489339" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6279318" visible="true" weight="0.2751896" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49307036" weight="0.39869988" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4978678" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4978678" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.37206823" side_tool="true" visible="true" weight="0.2751896" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.5676972" weight="0.32719395" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.21588486" />
-    </layout-to-restore>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -938,453 +712,8 @@
     <MESSAGE value="Fixing the tests, also arranging them in separate files according to site section tests." />
     <MESSAGE value="Arranging the Page Resource Files, deleting some extra page files." />
     <MESSAGE value="Adding tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding tests" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SitemapPage.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.5/testng-6.8.5.jar!/org/testng/internal/TestMethodWorker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.5/testng-6.8.5.jar!/org/testng/TestRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="464" selection-start-line="464" selection-end-line="464" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.5/testng-6.8.5.jar!/org/testng/SuiteRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.5/testng-6.8.5.jar!/org/testng/SuiteRunnerWorker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.5/testng-6.8.5.jar!/org/testng/TestNG.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="928" selection-start-line="928" selection-end-line="928" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.5/testng-6.8.5.jar!/org/testng/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/LoginPage.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.5.3/selenium-remote-driver-3.5.3.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/FlashcardsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/AskPopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/org/w3c/dom/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="262" column="19" selection-start-line="262" selection-start-column="11" selection-end-line="262" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Drivers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.5.3/selenium-remote-driver-3.5.3.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="303" selection-start-line="303" selection-end-line="303" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Images.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MyWalletPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/AboutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/TokenPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-742">
-          <caret line="52" column="11" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/SignPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/LandingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/HomeworkHelpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Pages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/ProfilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/UniversityPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="196" column="33" selection-start-line="196" selection-start-column="33" selection-end-line="196" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#token#0;class#Token#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.5/testng-6.8.5.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="477" selection-start-line="477" selection-end-line="477" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Pages/StudyDocumentsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/AboutTabs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="85" column="51" lean-forward="true" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
-          <folding>
-            <element signature="method#mainTabs#0;class#AboutTabs#0" />
-            <element signature="method#about#0;class#AboutTabs#0" />
-            <element signature="method#faq#0;class#AboutTabs#0" />
-            <element signature="method#blog#0;class#AboutTabs#0" />
-            <element signature="method#partners#0;class#AboutTabs#0" />
-            <element signature="method#reps#0;class#AboutTabs#0" />
-            <element signature="method#privacy#0;class#AboutTabs#0" />
-            <element signature="method#terms#0;class#AboutTabs#0" />
-            <element signature="method#contact#0;class#AboutTabs#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/BuyPoints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Common.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#header#0;class#Common#0" />
-            <element signature="method#mainTabs#0;class#Common#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Filters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#filters#0;class#Filters#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/AskQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="88" column="61" selection-start-line="88" selection-start-column="61" selection-end-line="88" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#askQuestion#0;class#AskQuestion#0" />
-            <element signature="method#deleteQuestion#0;class#AskQuestion#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="92" selection-start-line="55" selection-start-column="92" selection-end-line="55" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MainTabs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="54" column="61" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#homeworkHelp#0;class#MainTabs#0" />
-            <element signature="method#studyDocuments#0;class#MainTabs#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/MyWallet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#wallet#0;class#MyWallet#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Profile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#profile#0;class#Profile#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/OnBoarding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onboarding#0;class#OnBoarding#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/ReferralDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#search#0;class#Search#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="121" column="62" lean-forward="true" selection-start-line="121" selection-start-column="62" selection-end-line="121" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#signupWithGoogle#0;class#Sign#0" />
-            <element signature="method#signupWithEmail#0;class#Sign#0" />
-            <element signature="method#resetPassword#0;class#Sign#0" />
-            <element signature="method#loginWithEmail#0;class#Sign#0" />
-            <element signature="method#loginWithGoogle#0;class#Sign#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Sitemap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#dev#0;class#Sitemap#0" />
-            <element signature="method#production#0;class#Sitemap#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/TopEarners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#topEarners#0;class#TopEarners#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Upload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="53" lean-forward="true" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#upload#0;class#Upload#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Walkthrough.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#walkthrough#0;class#Walkthrough#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/Resources/Strings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="288" column="53" selection-start-line="288" selection-start-column="53" selection-end-line="288" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/University.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cloudents/AutomationTest/CloudentsAutoTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <MESSAGE value="Last fixes to the tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Last fixes to the tests." />
   </component>
   <component name="masterDetails">
     <states>

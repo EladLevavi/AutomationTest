@@ -12,7 +12,7 @@ public class HomeworkHelpPage {
 
     // ******   Right side   ********
 
-    @FindBy(xpath = "//*[@class='flex right-sidebar']//div//a//div//div//button")
+    @FindBy(xpath = "//*[@class='flex btn-wrap text-xs-left sm4 shrink']//button")
     public WebElement askButton;
 
     @FindBy(xpath = "//*[@class='question-add-button v-btn theme--light']")
@@ -59,6 +59,21 @@ public class HomeworkHelpPage {
 
     @FindBy(xpath = "//*[@class='question-options-part']")
     public WebElement browse;
+
+    @FindBy(xpath = "//*[@class='question-container cell']")
+    public List<WebElement> questionCards;
+
+    @FindBy(xpath = "//*[@class='tutor-result-card-other pa-2 mb-3 row wrap justify-space-between overflow-hidden ab-default-card']")
+    public List<WebElement> tutorCards;
+
+    @FindBy(xpath = "//*[@class='subheading font-weight-bold tutor-name text-truncate mb-2']")
+    public List<WebElement> tutorCardsTitle;
+
+    @FindBy(xpath = "//*[@class='white--text caption py-3 px-2 mb-0 v-btn v-btn--depressed v-btn--round v-btn--small theme--light tutor-btn']")
+    public List<WebElement> tutorCardsButton;
+
+    @FindBy(xpath = "//*[@class='flex title-holder']//span")
+    public WebElement courseTutors;
 
 
 

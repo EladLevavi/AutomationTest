@@ -2,11 +2,12 @@ package com.cloudents.AutomationTest;
 
 
 import com.cloudents.AutomationTest.Resources.Drivers;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import static com.cloudents.AutomationTest.Resources.Drivers.*;
 import static com.cloudents.AutomationTest.Resources.Pages.*;
-import static com.cloudents.AutomationTest.Resources.Strings.*;
 import static com.cloudents.AutomationTest.Resources.Methods.*;
 
 
@@ -47,7 +48,10 @@ public class MainTabs extends CloudentsAutoTests {
         personalizePopup(0);
 
         // Number of results bigger than 50 (paging is working)
-        resultsCount(0);
+        Actions actions = new Actions(driver);
+        actions.keyDown(Keys.CONTROL).sendKeys(Keys.END).perform();
+        Thread.sleep(2000);
+        Assert.assertTrue(homeworkHelpPage.questionCards.size()>20);
 
     }
 
@@ -75,7 +79,10 @@ public class MainTabs extends CloudentsAutoTests {
             Thread.sleep(2000);
         }
         mainPage.filterSections.get(0).click();*/
-        resultsCount(1);
+        Actions actions = new Actions(driver);
+        actions.keyDown(Keys.CONTROL).sendKeys(Keys.END).perform();
+        Thread.sleep(2000);
+        Assert.assertTrue(studyDocumentsPage.documentCards.size() > 20);
 
     }
 

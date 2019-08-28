@@ -9,132 +9,121 @@ public class LandingPage {
 
     // ******      Header     ********
 
-    @FindBy(xpath = "//*[@class='v-toolbar__items landing-header-items']/a[1]")
-    public WebElement learnLink;
+    @FindBy(xpath = "//*[@class='flex tutor-list-header-right hidden-sm-and-down']//a")
+    public WebElement hebrewButton;
 
-    @FindBy(xpath = "//*[@class='v-toolbar__items landing-header-items']/a[2]")
-    public WebElement earnLink;
+    @FindBy(xpath = "//*[@class='flex tutor-list-header-right hidden-sm-and-down']//button")
+    public List<WebElement> signButtons;
 
-    @FindBy(xpath = "//*[@class='login-action login']")
-    public WebElement loginButton;
-
-    @FindBy(xpath = "//*[@class='login-action signup']")
-    public WebElement signupButton;
-
-    @FindBy(xpath = "//*[@class='v-menu__activator']//button")
-    public WebElement userMenu;
-
-    @FindBy(xpath = "//*[@class='v-list__tile__title subheading']")
-    public List<WebElement> userItems;
-
-    @FindBy(xpath = "//*[@class='hero-text-container']//h1")
-    public WebElement headerTitle;
-
-    @FindBy(xpath = "//*[@class='hero-text-container']//h3")
-    public WebElement headerSubTitle;
-
-    @FindBy(xpath = "//*[@class='cta-button']")
-    public WebElement ctaButton;
-
-    @FindBy(xpath = "//*[@class='video-link']")
-    public WebElement videoLink;
-
-    @FindBy(xpath = "//*[@class='v-card__text stat-text-title px-0']")
-    public List<WebElement> statHeaders;
-
-    @FindBy(xpath = "//*[@class='intro-one-title']")
-    public WebElement title1;
-
-    @FindBy(xpath = "//*[@class='intro-one-sub-title']")
-    public WebElement subTitle1;
-
-    @FindBy(xpath = "//*[@class='intro-two-title']")
-    public WebElement title2;
-
-    @FindBy(xpath = "//*[@class='intro-two-sub-title']")
-    public WebElement subTitle2;
-
-    @FindBy(xpath = "//*[@class='gif-container-question']")
-    public WebElement gifImage1;
-
-    @FindBy(xpath = "//*[@class='gif-container-document']")
-    public WebElement gifImage2;
-
-    @FindBy(xpath = "//*[@class='v-input__slot']//input")
-    public List<WebElement> dropdownLists;
-
-    @FindBy(xpath = "//*[@class='v-list__tile__content']")
-    public List<WebElement> dropdownItems;
-
-    @FindBy(xpath = "//*[@class='subheading dark']")
-    public WebElement schoolItem;
+    @FindBy(xpath = "//*[@id='Layer_1']")
+    public WebElement logoIcon;
 
 
 
 
+    // ***** First paragraph *****
 
+    @FindBy(xpath = "//*[@class='flex landing-headeline-section-text-container xs12 lg6']//h2")
+    public WebElement title;
 
-    // *******      FAQ header    ********
+    @FindBy(xpath = "//*[@class='flex landing-headeline-section-text-container xs12 lg6']//h3")
+    public WebElement subTitle;
 
-    @FindBy(xpath = "//*[@class='faq-wrap']//h3")
-    public List<WebElement> faqTitle;
-
-    @FindBy(xpath = "//*[@class='faq-wrap']//p")
-    public List<WebElement> faqText;
-
-    @FindBy(xpath = "//*[@class='cta-sbl sb-rounded-btn']")
-    public WebElement faqCta;
-
+    @FindBy(xpath = "//*[@class='flex landing-headeline-section-text-container xs12 lg6']//button")
+    public WebElement upperCta;
 
 
 
-    // *******     Reviews section   *******
+    // ****** Inbetween section ******
 
-    @FindBy(xpath = "//*[@class='reviews-title']")
-    public WebElement reviewsTitle;
-
-    @FindBy(xpath = "//*[@class='review-name']")
-    public List<WebElement> reviewNames;
-
-    @FindBy(xpath = "//*[@class='review-title']")
-    public List<WebElement> reviewTitles;
-
-    @FindBy(xpath = "//*[@class='review-text']")
-    public List<WebElement> reviewTexts;
+    @FindBy(xpath = "//*[@class='layout landing-headelien-headlineStatus-container align-center justify-space-between row wrap']/span")
+    public List<WebElement> counters;
 
 
 
-    // ********     Subjects section   *********
+    // ****** Second paragraph *****
 
-    @FindBy(xpath = "//*[@class='subjects']//h3")
-    public WebElement subjectTitle;
+    @FindBy(xpath = "//*[@class='flex landing-section1-text-container']//h3")
+    public WebElement secondTitle;
 
-    @FindBy(xpath = "//*[@class='subjects']//span")
-    public WebElement subjectSubTitle;
-
-    @FindBy(xpath = "//*[@class='flex subject-item xs3']")
-    public List<WebElement> subjectsList;
+    @FindBy(xpath = "//*[@class='flex landing-section1-text-container']//h4")
+    public WebElement secondSubTitle;
 
 
-    // ********      Footer    *********
 
-    @FindBy(xpath = "//*[@class='join-title']")
+    // ****** Third paragraph ******
+
+    @FindBy(xpath = "//*[@class='flex landing-section2-text-container']//h3")
+    public WebElement thirdTitle;
+
+    @FindBy(xpath = "//*[@class='flex landing-section2-text-container']//h4")
+    public WebElement thirdSubTitle;
+
+
+
+
+    // ***** Third paragraph *****
+
+    @FindBy(xpath = "//*[@class='flex landing-section3-text-container']//h3")
+    public WebElement rdTitle;
+
+    @FindBy(xpath = "//*[@class='flex landing-section3-text-container']//h4")
+    public WebElement rdSubTitle;
+
+
+
+    // ***** Fifth paragraph *****
+
+    @FindBy(xpath = "//*[@class='flex landing-section4-text-container']//h3")
+    public WebElement fifthTitle;
+
+    @FindBy(xpath = "//*[@class='flex landing-section4-text-container']//h4")
+    public WebElement fifthSubTitle;
+
+
+
+    // ***** Sixth paragraph ******
+
+    @FindBy(xpath = "//*[@class='flex landing-section5-text-container']//h3")
+    public WebElement sixthTitle;
+
+    @FindBy(xpath = "//*[@class='flex landing-section5-text-container']//h4")
+    public WebElement sixthSubTitle;
+
+
+
+    // ***** Seventh paragraph ******
+
+    @FindBy(xpath = "//*[@class='flex landing-section6-text-container']//h3")
+    public WebElement seventhTitle;
+
+    @FindBy(xpath = "//*[@class='flex landing-section6-text-container']//h4")
+    public WebElement seventhSubTitle;
+
+
+
+
+    // ***** Footer ******
+
+    @FindBy(xpath = "//*[@class='landing-carousel-card']")
+    public List<WebElement> carousel;
+
+    @FindBy(xpath = "//*[@class='flex landing-sub-footer-section-container']//h3")
     public WebElement footerTitle;
 
-    @FindBy(xpath = "//*[@class='join-cta']")
+    @FindBy(xpath = "//*[@class='flex landing-sub-footer-section-container']//button")
     public WebElement footerCta;
 
-    @FindBy(xpath = "//*[@class='s-cookie-container']//span")
-    public WebElement cookieText;
+    @FindBy(xpath = "//*[@class='flex landing-carousel-arrows']")
+    public WebElement carouselArrow;
 
-    @FindBy(xpath = "//*[@class='cookie-approve']//button")
-    public WebElement cookieButton;
+    @FindBy(xpath = "//*[@class='landing-carousel-card-text']")
+    public List<WebElement> carouselText;
 
-    @FindBy(xpath = "//*[@class='footer-card social-card v-card v-sheet theme--light elevation-0']//a")
-    public List<WebElement> socialLinks;
+    @FindBy(xpath = "//*[@class='landing-carousel-card-name']")
+    public List<WebElement> carouselName;
 
-    @FindBy(xpath = "//*[@class='footer-link']")
-    public List<WebElement> footerLinks;
-
+    @FindBy(xpath = "//*[@class='landing=carousel-card-title']")
+    public List<WebElement> carouselTitle;
 
 }

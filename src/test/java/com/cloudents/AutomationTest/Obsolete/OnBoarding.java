@@ -1,5 +1,6 @@
-package com.cloudents.AutomationTest;
+package com.cloudents.AutomationTest.Obsolete;
 
+import com.cloudents.AutomationTest.CloudentsAutoTests;
 import com.cloudents.AutomationTest.Resources.Drivers;
 import org.testng.Assert;
 import org.testng.annotations.Test;

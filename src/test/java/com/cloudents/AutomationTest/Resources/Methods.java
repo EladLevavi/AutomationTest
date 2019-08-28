@@ -1,6 +1,5 @@
 package com.cloudents.AutomationTest.Resources;
 
-import com.cloudents.AutomationTest.MyWallet;
 import com.cloudents.AutomationTest.Pages.*;
 import static com.cloudents.AutomationTest.Resources.Strings.*;
 import static com.cloudents.AutomationTest.CloudentsAutoTests.*;
@@ -17,7 +16,6 @@ import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -25,7 +23,6 @@ import java.util.Set;
 
 
 public class Methods {
-
 
 
     // Init all web elements on web pages
@@ -43,10 +40,11 @@ public class Methods {
         askPopup = PageFactory.initElements(driver, AskPopup.class);
         universityPage = PageFactory.initElements(driver, UniversityPage.class);
         profilePage = PageFactory.initElements(driver, ProfilePage.class);
+        studyRoomPage = PageFactory.initElements(driver, StudyRoomPage.class);
+        tutorListPage = PageFactory.initElements(driver, TutorListPage.class);
+        coursesPage = PageFactory.initElements(driver, CoursesPage.class);
 
     }
-
-
 
 
     public static void exitDialog() throws InterruptedException {
@@ -60,7 +58,7 @@ public class Methods {
     }
 
 
-    public static void newWindow(String address) throws InterruptedException {
+    public static void newWindow(String address) {
 
         Set<String> winHandles = driver.getWindowHandles();
         winHandles.forEach(winHandle -> driver.switchTo().window(winHandle));
@@ -100,9 +98,9 @@ public class Methods {
 
         Assert.assertEquals(mainPage.tabsContainer.get(tab).getText(), TABS_TITLE[tab]);
         //Assert.assertEquals(mainPage.banner.getText(), BANNER_TEXT[tab]);
-        Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"),"Search");
+        Assert.assertEquals(mainPage.searchBar.getAttribute("placeholder"), SEARCHBAR_PLACEHOLDERS[tab]);
         if (tab == 0)
-                Assert.assertEquals(homeworkHelpPage.askButton.getText(), "Add a Question");
+            Assert.assertEquals(homeworkHelpPage.askButton.getText(), "Add a Question");
         /*if (tab!=0 && tab!=5)
             Assert.assertEquals(mainPage.searchBars.get(1).getAttribute("placeholder"), PERSONALIZE_SEARCHBAR);*/
     }
@@ -115,12 +113,10 @@ public class Methods {
         if (tab == 0) {
             if (homeworkHelpPage.questionsBox.size() <= 50)
                 Assert.fail();
-        }
-        else if (tab == 1) {
+        } else if (tab == 1) {
             if (studyDocumentsPage.documentsBox.size() <= 50)
                 Assert.fail();
-        }
-        else if (tab == 2) {
+        } else if (tab == 2) {
             if (flashcardsPage.flashcardsBox.size() <= 50)
                 Assert.fail();
         }
@@ -129,12 +125,12 @@ public class Methods {
     public static void loginUser() throws InterruptedException {
 
         //mainPage.israeliClose.click();
-        landingPage.loginButton.click();
+        landingPage.signButtons.get(0).click();
         Thread.sleep(500);
         signPage.signWithEmail.click();
         Thread.sleep(500);
         signPage.emailInput.sendKeys(USERNAME);
-        signPage.continueButton.click();
+        signPage.loginButton.click();
         Thread.sleep(500);
         signPage.password.sendKeys(PASSWORD);
         signPage.loginButton.click();
@@ -164,15 +160,163 @@ public class Methods {
         ChromeOptions options = new ChromeOptions();
         System.setProperty(CHROME_DRIVER, DRIVERS_LOCATION + CHROME_FILE);
         //options.addArguments("--incognito");
-        Map<String, Object> prefs = new HashMap<String, Object>();
+        options.addArguments("--unsafely-allow-protected-media-identifier-for-domain");
+        Map<String, Object> prefs = new HashMap<>();
         prefs.put("profile.managed_default_content_settings.geolocation", 2);
         options.setExperimentalOption("prefs", prefs);
         driver = new ChromeDriver(options);
 
     }
 
+    public static void footerLinksTest() throws InterruptedException {
+
+        Actions builder = new Actions(Drivers.driver);
+
+        builder.sendKeys(Keys.END).perform();
+
+        for (int i = 0; i < 6; i++) {
+            Assert.assertEquals(tutorListPage.footerContact.get(i).getAttribute("href"), TUTOR_FOOTER_CONTACT[i]);
+        }
+        for (int i = 0; i < 10; i++) {
+            Assert.assertEquals(tutorListPage.footerLinks.get(i).getText(), TUTOR_FOOTER_LINKS[i]);
+            if (i == 1 || i == 6)
+                continue;
+            tutorListPage.footerLinks.get(i).click();
+            Thread.sleep(1000);
+            Assert.assertEquals(Drivers.driver.getCurrentUrl(), TUTOR_FOOTER_REDIRECT[i]);
+            Drivers.driver.navigate().back();
+            Thread.sleep(1000);
+            builder.keyDown(Keys.CONTROL).sendKeys(Keys.END).perform();
+            Thread.sleep(1000);
+        }
+    }
+
+    public static void tutorCarouselTest() throws InterruptedException {
+
+        tutorListPage.carouselArrow.click();
+        Thread.sleep(1000);
+        tutorListPage.carouselArrow.click();
+        Thread.sleep(1000);
+
+        for (int i = 0; i < 2; i++) {
+            Assert.assertEquals(tutorListPage.carouselText.get(i).getText(), TUTOR_CAROUSEL_TEXT[i]);
+        }
+
+        for (int i = 0; i < 2; i++) {
+            Assert.assertEquals(tutorListPage.carouselName.get(i).getText(), TUTOR_CAROUSEL_NAME[i]);
+        }
+        tutorListPage.carouselArrow.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(tutorListPage.carouselText.get(2).getText(), TUTOR_CAROUSEL_TEXT[2]);
+        Assert.assertEquals(tutorListPage.carouselName.get(2).getText(), TUTOR_CAROUSEL_NAME[2]);
+
+    }
+
+    public static void landingCarouselTest() throws InterruptedException {
+
+        landingPage.carouselArrow.click();
+        Thread.sleep(1000);
+        landingPage.carouselArrow.click();
+        Thread.sleep(1000);
+
+        Assert.assertEquals(landingPage.carousel.size(), 3);
+        for (int i = 0; i < 6; i++) {
+            Assert.assertEquals(tutorListPage.footerContact.get(i).getAttribute("href"), TUTOR_FOOTER_CONTACT[i]);
+        }
+        for (int i = 0; i < 2; i++) {
+            Assert.assertEquals(landingPage.carouselText.get(i).getText(), TUTOR_CAROUSEL_TEXT[i]);
+        }
+
+        for (int i = 0; i < 2; i++) {
+            Assert.assertEquals(landingPage.carouselName.get(i).getText(), TUTOR_CAROUSEL_NAME[i]);
+            Assert.assertEquals(landingPage.carouselTitle.get(i).getText(), TUTOR_CAROUSEL_TITLE[i]);
+        }
+        landingPage.carouselArrow.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(landingPage.carouselText.get(2).getText(), TUTOR_CAROUSEL_TEXT[2]);
+        Assert.assertEquals(landingPage.carouselName.get(2).getText(), TUTOR_CAROUSEL_NAME[2]);
+
+    }
+
+    public static void footerLinksHebTest() throws InterruptedException {
+
+        Actions builder = new Actions(Drivers.driver);
+
+        // Switch to Hebrew
+        Assert.assertEquals(landingPage.hebrewButton.getText(), TUTOR_ENGLISH);
+        Thread.sleep(2000);
 
 
+        for (int i = 0; i < 10; i++) {
+            Assert.assertEquals(tutorListPage.footerLinks.get(i).getText(), TUTOR_FOOTER_LINKS_H[i]);
+            if (i == 1 || i == 6)
+                continue;
+            tutorListPage.footerLinks.get(i).click();
+            Thread.sleep(1000);
+            Assert.assertEquals(Drivers.driver.getCurrentUrl(), TUTOR_FOOTER_REDIRECT[i]);
+            Drivers.driver.navigate().back();
+            Thread.sleep(1000);
+            builder.keyDown(Keys.CONTROL).sendKeys(Keys.END).perform();
+            Thread.sleep(1000);
+        }
+    }
 
+    public static void tutorCarouselHebTest() throws InterruptedException {
+
+        tutorListPage.carouselArrow.click();
+        Thread.sleep(1000);
+        tutorListPage.carouselArrow.click();
+        Thread.sleep(1000);
+
+        Assert.assertEquals(tutorListPage.tutorCarousel.size(), 3);
+        for (int i = 0; i < 6; i++) {
+            Assert.assertEquals(tutorListPage.footerContact.get(i).getAttribute("href"), TUTOR_FOOTER_CONTACT[i]);
+        }
+        for(int i = 0 ; i < 2 ; i ++) {
+            Assert.assertEquals(tutorListPage.carouselText.get(i).getText(), TUTOR_CAROUSEL_TEXT_H[i]);
+        }
+
+        for(int i = 0 ; i < 2 ; i ++) {
+            Assert.assertEquals(tutorListPage.carouselName.get(i).getText(), TUTOR_CAROUSEL_NAME_H[i]);
+        }
+        tutorListPage.carouselArrow.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(tutorListPage.carouselText.get(2).getText(), TUTOR_CAROUSEL_TEXT_H[2]);
+        Assert.assertEquals(tutorListPage.carouselName.get(2).getText(), TUTOR_CAROUSEL_NAME_H[2]);
+
+    }
+
+    public static void landingCarouselHebTest() throws InterruptedException {
+
+        landingPage.carouselArrow.click();
+        Thread.sleep(1000);
+        landingPage.carouselArrow.click();
+        Thread.sleep(1000);
+
+        for(int i = 0 ; i < 2 ; i ++) {
+            Assert.assertEquals(landingPage.carouselText.get(i).getText(), TUTOR_CAROUSEL_TEXT_H[i]);
+        }
+
+        for(int i = 0 ; i < 2 ; i ++) {
+            Assert.assertEquals(landingPage.carouselName.get(i).getText(), TUTOR_CAROUSEL_NAME_H[i]);
+        }
+        landingPage.carouselArrow.click();
+        Thread.sleep(1000);
+        Assert.assertEquals(landingPage.carouselText.get(2).getText(), TUTOR_CAROUSEL_TEXT_H[2]);
+        Assert.assertEquals(landingPage.carouselName.get(2).getText(), TUTOR_CAROUSEL_NAME_H[2]);
+
+    }
+
+    public static void addTestCourse() throws InterruptedException {
+
+        coursesPage.addCourse.click();
+        Thread.sleep(2000);
+        coursesPage.input.sendKeys("Statistics");
+        Thread.sleep(2000);
+        coursesPage.coursesResult.get(1).click();
+        Thread.sleep(2000);
+        coursesPage.doneButton.click();
+
+    }
 
 }

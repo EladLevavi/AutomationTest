@@ -80,7 +80,7 @@ public class MainPage {
     public WebElement filter;
 
     @FindBy(xpath = "//*[@class='filter-single-title']")
-    public List<WebElement> filterTitle;
+    public WebElement filterTitle;
 
     @FindBy(xpath = "//*[@class='filter-list']//button")
     public List<WebElement> filterItems;
@@ -99,6 +99,45 @@ public class MainPage {
 
     @FindBy(xpath = "//*[@class='v-input__icon v-input__icon--clear']")
     public WebElement clearSearch;
+
+    @FindBy(xpath = "//*[@class='light-btn elevation-0 ma-0 v-btn v-btn--round theme--light']")
+    public List<WebElement> actionButtons;
+
+    @FindBy(xpath = "//*[@class='v-dialog login-popup v-dialog--active v-dialog--scrollable']")
+    public WebElement loginPopup;
+
+    @FindBy(xpath = "//*[@class='close-btn text-md-right']")
+    public WebElement closePopup;
+
+    @FindBy(xpath = "//*[@class='v-toolbar__title subheading']")
+    public WebElement requestTitle;
+
+    @FindBy(name = "add-request-textarea")
+    public WebElement requestText;
+
+    @FindBy(xpath = "//*[@class='v-select__slot']//input")
+    public WebElement course;
+
+    @FindBy(xpath = "//*[@class='v-btn v-btn--flat theme--light blue--text text--darken-1']")
+    public WebElement closeRequest;
+
+    @FindBy(xpath = "//*[@class='white--text v-btn v-btn--depressed v-btn--round theme--light']")
+    public WebElement submitRequest;
+
+    @FindBy(xpath = "//*[@class='v-messages__message']")
+    public List<WebElement> requiredMessage;
+
+    @FindBy(xpath = "//*[@class='v-list__tile v-list__tile--link theme--light']")
+    public List<WebElement> coursesList;
+
+    @FindBy(xpath = "//*[@class='v-text-field__slot']//input")
+    public List<WebElement> requestFields;
+
+    @FindBy(xpath = "//*[@class='v-select__slot']//input")
+    public List<WebElement> requestUniversity;
+
+    @FindBy(xpath = "//*[@class='txt-buy-tokens']//p")
+    public List<WebElement> pointsMessages;
 
 
 
@@ -170,14 +209,17 @@ public class MainPage {
 
     // *******  Referral Dialog   *******
 
-    @FindBy(xpath = "//*[@class='flex mb-3 xs12 sm12 md12']//div//span")
+    @FindBy(xpath = "//*[@class='flex mb-3 xs12']//span")
     public WebElement spreadText;
 
-    @FindBy(xpath = "//*[@class='flex mb-4 xs12 sm12 md12']//div//span")
+    @FindBy(xpath = "//*[@class='text-xs-center ref-subtitle']")
     public WebElement earnText;
 
-    @FindBy(xpath = "//*[@class='flex xs12 sm12 md12']//div//div")
-    public List<WebElement> subTitle;
+    @FindBy(xpath = "//*[@class='bottom-sub']")
+    public WebElement subTitle;
+
+    @FindBy(xpath = "//*[@class='bottom-sub bottom-sub-small']")
+    public WebElement smallLetters;
 
     @FindBy(xpath = "//*[@class='share-icon-container']//span//span")
     public List<WebElement> shareIcons;
@@ -185,16 +227,19 @@ public class MainPage {
     @FindBy(className = "referral-btn")
     public WebElement copyButton;
 
-    @FindBy(className = "referral-btn copied")
+    @FindBy(xpath = "//*[@class='referral-btn copied']")
     public WebElement copiedButton;
 
-    @FindBy(xpath = "//*[@class='flex xs11 sm11 md11']//span")
-    public List<WebElement> invitedText;
+    @FindBy(xpath = "//*[@class='bottom-sub bottom-sub-small']")
+    public WebElement invitedText;
 
     @FindBy(xpath = "//*[@class='close-btn text-md-right']")
     public WebElement closeReferral;
 
-    @FindBy(id = "sb_referralLink")
+    @FindBy(xpath = "//*[@class='share-text']")
+    public List<WebElement> shareText;
+
+    @FindBy(xpath = "//*[@class='input-field inputPrepIcon errorTextStr']")
     public WebElement referralLink;
 
 

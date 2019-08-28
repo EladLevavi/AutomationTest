@@ -2,11 +2,9 @@ package com.cloudents.AutomationTest;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import static com.cloudents.AutomationTest.Resources.Methods.*;
+import static com.cloudents.AutomationTest.Resources.Strings.*;
 
-import java.util.concurrent.CountDownLatch;
-
-import static com.cloudents.AutomationTest.Resources.Methods.loginUser;
-import static com.cloudents.AutomationTest.Resources.Strings.REFERRAL_SHARING_ICONS;
 
 public class ReferralDialog extends CloudentsAutoTests {
 
@@ -15,30 +13,24 @@ public class ReferralDialog extends CloudentsAutoTests {
 
         loginUser();
         Thread.sleep(1000);
-        mainPage.nextWindow.click();
-        Thread.sleep(1000);
-        mainPage.nextWindow.click();
-        Thread.sleep(1000);
-        mainPage.finishButton.click();
-        Thread.sleep(1000);
         mainPage.userMenuIcon.click();
         Thread.sleep(1000);
-        mainPage.userMenuItems.get(7).click();
+        mainPage.userMenuItems.get(8).click();
         Thread.sleep(1000);
-        Assert.assertEquals(mainPage.spreadText.getText(), "Spread the word at");
-        Assert.assertEquals(mainPage.earnText.getText(), "Earn 10 points for each one that joins");
-        Assert.assertEquals(mainPage.subTitle.get(0).getText(), "The more classmates you get on Spitball, the better everyone’s grades will be!");
-        Assert.assertEquals(mainPage.subTitle.get(1).getText(), "Limited to 5 referrals");
-        Assert.assertTrue(Integer.parseInt(mainPage.invitedText.get(0).getText()) >= 0);
-        Assert.assertEquals(mainPage.invitedText.get(1).getText(), "invited friends have joined");
-        Assert.assertEquals(mainPage.copyButton.getText(), "COPY");
+        Assert.assertEquals(mainPage.spreadText.getText(), REFERRAL_TITLE);
+        Assert.assertEquals(mainPage.earnText.getText(), REFERRAL_SEC_TITLE);
+        Assert.assertEquals(mainPage.subTitle.getText(), REFERRAL_SUB_TITLE);
+        Assert.assertEquals(mainPage.smallLetters.getText(), REFERRAL_SMALL_LETTERS);
+        Assert.assertTrue(mainPage.invitedText.getText().contains("Limited to "));
+        //Assert.assertEquals(mainPage.referralLink.getText(), REFERRAL_LINK);
+        Assert.assertEquals(mainPage.copyButton.getText(), REFERRAL_COPY_BUTTON[0]);
         mainPage.copyButton.click();
         Thread.sleep(500);
-        //Assert.assertEquals(mainPage.copiedButton.getText(), "COPIED");
-
+        Assert.assertEquals(mainPage.copiedButton.getText(), REFERRAL_COPY_BUTTON[1]);
 
         for(int i = 0 ; i < 4 ; i++) {
             Assert.assertEquals(mainPage.shareIcons.get(i).getText(), REFERRAL_SHARING_ICONS[i]);
+            Assert.assertEquals(mainPage.shareText.get(i).getText(), REFERRAL_SHARE_TEXT[i]);
         }
 
         mainPage.closeReferral.click();
